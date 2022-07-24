@@ -1,0 +1,76 @@
+import type { AttackSetting } from './attack-setting.interface';
+import type { CommandBehavior } from './command-behavior.interface';
+import type { DirectionMove } from './direction-move.interface';
+import type { EffectRemove } from './effect-remove.interface';
+import type { EffectShow } from './effect-show.interface';
+import type { FileLoad } from './file-load.interface';
+import type { ForthBackMoveTurn } from './forth-back-move-turn.interface';
+import type { GameSpeedChange } from './game-speed-change.interface';
+import type { ImageShow } from './image-show.interface';
+import type { MenuHide } from './menu-hide.interface';
+import type { MenuShow } from './menu-show.interface';
+import type { MessageShow } from './message-show.interface';
+import type { MovieShow } from './movie-show.interface';
+import type { ObjectChange } from './object-change.interface';
+import type { ObjectCreate } from './object-create.interface';
+import type { ObjectLock } from './object-lock.interface';
+import type { ObjectMove } from './object-move.interface';
+import type { ObjectPushPull } from './object-push-pull.interface';
+import type { ObjectUnlock } from './object-unlock.interface';
+import type { ParticleRemove } from './particle-remove.interface';
+import type { ParticleShow } from './particle-show.interface';
+import type { PriorityType } from './priority-type.interface';
+import type { SceneRotateFlip } from './scene-rotate-flip.interface';
+import type { ScrollMessageShow } from './scroll-message-show.interface';
+import type { SoundPlay } from './sound-play.interface';
+import type { SoundPositionRemember } from './sound-position-remember.interface';
+import type { SoundStop } from './sound-stop.interface';
+import type { TemplateMove } from './template-move.interface';
+import type { Timer } from './timer.interface';
+
+/**
+ *
+ */
+export interface ActionCommands {
+  ObjectByType: 0;
+  ObjectByGroup: 0;
+  ObjectById: 1;
+  ProjectCommon: 0;
+  UnsetObject: -1;
+  SelfObject: -2;
+  OtherThanSelfObject: -3;
+  ChildObject: -4;
+  LockedObject: -5;
+  TouchedObject: -6;
+  ParentObject: -7;
+  AccordingToMoveDirection: -2;
+  commandBehavior: CommandBehavior;
+  priorityType: PriorityType;
+  templateMove: TemplateMove;
+  objectLock: ObjectLock;
+  objectCreate: ObjectCreate;
+  objectChange: ObjectChange;
+  objectMove: ObjectMove;
+  objectPushPull: ObjectPushPull;
+  attackSetting: AttackSetting;
+  sceneRotateFlip: SceneRotateFlip;
+  soundPlay: SoundPlay;
+  soundStop: SoundStop;
+  soundPositionRemember: SoundPositionRemember;
+  messageShow: MessageShow;
+  scrollMessageShow: ScrollMessageShow;
+  effectShow: EffectShow;
+  effectRemove: EffectRemove;
+  particleShow: ParticleShow;
+  particleRemove: ParticleRemove;
+  movieShow: MovieShow;
+  imageShow: ImageShow;
+  gameSpeedChange: GameSpeedChange;
+  timer: Timer;
+  directionMove: DirectionMove;
+  forthBackMoveTurn: ForthBackMoveTurn;
+  menuShow: MenuShow;
+  menuHide: MenuHide;
+  fileLoad: FileLoad;
+  objectUnlock: ObjectUnlock;
+}
