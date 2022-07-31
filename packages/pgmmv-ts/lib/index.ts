@@ -1,1 +1,1 @@
-export * from './agtk.interface';
+export * from './agtk';

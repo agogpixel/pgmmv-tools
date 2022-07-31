@@ -1,4 +1,4 @@
-import type { Agtk } from './agtk.interface';
+import type { Agtk } from './agtk';
 
 type window = { Agtk: Agtk; window: window } & Record<string, unknown>;
 

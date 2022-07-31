@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/agogpixel/pgmmv-tools/issues"
+  },
+  "dependencies": {
+    "type-fest": "~2.18.0"
   }
 }
