@@ -3,11 +3,14 @@
  *
  * @packageDocumentation
  */
-import type { ObjectLock as ObjectLockConstant } from '../../../constants/action-commands/object-lock/object-lock.interface';
-import type { ComparisonOperator } from '../../../_shared/comparison-operator.type';
-import type { ComparisonType } from '../../../_shared/comparison-type.type';
-import type { SwitchCondition } from '../../../_shared/switch-condition.type';
+import type { ObjectLock as ObjectLockConstant } from '../../../constants/action-commands/object-lock';
+import type { ComparisonOperator, ComparisonType, SwitchCondition } from '../../../_shared';
 
+/**
+ * Object lock use type type.
+ *
+ * @internal
+ */
 type UseType = ObjectLockConstant['UseSwitch'] | ObjectLockConstant['UseVariable'] | ObjectLockConstant['UseNone'];
 
 /**

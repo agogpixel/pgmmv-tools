@@ -3,7 +3,6 @@
  *
  * @packageDocumentation
  */
-export * from './command-behavior-next.type';
 export * from './comparison-operator.type';
 export * from './comparison-type.type';
 export * from './predefined-common-switch-id.type';
