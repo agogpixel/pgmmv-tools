@@ -6,14 +6,30 @@
 import type { CommandBehavior } from '../../constants/action-commands/command-behavior';
 
 import type {
+  ActionExec,
   AttackSetting,
   BulletFire,
   CameraAreaChange,
+  DatabaseReflect,
+  DirectionMove,
   DisableObjectEnable,
   DisappearObjectRecover,
+  DisplayDirectionMove,
+  EffectRemove,
   EffectShow,
+  FileLoad,
+  ForthBackMoveTurn,
+  GameSpeedChange,
+  ImageShow,
+  LayerDisable,
+  LayerEnable,
+  LayerHide,
   LayerMove,
+  LayerShow,
+  MenuHide,
+  MenuShow,
   MessageShow,
+  MovieShow,
   ObjectChange,
   ObjectCreate,
   ObjectFilterEffect,
@@ -21,13 +37,22 @@ import type {
   ObjectLock,
   ObjectMove,
   ObjectPushPull,
+  ObjectUnlock,
+  ParticleRemove,
+  ParticleShow,
+  ResourceSetChange,
   SceneEffect,
   SceneEffectRemove,
   SceneGravityChange,
   SceneRotateFlip,
+  SceneShake,
   ScrollMessageShow,
   SoundPlay,
-  TemplateMove
+  SoundPositionRemember,
+  SwitchVariableChange,
+  SwitchVariableReset,
+  TemplateMove,
+  Timer
 } from './action-command-config';
 import type { Switches } from './switches';
 import type { Variables } from './variables';
@@ -45,6 +70,13 @@ type CommandBehaviorNext = CommandBehavior['CommandBehaviorNext'];
  * @internal
  */
 type CommandBehaviorLoop = CommandBehavior['CommandBehaviorLoop'];
+
+/**
+ * Command behavior break type.
+ *
+ * @internal
+ */
+type CommandBehaviorBreak = CommandBehavior['CommandBehaviorBreak'];
 
 /**
  * Object instance interface.
@@ -256,4 +288,187 @@ export interface ObjectInstance {
    * @param effectShow
    */
   execCommandEffectShow(effectShow: EffectShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Hide Effects".
+   *
+   * @param effectRemove
+   */
+  execCommandEffectRemove(effectRemove: EffectRemove): CommandBehaviorNext;
+
+  /**
+   * Executes "Show Particles".
+   *
+   * @param particleShow
+   */
+  execCommandParticleShow(particleShow: ParticleShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Hide Particles".
+   *
+   * @param particleRemove
+   */
+  execCommandParticleRemove(particleRemove: ParticleRemove): CommandBehaviorNext;
+
+  /**
+   * Executes "Play Video".
+   *
+   * @param movieShow
+   */
+  execCommandMovieShow(movieShow: MovieShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Display Image".
+   *
+   * @param imageShow
+   */
+  execCommandImageShow(imageShow: ImageShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Change Switch/Variable".
+   *
+   * @param switchVariableChange
+   */
+  execCommandSwitchVariableChange(switchVariableChange: SwitchVariableChange): CommandBehaviorNext;
+
+  /**
+   * Executes "Reset Switch/Variable".
+   *
+   * @param switchVariableResets
+   */
+  execCommandSwitchVariableReset(switchVariableResets: SwitchVariableReset[]): CommandBehaviorNext;
+
+  /**
+   * Executes "Change Game Speed".
+   *
+   * @param gameSpeedChange
+   */
+  execCommandGameSpeedChange(gameSpeedChange: GameSpeedChange): CommandBehaviorNext;
+
+  /**
+   * Executes "Timer Function".
+   *
+   * @param timer
+   */
+  execCommandTimer(timer: Timer): CommandBehaviorNext;
+
+  /**
+   * Executes "End Scene".
+   *
+   * @param sceneTerminate Not used.
+   */
+  execCommandSceneTerminate(sceneTerminate?: unknown): CommandBehaviorNext;
+
+  /**
+   * Executes "Set Move Direction and Move".
+   *
+   * @param directionMove
+   */
+  execCommandDirectionMove(directionMove: DirectionMove): CommandBehaviorNext;
+
+  /**
+   * Executes "Back and Forth Moving and Turning".
+   *
+   * @param forthBackMoveTurn
+   */
+  execCommandForthBackMoveTurn(forthBackMoveTurn: ForthBackMoveTurn): CommandBehaviorNext;
+
+  /**
+   * Executes "Execute Object Action". When action of this object self is executed,
+   * Agtk.constants.actionCommands.commandBehavior.CommandBehaviorBreak is returned.
+   *
+   * @param actionExec
+   */
+  execCommandActionExec(actionExec: ActionExec): CommandBehaviorNext | CommandBehaviorBreak;
+
+  /**
+   * Executes "Shake Scene".
+   *
+   * @param sceneShake
+   */
+  execCommandSceneShake(sceneShake: SceneShake): CommandBehaviorNext;
+
+  /**
+   * Execute "Disable Layer Display".
+   *
+   * @param layerHide
+   */
+  execCommandLayerHide(layerHide: LayerHide): CommandBehaviorNext;
+
+  /**
+   * Executes "Enable Layer Display".
+   *
+   * @param layerShow
+   */
+  execCommandLayerShow(layerShow: LayerShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Disable Layer Motion".
+   *
+   * @param layerDisable
+   */
+  execCommandLayerDisable(layerDisable: LayerDisable): CommandBehaviorNext;
+
+  /**
+   * Executes "Enable Layer Motion".
+   *
+   * @param layerEnable
+   */
+  execCommandLayerEnable(layerEnable: LayerEnable): CommandBehaviorNext;
+
+  /**
+   * Executes "Show Menu Screen".
+   *
+   * @param menuShow
+   */
+  execCommandMenuShow(menuShow: MenuShow): CommandBehaviorNext;
+
+  /**
+   * Executes "Hide Menu Screen".
+   *
+   * @param menuHide
+   */
+  execCommandMenuHide(menuHide: MenuHide): CommandBehaviorNext;
+
+  /**
+   * Executes "Move Towards Display Direction"
+   *
+   * @param displayDirectionMove
+   */
+  execCommandDisplayDirectionMove(displayDirectionMove: DisplayDirectionMove): CommandBehaviorNext;
+
+  /**
+   * Executes “File load".
+   *
+   * @param fileLoad
+   */
+  execCommandFileLoad(fileLoad: FileLoad): CommandBehaviorNext;
+
+  /**
+   * Execute "Save Sound Playback Location".
+   *
+   * @param soundPositionRemember
+   */
+  execCommandSoundPositionRemember(soundPositionRemember: SoundPositionRemember): CommandBehaviorNext;
+
+  /**
+   * Execute "Unlock"
+   *
+   * @param objectUnlock
+   */
+  execCommandObjectUnlock(objectUnlock: ObjectUnlock): CommandBehaviorNext;
+
+  /**
+   * Execute "Change Animation Resource Set".
+   *
+   * @param resourceSetChange
+   */
+  execCommandResourceSetChange(resourceSetChange: ResourceSetChange): CommandBehaviorNext;
+
+  /**
+   * Run the runtime action “Object Parameter Apply to Database".
+   *
+   * @param databaseReflect
+   */
+  execCommandDatabaseReflect(databaseReflect: DatabaseReflect): CommandBehaviorNext;
 }

@@ -2,12 +2,14 @@
  * Generic value accessor interface module.
  *
  * @packageDocumentation
+ * @internal
  */
 
 /**
  * Generic value accessor interface.
  *
  * @template T - Type of value to be accessed.
+ * @internal
  */
 export interface ValueAccessor<T extends boolean | number> {
   /**

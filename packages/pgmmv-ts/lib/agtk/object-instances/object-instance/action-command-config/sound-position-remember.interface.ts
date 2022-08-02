@@ -1,0 +1,40 @@
+/**
+ * Object instance sound position remember action command configuration interface module.
+ *
+ * @packageDocumentation
+ */
+import type { SoundPositionRememberValue as SoundType } from '../../../constants/action-commands/sound-position-remember';
+
+/**
+ * Object instance sound position remember action command configuration interface.
+ */
+export interface SoundPositionRemember {
+  /**
+   * Value 0 - 2
+   *  - 0 = Sound Effects
+   *  - 1 = Voices
+   *  - 2 = Background Music
+   */
+  soundType: SoundType;
+
+  /**
+   * Value -5, -2, -1, 0, 1+
+   *  - -5 = Locked
+   *  - -2 = Object Self
+   *  - -1 = Not Set
+   *  - 0 = Project Common
+   *  - 1+ = Any created objects you may have
+   */
+  variableObjectId: number;
+
+  /**
+   * Value -1
+   *  - -1 = Single
+   */
+  variableQualifierId: number;
+
+  /**
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default variable, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting variable values
+   */
+  variableId: number;
+}

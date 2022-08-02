@@ -2,8 +2,8 @@
  * Generic value accessor accessor interface module.
  *
  * @packageDocumentation
+ * @internal
  */
-import type { NonZeroPositiveInteger } from './non-zero-positive-integer.type';
 import type { SwitchValueAccessor } from './switch-value-accessor.interface';
 import type { VariableValueAccessor } from './variable-value-accessor.interface';
 
@@ -11,6 +11,7 @@ import type { VariableValueAccessor } from './variable-value-accessor.interface'
  * Generic value accessor accessor interface.
  *
  * @template T - Type of value accessor to be accessed.
+ * @internal
  */
 export interface ValueAccessorAccessor<T extends SwitchValueAccessor | VariableValueAccessor> {
   /**
@@ -19,7 +20,7 @@ export interface ValueAccessorAccessor<T extends SwitchValueAccessor | VariableV
    * @param id - Value accessor ID.
    * @returns The value accessor.
    */
-  get<U extends number>(id: NonZeroPositiveInteger<U>): T;
+  get(id: number): T;
 
   /**
     * Get value accessor ID by name.

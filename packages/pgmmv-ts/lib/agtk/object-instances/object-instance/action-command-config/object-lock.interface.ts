@@ -4,7 +4,41 @@
  * @packageDocumentation
  */
 import type { ObjectLock as ObjectLockConstant } from '../../../constants/action-commands/object-lock';
-import type { ComparisonOperator, ComparisonType, SwitchCondition } from '../../../_shared';
+import type { Conditions } from '../../../constants/conditions';
+
+/**
+ * Object lock compare variable operator type.
+ *
+ * @internal
+ */
+type CompareVariableOperator =
+  | Conditions['OperatorLess']
+  | Conditions['OperatorLessEqual']
+  | Conditions['OperatorEaual']
+  | Conditions['OperatorGreaterEqual']
+  | Conditions['OperatorGreater']
+  | Conditions['OperatorNotEqual'];
+
+/**
+ * Object lock compare value type type.
+ *
+ * @internal
+ */
+type CompareValueType =
+  | Conditions['CompareValue']
+  | Conditions['CompareVariable']
+  | Conditions['CompareNaN'];
+
+/**
+ * Object lock switch condition type.
+ *
+ * @internal
+ */
+type SwitchCondition =
+  | Conditions['SwitchConditionOn']
+  | Conditions['SwitchConditionOff']
+  | Conditions['SwitchConditionOnFromOff']
+  | Conditions['SwitchConditionOffFromOn'];
 
 /**
  * Object lock use type type.
@@ -124,7 +158,7 @@ export interface ObjectLock {
    *  - 4 = Greater than >
    *  - 5 = Not equal to !=
    */
-  compareVariableOperator: ComparisonOperator;
+  compareVariableOperator: CompareVariableOperator;
 
   /**
    * Value 0-2. Only useable if useType = 1.
@@ -132,7 +166,7 @@ export interface ObjectLock {
    *  - 1 = Other Variables
    *  - 2 = Non-numeric
    */
-  compareValueType: ComparisonType;
+  compareValueType: CompareValueType;
 
   /**
    *  Value any float. Only useable if compareValueType = 0.
