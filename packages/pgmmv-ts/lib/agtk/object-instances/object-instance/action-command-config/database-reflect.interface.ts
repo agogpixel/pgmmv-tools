@@ -1,5 +1,6 @@
 /**
- * Object instance database reflect action command configuration interface module.
+ * Object instance database reflect action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */

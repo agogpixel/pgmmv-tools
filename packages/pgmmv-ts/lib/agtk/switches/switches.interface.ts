@@ -72,7 +72,8 @@ export interface Switches {
    *
    * @param name - The switch name.
    * @returns A switch ID when found, -1 otherwise.
-   * @note Preset variable may change according to language, so avoid using this method if possible.
+   * @note Preset variable may change according to language, so avoid using this
+   * method if possible.
    */
   getIdByName(name: string): number;
 }

@@ -23,7 +23,8 @@ export interface ObjectInstances {
    * @param objectId - The object instance's object ID.
    * @param instanceName - The object instance's name (as set in the editor).
    * @returns An object instance ID when found, -1 otherwise.
-   * @note Checks for consistency with object name if object instance is dynamically generated.
+   * @note Checks for consistency with object name if object instance is
+   * dynamically generated.
    */
   getIdByName(objectId: number, instanceName: string): number;
 }

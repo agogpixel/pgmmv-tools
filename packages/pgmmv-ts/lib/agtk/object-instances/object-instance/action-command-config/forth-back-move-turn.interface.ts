@@ -1,5 +1,6 @@
 /**
- * Object instance forth/back/move/turn action command configuration interface module.
+ * Object instance forth/back/move/turn action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -30,7 +31,8 @@ type TurnType =
  */
 export interface ForthBackMoveTurn {
   /**
-   * Value 0-2. NOTE: Any values outside 0-2 won't crash game but will null the action.
+   * Value 0-2. NOTE: Any values outside 0-2 won't crash game but will null the
+   * action.
    *  - 0 = None
    *  - 1 = Move Forward
    *  - 2 = Move Backward
@@ -38,7 +40,8 @@ export interface ForthBackMoveTurn {
   moveType: MoveType;
 
   /**
-   * Value 0-2. NOTE: Any values outside 0-2 won't crash game but will null the action.
+   * Value 0-2. NOTE: Any values outside 0-2 won't crash game but will null the
+   * action.
    *  - 0 = None
    *  - 1 = Turn Right
    *  - 2 = Turn Left
@@ -46,7 +49,13 @@ export interface ForthBackMoveTurn {
   turnType: TurnType;
 
   /**
-   * This is the direction the object will face while moving. Anything < 0 (ie -1, -2, etc) will result in 'Match Movement Direction'. Anything above 0 (ie 1, 2, etc) will represent the directions that particular motion has available. NOTE: If value for direction doesn't exist in the motion, the game won't crash, but the animation will be null.
+   * This is the direction the object will face while moving.
+   * Anything < 0 (ie -1, -2, etc) will result in 'Match Movement Direction'.
+   * Anything above 0 (ie 1, 2, etc) will represent the directions that
+   * particular motion has available.
+   *
+   * @note If value for direction doesn't exist in the motion, the game won't
+   * crash, but the animation will be null.
    */
   directionId: number;
 }

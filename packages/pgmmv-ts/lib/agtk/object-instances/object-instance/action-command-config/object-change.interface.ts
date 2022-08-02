@@ -10,7 +10,8 @@ import type { ObjectChangeValue as CreatePosition } from '../../../constants/act
  */
 export interface ObjectChange {
   /**
-   * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent object ID positive number.
+   * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
+   * object ID positive number.
    *  - -1 = Not Set
    *  - 1+ = Any created objects you may have
    */
@@ -59,7 +60,7 @@ export interface ObjectChange {
   useConnect: boolean;
 
   /**
-   * Value -1 or 1+. Note: If outside an existing value, action will be null
+   * Value -1 or 1+. Note: If outside an existing value, action will be null.
    *  - -1 = Not Set
    *  - 1+ = Any connection points you may have
    */

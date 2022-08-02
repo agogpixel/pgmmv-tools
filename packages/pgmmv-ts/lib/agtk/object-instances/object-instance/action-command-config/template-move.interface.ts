@@ -10,7 +10,8 @@ import type { TemplateMoveValue as MoveType } from '../../../constants/action-co
  */
 export interface TemplateMove {
   /**
-   * Value 0-6. NOTE: Values outside 0-6 won't crash game, but will null the action.
+   * Value 0-6. NOTE: Values outside 0-6 won't crash game, but will null the
+   * action.
    *  - 0 = Move Left/Right
    *  - 1 = Move Up/Down
    *  - 2 = Bound
@@ -35,7 +36,8 @@ export interface TemplateMove {
 
   /**
    * Value True/False.
-   *  - True = Duration is infinite (meaning it will only flip direction when hitting a wall/tile)
+   *  - True = Duration is infinite (meaning it will only flip direction when
+   *    hitting a wall/tile)
    *  - False = Duration is based on horizontalMoveDuration300 value
    */
   horizontalInfinite: boolean;
@@ -54,35 +56,41 @@ export interface TemplateMove {
 
   /**
    * Value True/False.
-   *  - True = Duration is infinite (meaning it will only flip direction when hitting a wall/tile)
+   *  - True = Duration is infinite (meaning it will only flip direction when
+   *    hitting a wall/tile)
    *  - False = Duration is based on verticalMoveDuration300 value
    */
   verticalInfinite: boolean;
 
   /**
-   * Value 0+. This is the time duration for the random movement. A value of 300 = 1 second.
+   * Value 0+. This is the time duration for the random movement. A value of
+   * 300 = 1 second.
    */
   randomMoveDuration300: number;
 
   /**
-   * Value 0+. This is the wait for when the next random movement will begin (object is stopped during wait). A value of 300 = 1 second.
+   * Value 0+. This is the wait for when the next random movement will begin
+   * (object is stopped during wait). A value of 300 = 1 second.
    */
   randomMoveStop300: number;
 
   /**
-   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the
+   * game won't crash but the action will be null.
    */
   nearObjectGroup: number;
 
   /**
-   * Value True/False. NOTE: Seems to be tied with nearPlayerLockedPlayerPrior as well, make sure they both are same value.
+   * Value True/False. NOTE: Seems to be tied with nearPlayerLockedPlayerPrior
+   * as well, make sure they both are same value.
    *  - True = Prioritize Locked Object of Group
    *  - False = No priority
    */
   nearObjectLockedObjectPrior: boolean;
 
   /**
-   * Value True/False. NOTE: Seems to be tied with nearObjectLockedObjectPrior as well, make sure they both are same value.
+   * Value True/False. NOTE: Seems to be tied with nearObjectLockedObjectPrior
+   * as well, make sure they both are same value.
    *  - True = Prioritize Locked Object of Group
    *  - False = No priority
    *
@@ -91,7 +99,8 @@ export interface TemplateMove {
   nearPlayerLockedPlayerPrior: boolean;
 
   /**
-   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the
+   * game won't crash but the action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group
@@ -100,14 +109,18 @@ export interface TemplateMove {
   apartNearObjectGroup: number;
 
   /**
-   * Value True/False. NOTE: Seems to be tied with apartNearPlayerLockedPlayerPrior as well, make sure they both are same value.
+   * Value True/False. NOTE: Seems to be tied with
+   * apartNearPlayerLockedPlayerPrior as well, make sure they both are same
+   * value.
    *  - True = Prioritize Locked Object of Group
    *  - False = No priority
    */
   apartNearObjectLockedObjectPrior: boolean;
 
   /**
-   * Value True/False. NOTE: Seems to be tied with apartNearObjectLockedObjectPrior as well, make sure they both are same value.
+   * Value True/False. NOTE: Seems to be tied with
+   * apartNearObjectLockedObjectPrior as well, make sure they both are same
+   * value.
    *  - True = Prioritize Locked Object of Group
    *  - False = No priority
    *
@@ -133,7 +146,8 @@ export interface TemplateMove {
 
   /**
    * Value True/False.
-   *  - True = Will ignore tile wall detections (recommended not affected by gravity by 100%)
+   *  - True = Will ignore tile wall detections (recommended not affected by
+   *    gravity by 100%)
    *  - False = Won't ignore tile wall detections
    */
   ignoreWall: boolean;

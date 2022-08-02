@@ -1,5 +1,6 @@
 /**
- * Object instance object filter effect action command configuration interface module.
+ * Object instance object filter effect action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -29,7 +30,7 @@ type EffectType =
  */
 export interface ObjectFilterEffect {
   /**
-   * Value 0 - 11
+   * Value 0 - 11.
    *  - 0 = Noise
    *  - 1 = Mosaic
    *  - 2 = Monochrome
@@ -46,22 +47,22 @@ export interface ObjectFilterEffect {
   effectType: EffectType;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   noise: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   mosaic: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   monochrome: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   sepia: number;
 
@@ -76,64 +77,64 @@ export interface ObjectFilterEffect {
   defocus: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   chromaticAberration: number;
 
   /**
-   * Value 0 - 100. Referring to Darken %
+   * Value 0 - 100. Referring to Darken %.
    */
   darkness: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   transparency: number;
 
   /**
-   * Value 0.00+. NOTE: 300 = 1sec
+   * Value 0.00+. NOTE: 300 = 1sec.
    */
   blinkInterval300: number;
 
   /**
-   * Value -1, 1+
+   * Value -1, 1+.
    *  - -1 = Not Set
    *  - 1+ = Any image ID you have in Resources tab
    */
   imageId: number;
 
   /**
-   * Value 0 - 100
+   * Value 0 - 100.
    */
   imageTransparency: number;
 
   /**
-   * N/A
+   * N/A.
    */
   imagePlacement: unknown;
 
   /**
-   * Value 0 - 255
+   * Value 0 - 255.
    */
   fillA: number;
 
   /**
-   * Value 0 - 255
+   * Value 0 - 255.
    */
   fillR: number;
 
   /**
-   * Value 0 - 255
+   * Value 0 - 255.
    */
   fillG: number;
 
   /**
-   * Value 0 - 255
+   * Value 0 - 255.
    */
   fillB: number;
 
   /**
-   * Value 0.00+. NOTE: 300 = 1sec
+   * Value 0.00+. NOTE: 300 = 1sec.
    */
   duration300: number;
 }

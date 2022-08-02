@@ -22,7 +22,7 @@ type ImagePlacement =
  */
 export interface SceneEffect {
   /**
-   * Value -4, -3, -1, 0+
+   * Value -4, -3, -1, 0+.
    *  - -4 = Foremost Layer + Menu
    *  - -3 = Foremost Layer
    *  - -1 = All Layers in Scene
@@ -35,7 +35,7 @@ export interface SceneEffect {
    */
   filterEffect: ObjectFilterEffect & {
     /**
-     * Value 0 - 4
+     * Value 0 - 4.
      *  - 0 = Center
      *  - 1 = Enlarge
      *  - 2 = Tiles

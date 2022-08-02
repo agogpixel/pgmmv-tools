@@ -1,5 +1,6 @@
 /**
- * Object instance switch/variable change action command configuration interface module.
+ * Object instance switch/variable change action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -41,11 +42,12 @@ type VariableAssignValueType =
   | Assignments['VariableAssignScript'];
 
 /**
- * Object instance switch/variable change action command configuration interface.
+ * Object instance switch/variable change action command configuration
+ * interface.
  */
 export interface SwitchVariableChange {
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Switch
    *  - False = Variable
    */
@@ -63,19 +65,20 @@ export interface SwitchVariableChange {
   switchObjectId: number;
 
   /**
-   * Value -2, -1
+   * Value -2, -1.
    *  - -2 = All
    *  - -1 = Single
    */
   switchQualifierId: QualifierId;
 
   /**
-   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default switch, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting switch values
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common
+   * selected as well as if created or default switch.
    */
   switchId: number;
 
   /**
-   * Value 0 - 2
+   * Value 0 - 2.
    *  - 0 = ON
    *  - 1 = OFF
    *  - 2 = Toggle
@@ -94,19 +97,20 @@ export interface SwitchVariableChange {
   variableObjectId: number;
 
   /**
-   * Value -2, -1
+   * Value -2, -1.
    *  - -2 = All
    *  - -1 = Single
    */
   variableQualifierId: QualifierId;
 
   /**
-   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default variable, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting variable values
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common
+   * selected as well as if created or default variable.
    */
   variableId: number;
 
   /**
-   * Value 0 - 5
+   * Value 0 - 5.
    *  - 0 = Assign (=)
    *  - 1 = Add & assign (+=)
    *  - 2 = Subtract & assign (-=)
@@ -117,13 +121,13 @@ export interface SwitchVariableChange {
   variableAssignOperator: VariableAssignmentOperator;
 
   /**
-   * Value 0 - 3
+   * Value 0 - 3.
    *  - 0 = Constant
    *  - 1 = Variables
    *  - 2 = Random
    *  - 3 = Script
    *
-   * @note Do NOT specify Agtk.constants.assignments.VariableAssignScript
+   * @note Do NOT specify Agtk.constants.assignments.VariableAssignScript.
    */
   variableAssignValueType: VariableAssignValueType;
 
@@ -133,7 +137,7 @@ export interface SwitchVariableChange {
   assignValue: number
 
   /**
-   * Value -7, -2, -1, 0, 1+
+   * Value -7, -2, -1, 0, 1+.
    *  - -7 = Parent
    *  - -2 = Object Self
    *  - -1 = Not Set
@@ -143,13 +147,14 @@ export interface SwitchVariableChange {
   assignVariableObjectId: number;
 
   /**
-   * Value -1
+   * Value -1.
    *  - -1 = Single
    */
   assignVariableQualifierId: number;
 
   /**
-   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default variable, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting variable values
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common
+   * selected as well as if created or default variable.
    */
   assignVariableId: number;
 

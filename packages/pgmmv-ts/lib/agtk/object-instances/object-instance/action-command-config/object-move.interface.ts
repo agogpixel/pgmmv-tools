@@ -32,7 +32,7 @@ type TargetingType =
  */
 export interface ObjectMove {
   /**
-   * Value 0 - 4
+   * Value 0 - 4.
    *  - 0 = Set Direction and Move
    *  - 1 = Set Coordinates and Move
    *  - 2 = Move to Specified Object - Center
@@ -51,18 +51,21 @@ export interface ObjectMove {
   angle: number;
 
   /**
-   * Value any integer. Note: If using negative number, the movement will be instant and in opposite direction.
+   * Value any integer. Note: If using negative number, the movement will be
+   * instant and in opposite direction.
    *  - 0+ = Move distance in pixels
    */
   moveDistance: number;
 
   /**
-   * Value any integer. This moves to this X coordinate. Note: The top-left corner of every scene is (0,0).
+   * Value any integer. This moves to this X coordinate. Note: The top-left
+   * corner of every scene is (0,0).
    */
   posX: number;
 
   /**
-   * Value any integer. This moves to this Y coordinate. Note: The top-left corner of every scene is (0,0).
+   * Value any integer. This moves to this Y coordinate. Note: The top-left
+   * corner of every scene is (0,0).
    */
   posY: number;
 
@@ -81,7 +84,8 @@ export interface ObjectMove {
   followCameraMoving: boolean;
 
   /**
-   * Value -2, -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent object ID positive number
+   * Value -2, -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
+   * object ID positive number.
    *  - -2 = Object Self
    *  - -1 = Not Set
    *  - 1+ = Any created objects you may have
@@ -105,7 +109,7 @@ export interface ObjectMove {
   centerAdjustY: number;
 
   /**
-   * Value -1 or 1+. Note: If outside an existing value, action will be null
+   * Value -1 or 1+. Note: If outside an existing value, action will be null.
    *  - -1 = Not Set
    *  - 1+ = Any connection points you may have
    */
@@ -119,7 +123,9 @@ export interface ObjectMove {
   useObjectParameter: boolean;
 
   /**
-   * Value any integer. Represents the speed % to change object to during the move. Note: If using negative number, the movement will be go in the opposite direction specified.
+   * Value any integer. Represents the speed % to change object to during the
+   * move. Note: If using negative number, the movement will be go in the
+   * opposite direction specified.
    */
   changeMoveSpeed: number;
 
@@ -140,14 +146,16 @@ export interface ObjectMove {
   targettingType: TargetingType;
 
   /**
-   * Value anything. This may be a discontinued property as I couldn't find anything that this changes.
+   * Value anything. This may be a discontinued property as I couldn't find
+   * anything that this changes.
    *
    * @deprecated
    */
   targetObjectType: unknown;
 
   /**
-   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the
+   * game won't crash but the action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group
@@ -185,12 +193,14 @@ export interface ObjectMove {
   enemyObject: boolean;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    */
   objectGroupBit: number;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    *
    * The 1 left shift number of the target group’s index value.
    * Use a logical OR to allow multiple groups.
@@ -207,7 +217,7 @@ export interface ObjectMove {
   fitDispDirToMoveDir: boolean;
 
   /**
-   * Value true/false. Note: Opposite of editor
+   * Value true/false. Note: Opposite of editor.
    *  - True = Don't Hide
    *  - False = Hide Object During Move
    */

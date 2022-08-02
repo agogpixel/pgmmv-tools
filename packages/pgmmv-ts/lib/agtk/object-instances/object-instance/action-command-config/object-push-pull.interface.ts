@@ -1,5 +1,6 @@
 /**
- * Object instance object push/pull action command configuration interface module.
+ * Object instance object push/pull action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -38,21 +39,21 @@ type TargetingType =
  */
 export interface ObjectPushPull {
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Set Effect Range Base as Connection Point
    *  - False = Don't use connection point
    */
   effectRangeBaseConnect: boolean;
 
   /**
-   * Value -1 or 1+
+   * Value -1 or 1+.
    *  - -1 = Not Set
    *  - 1+ = Any connection points you may have
    */
   effectRangeBaseConnectId: number;
 
   /**
-   * Value 0-1
+   * Value 0-1.
    *  - 0 = Range Direction: Set Angle
    *  - 1 = Range Direction: This Object's Display Direction
    */
@@ -68,26 +69,26 @@ export interface ObjectPushPull {
   angle: number;
 
   /**
-   * Value -1 or 1+. Effect Direction connection point
+   * Value -1 or 1+. Effect Direction connection point.
    *  - -1 = Not Set
    *  - 1+ = Any connection points you may have
    */
   connectId: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Rectangle
    *  - False = Circle
    */
   rectangle: boolean;
 
   /**
-   * Value 0+
+   * Value 0+.
    */
   rectangleDistance: number;
 
   /**
-   * Value 0+
+   * Value 0+.
    */
   rectangleHeight: number;
 
@@ -102,7 +103,7 @@ export interface ObjectPushPull {
   arcAngle: number;
 
   /**
-   * Value 0-2
+   * Value 0-2.
    *  - 0 = Effect Direction: Set Angle
    *  - 1 = Effect Direction: This Object's Display Direction
    *  - 2 = Effect Direction: This Object's Connection Point
@@ -119,29 +120,29 @@ export interface ObjectPushPull {
   effectDirection: number;
 
   /**
-   * Value integer. Effective Strength +/-
+   * Value integer. Effective Strength +/-.
    */
   effectValue: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Bigger of smaller effect based on distance from this object
    *  - False = Not based on distance
    */
   distanceEffect: boolean;
 
   /**
-   * Value any integer
+   * Value any integer.
    */
   nearValue: number;
 
   /**
-   * Value any integer
+   * Value any integer.
    */
   farValue: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Apply Only Once to Target
    *  - False = Apply continuously
    */
@@ -151,20 +152,23 @@ export interface ObjectPushPull {
    * Value 0-3.
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
-   *  - 2 = Objects Touching This Object (STRONGLY recommend not using script for this option)
+   *  - 2 = Objects Touching This Object (STRONGLY recommend not using script
+   *    for this option)
    *  - 3 = Objects Locked by This Object
    */
   targettingType: TargetingType;
 
   /**
-   * Value anything. This may be a discontinued property as I couldn't find anything that this changes.
+   * Value anything. This may be a discontinued property as I couldn't find
+   * anything that this changes.
    *
    * @deprecated
    */
   targetObjectType: unknown;
 
   /**
-   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the
+   * game won't crash but the action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group
@@ -202,12 +206,14 @@ export interface ObjectPushPull {
   enemyObject: boolean;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    */
   objectGroupBit: number;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    */
   excludeObjectGroupBit: number;
 }

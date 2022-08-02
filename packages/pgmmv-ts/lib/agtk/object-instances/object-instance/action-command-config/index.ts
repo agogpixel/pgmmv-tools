@@ -46,6 +46,7 @@ export * from './scene-shake.interface';
 export * from './scroll-message-show.interface';
 export * from './sound-play.interface';
 export * from './sound-position-remember.interface';
+export * from './sound-stop.interface';
 export * from './switch-variable-change.interface';
 export * from './switch-variable-reset.interface';
 export * from './template-move.interface';

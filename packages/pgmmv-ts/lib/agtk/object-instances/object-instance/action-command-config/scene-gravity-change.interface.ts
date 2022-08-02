@@ -1,5 +1,6 @@
 /**
- * Object instance scene gravity change action command configuration interface module.
+ * Object instance scene gravity change action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -23,7 +24,7 @@ export interface SceneGravityChange {
   direction: number;
 
   /**
-   * Value 0.00+. NOTE: 300 = 1sec
+   * Value 0.00+. NOTE: 300 = 1sec.
    */
   duration300: number;
 

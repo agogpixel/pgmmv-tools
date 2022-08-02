@@ -10,21 +10,21 @@ import type { MenuShowValue as EffectType } from '../../../constants/action-comm
  */
 export interface MenuShow {
   /**
-   * Value -1, 1+
+   * Value -1, 1+.
    *  - -1 = Not Set
    *  - 1+ = Any menu scene layers you may have (1 being the far left tab)
    */
   layerId: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Set Sequence
    *  - False = No sequence
    */
   useEffect: boolean;
 
   /**
-   * Value -1, 0 - 3
+   * Value -1, 0 - 3.
    *  - -1 = Not Set
    *  - 0 = Slide Up
    *  - 1 = Slide Down
@@ -34,14 +34,14 @@ export interface MenuShow {
   effectType: EffectType;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Fade-in
    *  - False = None
    */
   fadein: boolean;
 
   /**
-   * Value 0.00+. 300 = 1 second
+   * Value 0.00+. 300 = 1 second.
    */
   duration300: number;
 }

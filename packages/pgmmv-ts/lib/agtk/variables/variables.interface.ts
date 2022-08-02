@@ -127,7 +127,8 @@ export interface Variables {
    *
    * @param name - The variable name.
    * @returns A variable ID when found, -1 otherwise.
-   * @note Preset variable may change according to language, so avoid using this method if possible.
+   * @note Preset variable may change according to language, so avoid using this
+   * method if possible.
    */
   getIdByName(name: string): number;
 }

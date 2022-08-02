@@ -1,5 +1,6 @@
 /**
- * Object instance particle remove action command configuration interface module.
+ * Object instance particle remove action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
@@ -21,7 +22,7 @@ type TargetingType =
  */
 export interface ParticleRemove {
   /**
-   * Value -2, -1, 1+
+   * Value -2, -1, 1+.
    *  - -2 = All Particles
    *  - -1 = Not Set
    *  - 1+ = Any particles you may have created
@@ -29,7 +30,7 @@ export interface ParticleRemove {
   particleId: number;
 
   /**
-   * Value 0, 1, 5
+   * Value 0, 1, 5.
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    *  - 5 = Particles Being Shown in Scene
@@ -37,14 +38,16 @@ export interface ParticleRemove {
   targettingType: TargetingType;
 
   /**
-   * Value anything. This may be a discontinued property as I couldn't find anything that this changes.
+   * Value anything. This may be a discontinued property as I couldn't find
+   * anything that this changes.
    *
    * @deprecated
    */
   targetObjectType: unknown;
 
   /**
-   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. NOTE: If a value doesn't exist the
+   * game won't crash but the action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group

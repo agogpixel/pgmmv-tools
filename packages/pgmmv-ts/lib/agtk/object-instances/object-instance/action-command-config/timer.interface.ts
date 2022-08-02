@@ -10,7 +10,7 @@ import type { TimerValue as SecondType } from '../../../constants/action-command
  */
 export interface Timer {
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Start
    *  - False = Stop
    */
@@ -27,32 +27,33 @@ export interface Timer {
   timerVariableObjectId: number;
 
   /**
-   * Value -1
+   * Value -1.
    *  - -1 = Single
    */
   timerVariableQualifierId: number;
 
   /**
-   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default variable, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting variable values
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common
+   * selected as well as if a created or default variable.
    */
   timerVariableId: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Count Up
    *  - False = Count Down
    */
   countUp: boolean;
 
   /**
-   * Value 0 - 1
+   * Value 0 - 1.
    *  - 0 = Input Seconds
    *  - 1 = Set by Variable
    */
   secondType: SecondType;
 
   /**
-   * Value 0.00+. 300 = 1 second if secondType is 0
+   * Value 0.00+. 300 = 1 second if secondType is 0.
    */
   second300: number;
 
@@ -67,13 +68,14 @@ export interface Timer {
   secondVariableObjectId: number;
 
   /**
-   * Value -1
+   * Value -1.
    *  - -1 = Single
    */
   secondVariableQualifierId: number;
 
   /**
-   * Value -1 (None) or any whole number. Value will depend on if Self or Common selected as well as if a created or default variable, so refer to section 'Targeting Switches & Variables' and 'Find Switch / Variable ID's' for info on getting variable values
+   * Value -1 (None) or any whole number. Value will depend on if Self or Common
+   * selected as well as if a created or default variable.
    */
   secondVariableId: number;
 }

@@ -10,7 +10,9 @@ import type { ObjectUnlockValue as ObjectType } from '../../../constants/action-
  */
 export interface ObjectUnlock {
   /**
-   * Value -1+ depending on amount of Groups. Only useable if objectType is not a value of 1. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. Only useable if objectType is not
+   * a value of 1. NOTE: If a value doesn't exist the game won't crash but the
+   * action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group
@@ -29,7 +31,9 @@ export interface ObjectUnlock {
   /**
    * Value -1 and 1+. Only useable if objectType = 1.
    *  - -1 = Not Set
-   *  - 1+ = The desired object ID will be placed here, you can get object ID by right-clicking an object and clicking object settings. A non existing object ID will not crash game but will null action
+   *  - 1+ = The desired object ID will be placed here, you can get object ID by
+   *    right-clicking an object and clicking object settings. A non existing
+   *    object ID will not crash game but will null action
    */
   objectId: number;
 }

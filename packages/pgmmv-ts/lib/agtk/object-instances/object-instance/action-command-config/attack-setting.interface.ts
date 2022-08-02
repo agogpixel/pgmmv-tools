@@ -16,52 +16,55 @@ export interface AttackSetting {
   attackChange: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Change Object Groups Settings for Attack Detection
    *  - False = Don't change
    */
   hitObjectFlag: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Player Group is selected on Object Group Settings
    *  - False = Not selected
    */
   playerAttackArea: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Enemy Group is selected on Object Group Settings
    *  - False = Not selected
    */
   enemyAttackArea: boolean;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    *
    * The 1-left shift number of the targetgroup’s index value.
    * Use a logical OR to allow multiple groups.
-   * For example, to allow the objectGroupBit: number; player and enemy groups to tileAttackArea: boolean; be
-   * affected, the code is (1 << Agtk.constants.objectGoup.ObjectGroupPlayer) | (1 << Agtk.constants.objectGroup.ObjectGroupEnemy).
+   * For example, to allow the objectGroupBit: number; player and enemy groups
+   * to tileAttackArea: boolean; be affected, the code is
+   * (1 << Agtk.constants.objectGoup.ObjectGroupPlayer) | (1 << Agtk.constants.objectGroup.ObjectGroupEnemy).
    */
   objectGroupBit: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Tile Group Settings for Attack Detection
    *  - False = Don't change
    */
   hitTileFlag: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Default Tile Group is selected
    *  - False = Not selected
    */
   tileAttackArea: boolean;
 
   /**
-   * Value whole numbers. STRONGLY recommend not using script for this option, seems to based off the bit pattern the Groups are stored in.
+   * Value whole numbers. STRONGLY recommend not using script for this option,
+   * seems to based off the bit pattern the Groups are stored in.
    */
   tileGroupBit: number;
 
@@ -74,7 +77,7 @@ export interface AttackSetting {
   attributeType: AttributeType;
 
   /**
-   * Value 1-8
+   * Value 1-8.
    *  - 1 = Fire
    *  - 2 = Water
    *  - 3 = Earth

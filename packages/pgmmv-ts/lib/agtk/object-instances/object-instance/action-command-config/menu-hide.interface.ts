@@ -10,21 +10,21 @@ import type { MenuHideValue as EffectType } from '../../../constants/action-comm
  */
 export interface MenuHide {
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Hide All Except Default Display Menu
    *  - False = Hide only last shown menu
    */
   hideExceptInitial: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Set Sequence
    *  - False = No sequence
    */
   useEffect: boolean;
 
   /**
-   * Value -1, 0 - 3
+   * Value -1, 0 - 3.
    *  - -1 = Not Set
    *  - 0 = Slide Up
    *  - 1 = Slide Down
@@ -34,19 +34,19 @@ export interface MenuHide {
   effectType: EffectType;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Fade-out
    *  - False = None
    */
   fadeout: boolean;
 
   /**
-   * Value 0.00+. 300 = 1 second
+   * Value 0.00+. 300 = 1 second.
    */
   duration300: number;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Disable Object
    *  - False = Don't disable
    */

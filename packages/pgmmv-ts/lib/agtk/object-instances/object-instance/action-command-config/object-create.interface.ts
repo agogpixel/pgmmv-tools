@@ -10,7 +10,8 @@ import type { ObjectCreateValue as CreatePosition } from '../../../constants/act
  */
 export interface ObjectCreate {
   /**
-   * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent object ID positive number.
+   * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
+   * object ID positive number.
    *  - -1 = Not Set
    *  - 1+ = Any created objects you may have
    */

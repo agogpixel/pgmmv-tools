@@ -10,35 +10,35 @@ import type { FileLoadValue as EffectType } from '../../../constants/action-comm
  */
 export interface FileLoad {
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Project Common Variables
    *  - False = Don't include
    */
   projectCommonVariables: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Project Common Switches
    *  - False = Don't include
    */
   projectCommonSwitches: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Scene at time of Save
    *  - False = Don't include
    */
   sceneAtTimeOfSave: boolean;
 
   /**
-   * Value true/false
+   * Value true/false.
    *  - True = Objects States in Scene at time of Save
    *  - False = Don't include
    */
   objectsStatesInSceneAtTimeOfSave: boolean;
 
   /**
-   * Value -1, 0 - 5
+   * Value -1, 0 - 5.
    *  - -1 = Not Set
    *  - 0 = Black
    *  - 1 = White
@@ -50,7 +50,7 @@ export interface FileLoad {
   effectType: EffectType;
 
   /**
-   * Value 0.00+. 300 = 1 second
+   * Value 0.00+. 300 = 1 second.
    */
   duration300: number;
 }

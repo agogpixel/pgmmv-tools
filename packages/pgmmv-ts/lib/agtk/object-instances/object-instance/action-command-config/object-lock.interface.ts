@@ -87,12 +87,15 @@ export interface ObjectLock {
   lockObjectTouchedByThisObjectAttack: boolean;
 
   /**
-   * Value any whole number. If objectType is not a value of 1, this option (Set by Object Group) will take priority.
+   * Value any whole number. If objectType is not a value of 1, this option (Set
+   * by Object Group) will take priority.
    */
   objectTypeByType: number;
 
   /**
-   * Value -1+ depending on amount of Groups. Only useable if objectType is not a value of 1. NOTE: If a value doesn't exist the game won't crash but the action will be null.
+   * Value -1+ depending on amount of Groups. Only useable if objectType is not
+   * a value of 1. NOTE: If a value doesn't exist the game won't crash but the
+   * action will be null.
    *  - -1 = All Objects
    *  - 0 = Player Group
    *  - 1 = Enemy Group
@@ -108,7 +111,10 @@ export interface ObjectLock {
   objectType: number;
 
   /**
-   * Value 1+. Only useable if objectType = 1. The desired object ID will be placed here, you can get object ID by right-clicking an object and clicking object settings. A non existing object ID will not crash game but will null action.
+   * Value 1+. Only useable if objectType = 1. The desired object ID will be
+   * placed here, you can get object ID by right-clicking an object and clicking
+   * object settings. A non existing object ID will not crash game but will null
+   * action.
    */
   objectId: number;
 
@@ -123,9 +129,11 @@ export interface ObjectLock {
   /**
    * Only useable if useType = 0.
    *
-   * **This one is difficult to use scripting as the visual script version seems to get ID by name, so you might want to get the switch by name in a temp variable (in the script) and then use that temp variable as the switchId.
+   * **This one is difficult to use scripting as the visual script version seems
+   *   to get ID by name, so you might want to get the switch by name in a temp
+   *   variable (in the script) and then use that temp variable as the switchId.
    *  - -1 = None
-   *  - 1-11 = Refer to the default object self switches (see section for Switch/Variable ID references)
+   *  - 1-11 = Refer to the default object self switches
    *  - 2000+ = Created object self switches, see above ** for further details
    */
   switchId: number;
@@ -142,9 +150,12 @@ export interface ObjectLock {
   /**
    * Only useable if useType = 1.
    *
-   * **This one is difficult to use scripting as the visual script version seems to get ID by name, so you might want to get the variable by name in a temp variable (in the script) and then use that temp variable as the variableId.
+   * **This one is difficult to use scripting as the visual script version seems
+   *   to get ID by name, so you might want to get the variable by name in a
+   *   temp variable (in the script) and then use that temp variable as the
+   *   variableId.
    *  - -1 = None
-   *  - 1-38 = Refer to the default object self variables(see section for Switch/Variable ID references)
+   *  - 1-38 = Refer to the default object self variables
    *  - 2000+ = Created object self variables, see above ** for further details
    */
   variableId: number;
@@ -195,10 +206,13 @@ export interface ObjectLock {
   /**
    * Only useable if compareValueType = 1.
    *
-   * **This one is difficult to use scripting as the visual script version seems to get ID by name, so you might want to get the variable by name in a temp variable (in the script) and then use that temp variable as the variableId.
+   * **This one is difficult to use scripting as the visual script version seems
+   *   to get ID by name, so you might want to get the variable by name in a
+   *   temp variable (in the script) and then use that temp variable as the
+   *   variableId.
    *  - -1 = None
-   *  - 6-23 = Refer to default common variables if compareVariableObjectId = 0 (see section for Switch/Variable ID references)
-   *  - 1-38 = Refer to the default object self variables if compareVariableObjectId = -2 or 1+ (see section for Switch/Variable ID references)
+   *  - 6-23 = Refer to default common variables if compareVariableObjectId = 0
+   *  - 1-38 = Refer to the default object self variables if compareVariableObjectId = -2 or 1+
    *  - 2000+ = Created object self variables, see above ** for further details
    */
   compareVariableId: number;
