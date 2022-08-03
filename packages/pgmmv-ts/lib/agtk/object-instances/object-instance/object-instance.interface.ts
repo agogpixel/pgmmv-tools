@@ -55,6 +55,27 @@ import type {
   TemplateMove,
   Timer
 } from './action-command-config';
+import type {
+  AttackAreaNear,
+  AttackAreaTouched,
+  BuriedInWall,
+  CameraOutOfRange,
+  HpZero,
+  Locked,
+  ObjectActionChanged,
+  ObjectFacing,
+  ObjectFacingDirection,
+  ObjectFacingEachOther,
+  ObjectFound,
+  ObjectHit,
+  ObjectNear,
+  ObjectWallTouched,
+  Probability,
+  SlopeTouched,
+  SwitchVariableChanged,
+  WallAhead,
+  WallTouched
+} from './link-condition-config';
 import type { Switches } from './switches';
 import type { Variables } from './variables';
 
@@ -1226,4 +1247,372 @@ export interface ObjectInstance {
    * @returns Command behavior next signal.
    */
   execCommandDatabaseReflect(databaseReflect: DatabaseReflect): CommandBehaviorNext;
+
+  /**
+   * Detects "Contact with Tile's Wall Detection".
+   *
+   * @param wallTouched Wall touched configuration.
+   * @returns True when contact, false otherwise.
+   * @example
+   * ```ts
+   * o.isWallTouched({
+   *   wallBit: 0,
+   *   useTileGroup: false,
+   *   tileGroup: 0
+   * });
+   * ```
+   */
+  isWallTouched(wallTouched: WallTouched): boolean;
+
+  /**
+   * Detects "Contact with Tile's Wall Detection When Moving One Tile".
+   *
+   * @param wallAhead Wall ahead configuration.
+   * @returns True when contact, false otherwise.
+   * @example
+   * ```ts
+   * o.isWallAhead({
+   *   wallBit: 0,
+   *   useTileGroup: false,
+   *   tileGroup: 0
+   * });
+   * ```
+   */
+  isWallAhead(wallAhead: WallAhead): boolean;
+
+  /**
+   * Detects "Contact with Wall Detection of Other Objects".
+   *
+   * @param objectWallTouched Object wall touched configuration.
+   * @returns True when contact, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectWallTouched({
+   *   wallBit": 0,
+   *   objectType": 0,
+   *   objectTypeByType": 0,
+   *   objectGroup": -1,
+   *   objectId": -1
+   * });
+   * ```
+   */
+  isObjectWallTouched(objectWallTouched: ObjectWallTouched): boolean;
+
+  /**
+   * Detects "Contact with Collision Detection of Other Objects".
+   *
+   * @param objectHit Object hit configuration.
+   * @returns True when contact, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectHit({
+   *   wallBit: 0,
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1
+   * });
+   * ```
+   */
+  isObjectHit(objectHit: ObjectHit): boolean;
+
+  /**
+   * Detects "Hit an Attack Detection".
+   *
+   * @param attackAreaTouched Attack area touched configuration.
+   * @returns True when attack detection hit, false otherwise.
+   * @example
+   * ```ts
+   * o.isAttackAreaTouched({
+   *   wallBit: 0,
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1,
+   *   attributeType: 0,
+   *   attributePresetId: 1,
+   *   attributeValue: 0,
+   *   attributeEqual: true
+   * });
+   * ```
+   */
+  isAttackAreaTouched(attackAreaTouched: AttackAreaTouched): boolean;
+
+  /**
+   * Detects "Distance with Attack Detection".
+   *
+   * @param attackAreaNear Attack area near configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isAttackAreaNear({
+   *   otherDirections: false,
+   *   objectDirection: true,
+   *   directionBit: 990,
+   *   distanceType: 0,
+   *   distance: 0,
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1,
+   *   attributeType: 0,
+   *   attributePresetId: 1,
+   *   attributeValue: 0,
+   *   attributeEqual: true
+   * });
+   * ```
+   */
+  isAttackAreaNear(attackAreaNear: AttackAreaNear): boolean;
+
+  /**
+   * Detects "Distance with Other Objects".
+   *
+   * @param objectNear Object near configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectNear({
+   *   otherDirections: false,
+   *   objectDirection: true,
+   *   directionBit: 990,
+   *   distanceType: 0,
+   *   distance: 0,
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1,
+   * })
+   * ```
+   */
+  isObjectNear(objectNear: ObjectNear): boolean;
+
+  /**
+   * Detects "Face-to-Face with Other Objects".
+   *
+   * @param objectFacingEachOther Object facing each other configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectFacingEachOther({
+   *   objectType": 0,
+   *   objectTypeByType": 0,
+   *   objectGroup": -1,
+   *   objectId": -1
+   * });
+   * ```
+   */
+  isObjectFacingEachOther(objectFacingEachOther: ObjectFacingEachOther): boolean;
+
+  /**
+   * Detects "Facing the Direction of Other Objects".
+   *
+   * @param objectFacing Object facing configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectFacing({
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1
+   * });
+   * ```
+   */
+  isObjectFacing(objectFacing: ObjectFacing): boolean;
+
+  /**
+   * Detects "Discovered Other Objects".
+   *
+   * @param objectFound Object found configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectFound({
+   *   viewportId: -1,
+   *   discoveredAcrossLayersObject: false,
+   *   objectType: 0,
+   *   objectTypeByType: -1,
+   *   objectGroup: -2,
+   *   objectId: -1
+   * });
+   * ```
+   */
+  isObjectFound(objectFound: ObjectFound): boolean;
+
+  /**
+   * Detects "Other Objects Facing Specified Direction".
+   *
+   * @param objectFacingDirection Object facing direction configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectFacingDirection({
+   *   otherDirections: false,
+   *   objectDirection: true,
+   *   directionBit: 990,
+   *   objectType: 0,
+   *   objectTypeByType: 0,
+   *   objectGroup: -1,
+   *   objectId: -1
+   * });
+   * ```
+   */
+  isObjectFacingDirection(objectFacingDirection: ObjectFacingDirection): boolean;
+
+  /**
+   * Detects "HP is 0".
+   *
+   * @param hpZero HP zero configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isHpZero({
+   *   objectId: -2
+   * });
+   * ```
+   */
+  isHpZero(hpZero: HpZero): boolean;
+
+  /**
+   * Detects "Going Off Camera".
+   *
+   * @param cameraOutOfRange Camera out of range configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isCameraOutOfRange({
+   *   objectId: -2,
+   *   distanceFlag: false,
+   *   distance: 0
+   * });
+   * ```
+   */
+  isCameraOutOfRange(cameraOutOfRange: CameraOutOfRange): boolean;
+
+  /**
+   * Detects "Embedded in Wall Detection".
+   *
+   * @param buriedInWall Buried in wall configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isBuriedInWall({
+   *   objectId: -2
+   * });
+   * ```
+   */
+  isBuriedInWall(buriedInWall: BuriedInWall): boolean;
+
+  /**
+   * Detects "Locked".
+   *
+   * @param locked Locked configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isLocked({
+   *   lockingObjectId: -1,
+   *   lockedObjectType: 0,
+   *   lockedObjectTypeByType: 0,
+   *   lockedObjectGroup: -1,
+   *   lockedObjectId: -1
+   * });
+   * ```
+   */
+  isLocked(locked: Locked): boolean;
+
+  /**
+   * Detects "Use Probability".
+   *
+   * @param probability Probability configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isProbability({
+   *   probability: 0
+   * });
+   * ```
+   */
+  isProbability(probability: Probability): boolean;
+
+  /**
+   * Detects "Finished Showing All Motion".
+   *
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isAnimationFinished();
+   * ```
+   */
+  isAnimationFinished(): boolean;
+
+  /**
+   * Detects "Switch/Variable Changes".
+   *
+   * @param switchVariableChanged Switch/variable changed configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isSwitchVariableChanged({
+   *   swtch: true,
+   *   switchObjectId: -1,
+   *   switchQualifierId: -1,
+   *   switchId: -1,
+   *   switchCondition: 0,
+   *   variableObjectId: -1,
+   *   variableQualifierId: -1,
+   *   variableId: -1,
+   *   compareVariableOperator: 0,
+   *   compareValueType: 0,
+   *   compareValue: 0.000000,
+   *   compareVariableObjectId: -1,
+   *   compareVariableQualifierId: -1,
+   *   compareVariableId: -1
+   * });
+   * ```
+   */
+  isSwitchVariableChanged(switchVariableChanged: SwitchVariableChanged): boolean;
+
+  /**
+   * Detects "Specified Object's Action Changes".
+   *
+   * @param objectActionChanged Object action changed configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isObjectActionChanged({
+   *   objectId: -1,
+   *   actionObjectId: -1,
+   *   actionId: -1,
+   *   otherActions: false
+   * });
+   * ```
+   */
+  isObjectActionChanged(objectActionChanged: ObjectActionChanged): boolean;
+
+  /**
+   * Detects "Jump Peak Reached".
+   *
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isJumpTop();
+   * ```
+   */
+  isJumpTop(): boolean;
+
+  /**
+   * Detects "Contact with Slope".
+   *
+   * @param slopeTouched Slope touched configuration.
+   * @returns True when condition satisfied, false otherwise.
+   * @example
+   * ```ts
+   * o.isSlopeTouched({
+   *   directionType: 0,
+   *   downwardType: 0
+   * });
+   * ```
+   */
+  isSlopeTouched(slopeTouched: SlopeTouched): boolean;
 }
