@@ -6,7 +6,7 @@
 import type { ObjectInstance } from './object-instance';
 
 /**
- * Object instance interface.
+ * Object instances interface.
  */
 export interface ObjectInstances {
   /**

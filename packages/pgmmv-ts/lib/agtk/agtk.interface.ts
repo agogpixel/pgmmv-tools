@@ -5,6 +5,8 @@
  */
 import type { Constants } from './constants';
 import type { ObjectInstances } from './object-instances';
+import type { PlayerCharacters } from './player-characters';
+import type { Settings } from './settings';
 import type { Switches } from './switches';
 import type { Variables } from './variables';
 
@@ -37,6 +39,16 @@ export interface Agtk {
    * Resets the game. Performs same operation as resetting with F5 key.
    */
   reset(): void;
+
+  /**
+   * Settings.
+   */
+  readonly settings: Settings;
+
+  /**
+   * Player characters.
+   */
+  readonly playerCharacters: PlayerCharacters;
 
   /**
    * Object instances.
