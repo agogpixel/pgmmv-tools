@@ -1,11 +1,11 @@
 /**
- * Common switches key type module.
+ * Agtk common switches key type module.
  *
  * @packageDocumentation
  */
-import type { Switches } from './switches.interface';
+import type { AgtkSwitches } from './switches.interface';
 
 /**
- * Common switches key type.
+ * Agtk common switches key type.
  */
-export type SwitchesKey = keyof Switches;
+export type AgtkSwitchesKey = Exclude<keyof AgtkSwitches, 'get' | 'getIdByName'>;

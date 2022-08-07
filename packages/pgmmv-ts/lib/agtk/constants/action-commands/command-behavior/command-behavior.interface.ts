@@ -1,13 +1,13 @@
 /**
- * Action commands command behavior constants interface module.
+ * Agtk action commands command behavior constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands command behavior constants interface.
+ * Agtk action commands command behavior constants interface.
  */
-export interface CommandBehavior {
+export interface AgtkCommandBehavior {
   /**
    * Command behavior next.
    */

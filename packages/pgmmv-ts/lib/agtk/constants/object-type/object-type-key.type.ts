@@ -1,14 +1,14 @@
 /**
- * Object type key constants type module.
+ * Agtk object type key constants type module.
  *
  * @packageDocumentation
  * @deprecated
  */
-import type { ObjectType } from './object-type.interface';
+import type { AgtkObjectType } from './object-type.interface';
 
 /**
- * Object type key constants type.
+ * Agtk object type key constants type.
  *
  * @deprecated
  */
-export type ObjectTypeKey = keyof ObjectType;
+export type AgtkObjectTypeKey = keyof AgtkObjectType;

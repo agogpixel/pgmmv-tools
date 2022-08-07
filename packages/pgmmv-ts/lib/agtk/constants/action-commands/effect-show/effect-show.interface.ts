@@ -1,13 +1,13 @@
 /**
- * Action commands effect show constants interface module.
+ * Agtk action commands effect show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands effect show constants interface.
+ * Agtk action commands effect show constants interface.
  */
-export interface EffectShow {
+export interface AgtkEffectShow {
   /**
    * Position center.
    */

@@ -1,11 +1,11 @@
 /**
- * Link condition object facing direction key constants type module.
+ * Agtk link condition object facing direction key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingDirection } from './object-facing-direction.interface';
+import type { AgtkObjectFacingDirection } from './object-facing-direction.interface';
 
 /**
- * Link condition object facing direction key constants type.
+ * Agtk link condition object facing direction key constants type.
  */
-export type ObjectFacingDirectionKey = keyof ObjectFacingDirection;
+export type AgtkObjectFacingDirectionKey = keyof AgtkObjectFacingDirection;

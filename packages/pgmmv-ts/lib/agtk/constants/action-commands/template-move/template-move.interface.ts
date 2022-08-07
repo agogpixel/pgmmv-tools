@@ -1,13 +1,13 @@
 /**
- * Action commands template move constants interface module.
+ * Agtk action commands template move constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands template move constants interface.
+ * Agtk action commands template move constants interface.
  */
-export interface TemplateMove {
+export interface AgtkTemplateMove {
   /**
    * Move horizontal.
    */

@@ -1,5 +1,5 @@
 /**
- * Action commands forth back move turn constants module.
+ * Agtk action commands forth back move turn constants module.
  *
  * @packageDocumentation
  */

@@ -1,12 +1,12 @@
 /**
- * Action commands object move value constants type module.
+ * Agtk Action commands object move value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectMoveKey } from './object-move-key.type';
-import type { ObjectMove } from './object-move.interface';
+import type { AgtkObjectMoveKey } from './object-move-key.type';
+import type { AgtkObjectMove } from './object-move.interface';
 
 /**
- * Action commands object move value constants type.
+ * Agtk action commands object move value constants type.
  */
-export type ObjectMoveValue = ObjectMove[ObjectMoveKey];
+export type AgtkObjectMoveValue = AgtkObjectMove[AgtkObjectMoveKey];

@@ -1,21 +1,21 @@
 /**
- * Object instance sound play action command configuration interface module.
+ * Agtk object instance sound play action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { SoundPlayValue as SoundType } from '../../../constants/action-commands/sound-play';
+import type { AgtkSoundPlayValue as AgtkSoundType } from '../../../constants/action-commands/sound-play';
 
 /**
- * Object instance sound play action command configuration interface.
+ * Agtk object instance sound play action command configuration interface.
  */
-export interface SoundPlay {
+export interface AgtkSoundPlay {
   /**
    * Value 0 - 2.
    *  - 0 = Play Sound Effect
    *  - 1 = Play Voice
    *  - 2 = Play Background Music
    */
-  soundType: SoundType;
+  soundType: AgtkSoundType;
 
   /**
    * Value -1, 1+.

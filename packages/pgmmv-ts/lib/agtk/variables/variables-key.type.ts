@@ -1,11 +1,11 @@
 /**
- * Common variables key type module.
+ * Agtk common variables key type module.
  *
  * @packageDocumentation
  */
-import type { Variables } from './variables.interface';
+import type { AgtkVariables } from './variables.interface';
 
 /**
- * Common variables key type.
+ * Agtk Common variables key type.
  */
-export type VariablesKey = keyof Variables;
+export type AgtkVariablesKey = Exclude<keyof AgtkVariables, 'get' | 'getIdByName'>;

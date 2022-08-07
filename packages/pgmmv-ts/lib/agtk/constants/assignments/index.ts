@@ -1,5 +1,5 @@
 /**
- * Assignments constants module.
+ * Agtk assignments constants module.
  *
  * @packageDocumentation
  */

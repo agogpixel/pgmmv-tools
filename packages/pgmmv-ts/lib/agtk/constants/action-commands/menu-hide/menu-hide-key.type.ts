@@ -1,11 +1,11 @@
 /**
- * Action commands menu hide key constants type module.
+ * Agtk action commands menu hide key constants type module.
  *
  * @packageDocumentation
  */
-import type { MenuHide } from './menu-hide.interface';
+import type { AgtkMenuHide } from './menu-hide.interface';
 
 /**
- * Action commands menu hide key constants type.
+ * Agtk action commands menu hide key constants type.
  */
-export type MenuHideKey = keyof MenuHide;
+export type AgtkMenuHideKey = keyof AgtkMenuHide;

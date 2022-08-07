@@ -1,12 +1,12 @@
 /**
- * Direction value constants type module.
+ * Agtk direction value constants type module.
  *
  * @packageDocumentation
  */
-import type { DirectionKey } from './direction-key.type';
-import type { Direction } from './direction.interface';
+import type { AgtkDirectionKey } from './direction-key.type';
+import type { AgtkDirection } from './direction.interface';
 
 /**
- * Direction value constants type.
+ * Agtk direction value constants type.
  */
-export type DirectionValue = Direction[DirectionKey];
+export type AgtkDirectionValue = AgtkDirection[AgtkDirectionKey];

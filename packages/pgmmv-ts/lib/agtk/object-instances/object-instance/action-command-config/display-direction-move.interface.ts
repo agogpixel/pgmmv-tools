@@ -1,14 +1,15 @@
 /**
- * Object instance display direction move action command configuration interface
- * module.
+ * Agtk object instance display direction move action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance display direction move action command configuration interface.
+ * Agtk object instance display direction move action command configuration
+ * interface.
  */
-export interface DisplayDirectionMove {
+export interface AgtkDisplayDirectionMove {
   /**
    * Value true/false.
    *  - True = Specify Movement Distance

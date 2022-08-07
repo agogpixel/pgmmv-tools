@@ -1,13 +1,13 @@
 /**
- * Object instance buried in wall link condition configuration interface module.
+ * Agtk object instance buried in wall link condition configuration interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance buried in wall link condition configuration interface.
+ * Agtk object instance buried in wall link condition configuration interface.
  */
-export interface BuriedInWall {
+export interface AgtkBuriedInWall {
   /**
    * Value -3, -2, -1 or 1+.
    *  - -3 = Object Other Then Self

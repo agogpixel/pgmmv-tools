@@ -3,12 +3,12 @@
  *
  * @packageDocumentation
  */
-import type { Variable } from './variable';
+import type { AgtkVariable } from './variable';
 
 /**
  * Common variables interface module.
  */
-export interface Variables {
+export interface AgtkVariables {
   /**
    * Player count ID.
    */
@@ -120,7 +120,7 @@ export interface Variables {
    * @param id - The variable ID.
    * @returns The variable.
    */
-  get(id: number): Variable;
+  get(id: number): AgtkVariable;
 
   /**
    * Get common variable ID by name.

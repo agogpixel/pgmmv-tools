@@ -1,45 +1,45 @@
 /**
- * Object instance attack area near link condition configuration interface
+ * Agtk object instance attack area near link condition configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { AttackAttributesValue as AttributePresetId } from '../../../constants/attack-attributes';
-import type { AttackAreaNear as AttackAreaNearConstant } from '../../../constants/link-condition/attack-area-near';
+import type { AgtkAttackAttributesValue as AgtkAttributePresetId } from '../../../constants/attack-attributes';
+import type { AgtkAttackAreaNear as AgtkAttackAreaNearConstant } from '../../../constants/link-condition/attack-area-near';
 
 /**
  * Attack area near distance type type.
  *
  * @internal
  */
-type DistanceType =
-  | AttackAreaNearConstant['DistanceNone']
-  | AttackAreaNearConstant['DistanceGreaterEqual']
-  | AttackAreaNearConstant['DistanceLessEqual'];
+type AgtkDistanceType =
+  | AgtkAttackAreaNearConstant['DistanceNone']
+  | AgtkAttackAreaNearConstant['DistanceGreaterEqual']
+  | AgtkAttackAreaNearConstant['DistanceLessEqual'];
 
 /**
  * Attack area near object type type.
  *
  * @internal
  */
-type ObjectType =
-  | AttackAreaNearConstant['SetByObjectGroup']
-  | AttackAreaNearConstant['SetByObjectId'];
+type AgtkObjectType =
+  | AgtkAttackAreaNearConstant['SetByObjectGroup']
+  | AgtkAttackAreaNearConstant['SetByObjectId'];
 
 /**
  * Attack area near attribute type type.
  *
  * @internal
  */
-type AttributeType =
-  | AttackAreaNearConstant['AttributeNone']
-  | AttackAreaNearConstant['AttributePreset']
-  | AttackAreaNearConstant['AttributeValue'];
+type AgtkAttributeType =
+  | AgtkAttackAreaNearConstant['AttributeNone']
+  | AgtkAttackAreaNearConstant['AttributePreset']
+  | AgtkAttackAreaNearConstant['AttributeValue'];
 
 /**
- * Object instance attack area near link condition configuration interface.
+ * Agtk object instance attack area near link condition configuration interface.
  */
-export interface AttackAreaNear {
+export interface AgtkAttackAreaNear {
   /**
    * Value true/false.
    *  - True = Direction of Detected Attack: Other than Specified Direction
@@ -68,7 +68,7 @@ export interface AttackAreaNear {
    *  - 1 = Set Distance: More Than Specified Distance
    *  - 2 = Set Distance: Less Than Specified Distance
    */
-  distanceType: DistanceType;
+  distanceType: AgtkDistanceType;
 
   /**
    * Value any whole number.
@@ -80,7 +80,7 @@ export interface AttackAreaNear {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find
@@ -116,7 +116,7 @@ export interface AttackAreaNear {
    *  - 1 = Preset Attributes
    *  - 2 = Set by Value
    */
-  attributeType: AttributeType;
+  attributeType: AgtkAttributeType;
 
   /**
    * Value 1-8.
@@ -129,7 +129,7 @@ export interface AttackAreaNear {
    *  - 7 = Light
    *  - 8 = Dark
    */
-  attributePresetId: AttributePresetId;
+  attributePresetId: AgtkAttributePresetId;
 
   /**
    * Value whole number.

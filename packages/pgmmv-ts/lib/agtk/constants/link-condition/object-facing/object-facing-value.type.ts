@@ -1,12 +1,12 @@
 /**
- * Link condition object facing value constants type module.
+ * Agtk link condition object facing value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingKey } from './object-facing-key.type';
-import type { ObjectFacing } from './object-facing.interface';
+import type { AgtkObjectFacingKey } from './object-facing-key.type';
+import type { AgtkObjectFacing } from './object-facing.interface';
 
 /**
- * Link condition object facing value constants type.
+ * Agtk link condition object facing value constants type.
  */
-export type ObjectFacingValue = ObjectFacing[ObjectFacingKey];
+export type AgtkObjectFacingValue = AgtkObjectFacing[AgtkObjectFacingKey];

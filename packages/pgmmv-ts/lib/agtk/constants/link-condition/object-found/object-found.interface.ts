@@ -1,13 +1,13 @@
 /**
- * Link condition object found constants interface module.
+ * Agtk link condition object found constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object found constants interface.
+ * Agtk link condition object found constants interface.
  */
-export interface ObjectFound {
+export interface AgtkObjectFound {
   /**
    * Set by object group.
    */

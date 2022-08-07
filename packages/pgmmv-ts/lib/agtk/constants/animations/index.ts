@@ -1,5 +1,5 @@
 /**
- * Animations constants module.
+ * Agtk animations constants module.
  *
  * @packageDocumentation
  */

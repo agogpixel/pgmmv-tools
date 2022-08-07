@@ -1,36 +1,37 @@
 /**
- * Object instance object move action command configuration interface module.
+ * Agtk object instance object move action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectMove as ObjectMoveConstant } from '../../../constants/action-commands/object-move';
+import type { AgtkObjectMove as AgtkObjectMoveConstant } from '../../../constants/action-commands/object-move';
 
 /**
- * Object move move type type.
+ * Agtk object move move type type.
  *
  * @internal
  */
-type MoveType =
-  | ObjectMoveConstant['MoveWithDirection']
-  | ObjectMoveConstant['MoveToPosition']
-  | ObjectMoveConstant['MoveToObjectCenter']
-  | ObjectMoveConstant['MoveToObjectOrigin']
-  | ObjectMoveConstant['MoveToObjectConnectionPoint'];
+type AgtkMoveType =
+  | AgtkObjectMoveConstant['MoveWithDirection']
+  | AgtkObjectMoveConstant['MoveToPosition']
+  | AgtkObjectMoveConstant['MoveToObjectCenter']
+  | AgtkObjectMoveConstant['MoveToObjectOrigin']
+  | AgtkObjectMoveConstant['MoveToObjectConnectionPoint'];
 
 /**
- * Object move targeting type type.
+ * Agtk object move targeting type type.
  */
-type TargetingType =
-  | ObjectMoveConstant['TargettingByType']
-  | ObjectMoveConstant['TargettingByGroup']
-  | ObjectMoveConstant['TargettingById']
-  | ObjectMoveConstant['TargettingTouched']
-  | ObjectMoveConstant['TargettingLocked'];
+type AgtkTargetingType =
+  | AgtkObjectMoveConstant['TargettingByType']
+  | AgtkObjectMoveConstant['TargettingByGroup']
+  | AgtkObjectMoveConstant['TargettingById']
+  | AgtkObjectMoveConstant['TargettingTouched']
+  | AgtkObjectMoveConstant['TargettingLocked'];
 
 /**
- * Object instance object move action command configuration interface.
+ * Agtk object instance object move action command configuration interface.
  */
-export interface ObjectMove {
+export interface AgtkObjectMove {
   /**
    * Value 0 - 4.
    *  - 0 = Set Direction and Move
@@ -39,7 +40,7 @@ export interface ObjectMove {
    *  - 3 = Move to Specified Object - Origin
    *  - 4 = Move to Specified Object - Connection Point
    */
-  moveType: MoveType;
+  moveType: AgtkMoveType;
 
   /**
    * Value 0 - 359. Common use references, but not limited too:
@@ -143,7 +144,7 @@ export interface ObjectMove {
    *
    * @note Developer typo.
    */
-  targettingType: TargetingType;
+  targettingType: AgtkTargetingType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

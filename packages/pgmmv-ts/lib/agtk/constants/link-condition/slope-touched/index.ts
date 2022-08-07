@@ -1,5 +1,5 @@
 /**
- * Link condition slope touched constants module.
+ * Agtk link condition slope touched constants module.
  *
  * @packageDocumentation
  */

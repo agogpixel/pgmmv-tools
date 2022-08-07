@@ -1,23 +1,23 @@
 /**
- * Object instance sound position remember action command configuration
+ * Agtk object instance sound position remember action command configuration
  * interface module.
  *
  * @packageDocumentation
  */
-import type { SoundPositionRememberValue as SoundType } from '../../../constants/action-commands/sound-position-remember';
+import type { AgtkSoundPositionRememberValue as AgtkSoundType } from '../../../constants/action-commands/sound-position-remember';
 
 /**
- * Object instance sound position remember action command configuration
+ * Agtk object instance sound position remember action command configuration
  * interface.
  */
-export interface SoundPositionRemember {
+export interface AgtkSoundPositionRemember {
   /**
    * Value 0 - 2.
    *  - 0 = Sound Effects
    *  - 1 = Voices
    *  - 2 = Background Music
    */
-  soundType: SoundType;
+  soundType: AgtkSoundType;
 
   /**
    * Value -5, -2, -1, 0, 1+.

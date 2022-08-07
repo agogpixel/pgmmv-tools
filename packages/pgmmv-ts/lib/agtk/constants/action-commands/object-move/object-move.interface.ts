@@ -1,13 +1,13 @@
 /**
- * Action commands object move constants interface module.
+ * Agtk action commands object move constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object move constants interface.
+ * Agtk action commands object move constants interface.
  */
-export interface ObjectMove {
+export interface AgtkObjectMove {
   /**
    * Move with direction.
    */

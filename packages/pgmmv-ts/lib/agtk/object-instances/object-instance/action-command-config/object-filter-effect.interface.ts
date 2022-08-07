@@ -1,34 +1,34 @@
 /**
- * Object instance object filter effect action command configuration interface
- * module.
+ * Agtk object instance object filter effect action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
-import type { FilterEffects } from '../../../constants/filter-effects'
+import type { AgtkFilterEffects } from '../../../constants/filter-effects'
 
 /**
- * Object filter effect effect type type.
+ * Agtk object filter effect effect type type.
  *
  * @internal
  */
-type EffectType =
-  | FilterEffects['EffectNoise']
-  | FilterEffects['EffectMosaic']
-  | FilterEffects['EffectMonochrome']
-  | FilterEffects['EffectSepia']
-  | FilterEffects['EffectNegaPosiReverse']
-  | FilterEffects['EffectDefocus']
-  | FilterEffects['EffectChromaticAberration']
-  | FilterEffects['EffectDarkness']
-  | FilterEffects['EffectDispImage']
-  | FilterEffects['EffectFillColor']
-  | FilterEffects['EffectTransparency']
-  | FilterEffects['EffectBlink'];
+type AgtkEffectType =
+  | AgtkFilterEffects['EffectNoise']
+  | AgtkFilterEffects['EffectMosaic']
+  | AgtkFilterEffects['EffectMonochrome']
+  | AgtkFilterEffects['EffectSepia']
+  | AgtkFilterEffects['EffectNegaPosiReverse']
+  | AgtkFilterEffects['EffectDefocus']
+  | AgtkFilterEffects['EffectChromaticAberration']
+  | AgtkFilterEffects['EffectDarkness']
+  | AgtkFilterEffects['EffectDispImage']
+  | AgtkFilterEffects['EffectFillColor']
+  | AgtkFilterEffects['EffectTransparency']
+  | AgtkFilterEffects['EffectBlink'];
 
 /**
- * Object instance object filter effect action command configuration interface.
+ * Agtk object instance object filter effect action command configuration interface.
  */
-export interface ObjectFilterEffect {
+export interface AgtkObjectFilterEffect {
   /**
    * Value 0 - 11.
    *  - 0 = Noise
@@ -44,7 +44,7 @@ export interface ObjectFilterEffect {
    *  - 10 = Transparency
    *  - 11 = Blink
    */
-  effectType: EffectType;
+  effectType: AgtkEffectType;
 
   /**
    * Value 0 - 100.

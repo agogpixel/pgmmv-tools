@@ -1,14 +1,15 @@
 /**
- * Object instance action execute action command configuration interface module.
+ * Agtk object instance action execute action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { QualifierValue as QualifierId } from '../../../constants/qualifier';
+import type { AgtkQualifierValue as AgtkQualifierId } from '../../../constants/qualifier';
 
 /**
- * Object instance action execute action command configuration interface.
+ * Agtk object instance action execute action command configuration interface.
  */
-export interface ActionExec {
+export interface AgtkActionExec {
   /**
    * Value -2, -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
    * object ID positive number.
@@ -23,7 +24,7 @@ export interface ActionExec {
    *  - -2 = All
    *  - -1 = Single
    */
-  qualifierId: QualifierId;
+  qualifierId: AgtkQualifierId;
 
   /**
    * Value -1 or 1+. Note: If actionId doesn't exist, default action will apply.

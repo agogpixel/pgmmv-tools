@@ -1,14 +1,15 @@
 /**
- * Object instance object action changed link condition configuration interface
- * module.
+ * Agtk object instance object action changed link condition configuration
+ * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance object action changed link condition configuration interface.
+ * Agtk object instance object action changed link condition configuration
+ * interface.
  */
-export interface ObjectActionChanged {
+export interface AgtkObjectActionChanged {
   /**
    * Value -7, -5, -4, -2, -1 or 1+.
    *  - -7 = Parent

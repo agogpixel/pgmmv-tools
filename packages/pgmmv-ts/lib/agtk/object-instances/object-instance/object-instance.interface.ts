@@ -1,109 +1,109 @@
 /**
- * Object instance interface module.
+ * Agtk object instance interface module.
  *
  * @packageDocumentation
  */
-import type { CommandBehavior } from '../../constants/action-commands/command-behavior';
+import type { AgtkCommandBehavior } from '../../constants/action-commands/command-behavior';
 
 import type {
-  ActionExec,
-  AttackSetting,
-  BulletFire,
-  CameraAreaChange,
-  DatabaseReflect,
-  DirectionMove,
-  DisableObjectEnable,
-  DisappearObjectRecover,
-  DisplayDirectionMove,
-  EffectRemove,
-  EffectShow,
-  FileLoad,
-  ForthBackMoveTurn,
-  GameSpeedChange,
-  ImageShow,
-  LayerDisable,
-  LayerEnable,
-  LayerHide,
-  LayerMove,
-  LayerShow,
-  MenuHide,
-  MenuShow,
-  MessageShow,
-  MovieShow,
-  ObjectChange,
-  ObjectCreate,
-  ObjectFilterEffect,
-  ObjectFilterEffectRemove,
-  ObjectLock,
-  ObjectMove,
-  ObjectPushPull,
-  ObjectUnlock,
-  ParticleRemove,
-  ParticleShow,
-  ResourceSetChange,
-  SceneEffect,
-  SceneEffectRemove,
-  SceneGravityChange,
-  SceneRotateFlip,
-  SceneShake,
-  ScrollMessageShow,
-  SoundPlay,
-  SoundStop,
-  SoundPositionRemember,
-  SwitchVariableChange,
-  SwitchVariableReset,
-  TemplateMove,
-  Timer
+  AgtkActionExec,
+  AgtkAttackSetting,
+  AgtkBulletFire,
+  AgtkCameraAreaChange,
+  AgtkDatabaseReflect,
+  AgtkDirectionMove,
+  AgtkDisableObjectEnable,
+  AgtkDisappearObjectRecover,
+  AgtkDisplayDirectionMove,
+  AgtkEffectRemove,
+  AgtkEffectShow,
+  AgtkFileLoad,
+  AgtkForthBackMoveTurn,
+  AgtkGameSpeedChange,
+  AgtkImageShow,
+  AgtkLayerDisable,
+  AgtkLayerEnable,
+  AgtkLayerHide,
+  AgtkLayerMove,
+  AgtkLayerShow,
+  AgtkMenuHide,
+  AgtkMenuShow,
+  AgtkMessageShow,
+  AgtkMovieShow,
+  AgtkObjectChange,
+  AgtkObjectCreate,
+  AgtkObjectFilterEffect,
+  AgtkObjectFilterEffectRemove,
+  AgtkObjectLock,
+  AgtkObjectMove,
+  AgtkObjectPushPull,
+  AgtkObjectUnlock,
+  AgtkParticleRemove,
+  AgtkParticleShow,
+  AgtkResourceSetChange,
+  AgtkSceneEffect,
+  AgtkSceneEffectRemove,
+  AgtkSceneGravityChange,
+  AgtkSceneRotateFlip,
+  AgtkSceneShake,
+  AgtkScrollMessageShow,
+  AgtkSoundPlay,
+  AgtkSoundStop,
+  AgtkSoundPositionRemember,
+  AgtkSwitchVariableChange,
+  AgtkSwitchVariableReset,
+  AgtkTemplateMove,
+  AgtkTimer
 } from './action-command-config';
 import type {
-  AttackAreaNear,
-  AttackAreaTouched,
-  BuriedInWall,
-  CameraOutOfRange,
-  HpZero,
-  Locked,
-  ObjectActionChanged,
-  ObjectFacing,
-  ObjectFacingDirection,
-  ObjectFacingEachOther,
-  ObjectFound,
-  ObjectHit,
-  ObjectNear,
-  ObjectWallTouched,
-  Probability,
-  SlopeTouched,
-  SwitchVariableChanged,
-  WallAhead,
-  WallTouched
+  AgtkAttackAreaNear,
+  AgtkAttackAreaTouched,
+  AgtkBuriedInWall,
+  AgtkCameraOutOfRange,
+  AgtkHpZero,
+  AgtkLocked,
+  AgtkObjectActionChanged,
+  AgtkObjectFacing,
+  AgtkObjectFacingDirection,
+  AgtkObjectFacingEachOther,
+  AgtkObjectFound,
+  AgtkObjectHit,
+  AgtkObjectNear,
+  AgtkObjectWallTouched,
+  AgtkProbability,
+  AgtkSlopeTouched,
+  AgtkSwitchVariableChanged,
+  AgtkWallAhead,
+  AgtkWallTouched
 } from './link-condition-config';
-import type { Switches } from './switches';
-import type { Variables } from './variables';
+import type { AgtkSwitches } from './switches';
+import type { AgtkVariables } from './variables';
 
 /**
- * Command behavior next type.
+ * Agtk command behavior next type.
  *
  * @internal
  */
-type CommandBehaviorNext = CommandBehavior['CommandBehaviorNext'];
+type AgtkCommandBehaviorNext = AgtkCommandBehavior['CommandBehaviorNext'];
 
 /**
- * Command behavior loop type.
+ * Agtk command behavior loop type.
  *
  * @internal
  */
-type CommandBehaviorLoop = CommandBehavior['CommandBehaviorLoop'];
+type AgtkCommandBehaviorLoop = AgtkCommandBehavior['CommandBehaviorLoop'];
 
 /**
- * Command behavior break type.
+ * Agtk command behavior break type.
  *
  * @internal
  */
-type CommandBehaviorBreak = CommandBehavior['CommandBehaviorBreak'];
+type AgtkCommandBehaviorBreak = AgtkCommandBehavior['CommandBehaviorBreak'];
 
 /**
- * Object instance interface.
+ * Agtk object instance interface.
  */
-export interface ObjectInstance {
+export interface AgtkObjectInstance {
   /**
    * Object instance ID.
    */
@@ -127,12 +127,12 @@ export interface ObjectInstance {
   /**
    * References object switches.
    */
-  readonly switches: Switches;
+  readonly switches: AgtkSwitches;
 
   /**
    * References object variables.
    */
-  readonly variables: Variables;
+  readonly variables: AgtkVariables;
 
   /**
    * Get attacker object instance list.
@@ -172,7 +172,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandTemplateMove(templateMove: TemplateMove): CommandBehaviorNext;
+  execCommandTemplateMove(templateMove: AgtkTemplateMove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Lock Object".
@@ -204,7 +204,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectLock(objectLock: ObjectLock): CommandBehaviorNext;
+  execCommandObjectLock(objectLock: AgtkObjectLock): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Generate Object".
@@ -229,7 +229,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectCreate(objectCreate: ObjectCreate): CommandBehaviorNext;
+  execCommandObjectCreate(objectCreate: AgtkObjectCreate): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Change Object".
@@ -253,7 +253,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectChange(objectChange: ObjectChange): CommandBehaviorNext;
+  execCommandObjectChange(objectChange: AgtkObjectChange): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Move Object".
@@ -295,7 +295,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectMove(objectMove: ObjectMove): CommandBehaviorNext;
+  execCommandObjectMove(objectMove: AgtkObjectMove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Push/Pull Object".
@@ -334,7 +334,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectPushPull(objectPushPull: ObjectPushPull): CommandBehaviorLoop;
+  execCommandObjectPushPull(objectPushPull: AgtkObjectPushPull): AgtkCommandBehaviorLoop;
 
   /**
    * Executes "Move Layer".
@@ -348,7 +348,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandLayerMove(layerMove: LayerMove): CommandBehaviorNext;
+  execCommandLayerMove(layerMove: AgtkLayerMove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Attack Settings".
@@ -372,7 +372,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandAttackSetting(attackSetting: AttackSetting): CommandBehaviorNext;
+  execCommandAttackSetting(attackSetting: AgtkAttackSetting): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Fire Bullet".
@@ -387,7 +387,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandBulletFire(bulletFire: BulletFire): CommandBehaviorNext;
+  execCommandBulletFire(bulletFire: AgtkBulletFire): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Destroy Object".
@@ -399,7 +399,7 @@ export interface ObjectInstance {
    * o.execCommandDisappear();
    * ```
    */
-  execCommandDisappear(disappear?: unknown): CommandBehaviorNext;
+  execCommandDisappear(disappear?: unknown): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Restore Destroyed Object".
@@ -413,7 +413,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandDisappearObjectRecover(disappearObjectRecover: DisappearObjectRecover): CommandBehaviorNext;
+  execCommandDisappearObjectRecover(disappearObjectRecover: AgtkDisappearObjectRecover): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Disable Object".
@@ -425,7 +425,7 @@ export interface ObjectInstance {
    * o.execCommandDisable();
    * ```
    */
-  execCommandDisable(disable?: unknown): CommandBehaviorNext;
+  execCommandDisable(disable?: unknown): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Restore Destroyed Object".
@@ -439,7 +439,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandDisableObjectEnable(disableObjectEnable: DisableObjectEnable): CommandBehaviorNext;
+  execCommandDisableObjectEnable(disableObjectEnable: AgtkDisableObjectEnable): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Apply Filter Effects on Object".
@@ -471,7 +471,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectFilterEffect(objectFilterEffect: ObjectFilterEffect): CommandBehaviorNext;
+  execCommandObjectFilterEffect(objectFilterEffect: AgtkObjectFilterEffect): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Delete Filter Effects from Objects".
@@ -486,7 +486,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectFilterEffectRemove(objectFilterEffectRemove: ObjectFilterEffectRemove): CommandBehaviorNext;
+  execCommandObjectFilterEffectRemove(objectFilterEffectRemove: AgtkObjectFilterEffectRemove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Apply Screen Effect to Scene".
@@ -521,7 +521,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSceneEffect(sceneEffect: SceneEffect): CommandBehaviorNext;
+  execCommandSceneEffect(sceneEffect: AgtkSceneEffect): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Delete Screen Effects from Scene".
@@ -537,7 +537,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSceneEffectRemove(sceneEffectRemove: SceneEffectRemove): CommandBehaviorNext;
+  execCommandSceneEffectRemove(sceneEffectRemove: AgtkSceneEffectRemove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Change Scene Gravity Effect".
@@ -554,7 +554,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSceneGravityChange(sceneGravityChange: SceneGravityChange): CommandBehaviorNext;
+  execCommandSceneGravityChange(sceneGravityChange: AgtkSceneGravityChange): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Rotate/Flip Scene".
@@ -574,7 +574,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSceneRotateFlip(sceneRotateFlip: SceneRotateFlip): CommandBehaviorNext;
+  execCommandSceneRotateFlip(sceneRotateFlip: AgtkSceneRotateFlip): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Change Camera Display Area".
@@ -590,7 +590,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandCameraAreaChange(cameraAreaChange: CameraAreaChange): CommandBehaviorNext;
+  execCommandCameraAreaChange(cameraAreaChange: AgtkCameraAreaChange): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Audio Playback".
@@ -617,7 +617,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSoundPlay(soundPlay: SoundPlay): CommandBehaviorNext;
+  execCommandSoundPlay(soundPlay: AgtkSoundPlay): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Audio Stop".
@@ -637,7 +637,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSoundStop(soundStop: SoundStop): CommandBehaviorNext;
+  execCommandSoundStop(soundStop: AgtkSoundStop): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Show Text".
@@ -690,7 +690,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandMessageShow(messageShow: MessageShow): CommandBehaviorNext;
+  execCommandMessageShow(messageShow: AgtkMessageShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Show Scrolling Text".
@@ -732,7 +732,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandScrollMessageShow(scrollMessageShow: ScrollMessageShow): CommandBehaviorNext;
+  execCommandScrollMessageShow(scrollMessageShow: AgtkScrollMessageShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Show Effect".
@@ -753,7 +753,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandEffectShow(effectShow: EffectShow): CommandBehaviorNext;
+  execCommandEffectShow(effectShow: AgtkEffectShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Hide Effects".
@@ -771,7 +771,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandEffectRemove(effectRemove: EffectRemove): CommandBehaviorNext;
+  execCommandEffectRemove(effectRemove: AgtkEffectRemove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Show Particles".
@@ -792,7 +792,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandParticleShow(particleShow: ParticleShow): CommandBehaviorNext;
+  execCommandParticleShow(particleShow: AgtkParticleShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Hide Particles".
@@ -810,7 +810,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandParticleRemove(particleRemove: ParticleRemove): CommandBehaviorNext;
+  execCommandParticleRemove(particleRemove: AgtkParticleRemove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Play Video".
@@ -843,7 +843,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandMovieShow(movieShow: MovieShow): CommandBehaviorNext;
+  execCommandMovieShow(movieShow: AgtkMovieShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Display Image".
@@ -876,7 +876,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandImageShow(imageShow: ImageShow): CommandBehaviorNext;
+  execCommandImageShow(imageShow: AgtkImageShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Change Switch/Variable".
@@ -905,7 +905,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSwitchVariableChange(switchVariableChange: SwitchVariableChange): CommandBehaviorNext;
+  execCommandSwitchVariableChange(switchVariableChange: AgtkSwitchVariableChange): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Reset Switch/Variable".
@@ -923,7 +923,7 @@ export interface ObjectInstance {
    * ]);
    * ```
    */
-  execCommandSwitchVariableReset(switchVariableResets: SwitchVariableReset[]): CommandBehaviorNext;
+  execCommandSwitchVariableReset(switchVariableResets: AgtkSwitchVariableReset[]): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Change Game Speed".
@@ -951,7 +951,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandGameSpeedChange(gameSpeedChange: GameSpeedChange): CommandBehaviorNext;
+  execCommandGameSpeedChange(gameSpeedChange: AgtkGameSpeedChange): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Timer Function".
@@ -974,7 +974,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandTimer(timer: Timer): CommandBehaviorNext;
+  execCommandTimer(timer: AgtkTimer): AgtkCommandBehaviorNext;
 
   /**
    * Executes "End Scene".
@@ -986,7 +986,7 @@ export interface ObjectInstance {
    * o.execCommandSceneTerminate();
    * ```
    */
-  execCommandSceneTerminate(sceneTerminate?: unknown): CommandBehaviorNext;
+  execCommandSceneTerminate(sceneTerminate?: unknown): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Set Move Direction and Move".
@@ -1003,7 +1003,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandDirectionMove(directionMove: DirectionMove): CommandBehaviorNext;
+  execCommandDirectionMove(directionMove: AgtkDirectionMove): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Back and Forth Moving and Turning".
@@ -1019,7 +1019,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandForthBackMoveTurn(forthBackMoveTurn: ForthBackMoveTurn): CommandBehaviorNext;
+  execCommandForthBackMoveTurn(forthBackMoveTurn: AgtkForthBackMoveTurn): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Execute Object Action".
@@ -1036,7 +1036,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandActionExec(actionExec: ActionExec): CommandBehaviorNext | CommandBehaviorBreak;
+  execCommandActionExec(actionExec: AgtkActionExec): AgtkCommandBehaviorNext | AgtkCommandBehaviorBreak;
 
   /**
    * Executes "Shake Scene".
@@ -1057,7 +1057,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSceneShake(sceneShake: SceneShake): CommandBehaviorNext;
+  execCommandSceneShake(sceneShake: AgtkSceneShake): AgtkCommandBehaviorNext;
 
   /**
    * Execute "Disable Layer Display".
@@ -1072,7 +1072,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandLayerHide(layerHide: LayerHide): CommandBehaviorNext;
+  execCommandLayerHide(layerHide: AgtkLayerHide): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Enable Layer Display".
@@ -1087,7 +1087,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandLayerShow(layerShow: LayerShow): CommandBehaviorNext;
+  execCommandLayerShow(layerShow: AgtkLayerShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Disable Layer Motion".
@@ -1102,7 +1102,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandLayerDisable(layerDisable: LayerDisable): CommandBehaviorNext;
+  execCommandLayerDisable(layerDisable: AgtkLayerDisable): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Enable Layer Motion".
@@ -1117,7 +1117,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandLayerEnable(layerEnable: LayerEnable): CommandBehaviorNext;
+  execCommandLayerEnable(layerEnable: AgtkLayerEnable): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Show Menu Screen".
@@ -1135,7 +1135,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandMenuShow(menuShow: MenuShow): CommandBehaviorNext;
+  execCommandMenuShow(menuShow: AgtkMenuShow): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Hide Menu Screen".
@@ -1154,7 +1154,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandMenuHide(menuHide: MenuHide): CommandBehaviorNext;
+  execCommandMenuHide(menuHide: AgtkMenuHide): AgtkCommandBehaviorNext;
 
   /**
    * Executes "Move Towards Display Direction"
@@ -1170,7 +1170,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandDisplayDirectionMove(displayDirectionMove: DisplayDirectionMove): CommandBehaviorNext;
+  execCommandDisplayDirectionMove(displayDirectionMove: AgtkDisplayDirectionMove): AgtkCommandBehaviorNext;
 
   /**
    * Executes “File load".
@@ -1189,7 +1189,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandFileLoad(fileLoad: FileLoad): CommandBehaviorNext;
+  execCommandFileLoad(fileLoad: AgtkFileLoad): AgtkCommandBehaviorNext;
 
   /**
    * Execute "Save Sound Playback Location".
@@ -1206,7 +1206,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandSoundPositionRemember(soundPositionRemember: SoundPositionRemember): CommandBehaviorNext;
+  execCommandSoundPositionRemember(soundPositionRemember: AgtkSoundPositionRemember): AgtkCommandBehaviorNext;
 
   /**
    * Execute "Unlock"
@@ -1222,7 +1222,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandObjectUnlock(objectUnlock: ObjectUnlock): CommandBehaviorNext;
+  execCommandObjectUnlock(objectUnlock: AgtkObjectUnlock): AgtkCommandBehaviorNext;
 
   /**
    * Execute "Change Animation Resource Set".
@@ -1238,7 +1238,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  execCommandResourceSetChange(resourceSetChange: ResourceSetChange): CommandBehaviorNext;
+  execCommandResourceSetChange(resourceSetChange: AgtkResourceSetChange): AgtkCommandBehaviorNext;
 
   /**
    * Run the runtime action “Object Parameter Apply to Database".
@@ -1246,7 +1246,7 @@ export interface ObjectInstance {
    * @param databaseReflect Database reflect configuration.
    * @returns Command behavior next signal.
    */
-  execCommandDatabaseReflect(databaseReflect: DatabaseReflect): CommandBehaviorNext;
+  execCommandDatabaseReflect(databaseReflect: AgtkDatabaseReflect): AgtkCommandBehaviorNext;
 
   /**
    * Detects "Contact with Tile's Wall Detection".
@@ -1262,7 +1262,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isWallTouched(wallTouched: WallTouched): boolean;
+  isWallTouched(wallTouched: AgtkWallTouched): boolean;
 
   /**
    * Detects "Contact with Tile's Wall Detection When Moving One Tile".
@@ -1278,7 +1278,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isWallAhead(wallAhead: WallAhead): boolean;
+  isWallAhead(wallAhead: AgtkWallAhead): boolean;
 
   /**
    * Detects "Contact with Wall Detection of Other Objects".
@@ -1296,7 +1296,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectWallTouched(objectWallTouched: ObjectWallTouched): boolean;
+  isObjectWallTouched(objectWallTouched: AgtkObjectWallTouched): boolean;
 
   /**
    * Detects "Contact with Collision Detection of Other Objects".
@@ -1314,7 +1314,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectHit(objectHit: ObjectHit): boolean;
+  isObjectHit(objectHit: AgtkObjectHit): boolean;
 
   /**
    * Detects "Hit an Attack Detection".
@@ -1336,7 +1336,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isAttackAreaTouched(attackAreaTouched: AttackAreaTouched): boolean;
+  isAttackAreaTouched(attackAreaTouched: AgtkAttackAreaTouched): boolean;
 
   /**
    * Detects "Distance with Attack Detection".
@@ -1362,7 +1362,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isAttackAreaNear(attackAreaNear: AttackAreaNear): boolean;
+  isAttackAreaNear(attackAreaNear: AgtkAttackAreaNear): boolean;
 
   /**
    * Detects "Distance with Other Objects".
@@ -1384,7 +1384,7 @@ export interface ObjectInstance {
    * })
    * ```
    */
-  isObjectNear(objectNear: ObjectNear): boolean;
+  isObjectNear(objectNear: AgtkObjectNear): boolean;
 
   /**
    * Detects "Face-to-Face with Other Objects".
@@ -1401,7 +1401,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectFacingEachOther(objectFacingEachOther: ObjectFacingEachOther): boolean;
+  isObjectFacingEachOther(objectFacingEachOther: AgtkObjectFacingEachOther): boolean;
 
   /**
    * Detects "Facing the Direction of Other Objects".
@@ -1418,7 +1418,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectFacing(objectFacing: ObjectFacing): boolean;
+  isObjectFacing(objectFacing: AgtkObjectFacing): boolean;
 
   /**
    * Detects "Discovered Other Objects".
@@ -1437,7 +1437,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectFound(objectFound: ObjectFound): boolean;
+  isObjectFound(objectFound: AgtkObjectFound): boolean;
 
   /**
    * Detects "Other Objects Facing Specified Direction".
@@ -1457,7 +1457,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectFacingDirection(objectFacingDirection: ObjectFacingDirection): boolean;
+  isObjectFacingDirection(objectFacingDirection: AgtkObjectFacingDirection): boolean;
 
   /**
    * Detects "HP is 0".
@@ -1471,7 +1471,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isHpZero(hpZero: HpZero): boolean;
+  isHpZero(hpZero: AgtkHpZero): boolean;
 
   /**
    * Detects "Going Off Camera".
@@ -1487,7 +1487,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isCameraOutOfRange(cameraOutOfRange: CameraOutOfRange): boolean;
+  isCameraOutOfRange(cameraOutOfRange: AgtkCameraOutOfRange): boolean;
 
   /**
    * Detects "Embedded in Wall Detection".
@@ -1501,7 +1501,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isBuriedInWall(buriedInWall: BuriedInWall): boolean;
+  isBuriedInWall(buriedInWall: AgtkBuriedInWall): boolean;
 
   /**
    * Detects "Locked".
@@ -1519,7 +1519,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isLocked(locked: Locked): boolean;
+  isLocked(locked: AgtkLocked): boolean;
 
   /**
    * Detects "Use Probability".
@@ -1533,7 +1533,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isProbability(probability: Probability): boolean;
+  isProbability(probability: AgtkProbability): boolean;
 
   /**
    * Detects "Finished Showing All Motion".
@@ -1571,7 +1571,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isSwitchVariableChanged(switchVariableChanged: SwitchVariableChanged): boolean;
+  isSwitchVariableChanged(switchVariableChanged: AgtkSwitchVariableChanged): boolean;
 
   /**
    * Detects "Specified Object's Action Changes".
@@ -1588,7 +1588,7 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isObjectActionChanged(objectActionChanged: ObjectActionChanged): boolean;
+  isObjectActionChanged(objectActionChanged: AgtkObjectActionChanged): boolean;
 
   /**
    * Detects "Jump Peak Reached".
@@ -1614,5 +1614,5 @@ export interface ObjectInstance {
    * });
    * ```
    */
-  isSlopeTouched(slopeTouched: SlopeTouched): boolean;
+  isSlopeTouched(slopeTouched: AgtkSlopeTouched): boolean;
 }

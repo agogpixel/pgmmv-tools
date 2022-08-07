@@ -1,14 +1,14 @@
 /**
- * Object instance scene gravity change action command configuration interface
+ * Agtk object instance scene gravity change action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance scene gravity change action command configuration interface.
+ * Agtk object instance scene gravity change action command configuration interface.
  */
-export interface SceneGravityChange {
+export interface AgtkSceneGravityChange {
   /**
    * Value 0.00+. Percentage of gravity.
    */

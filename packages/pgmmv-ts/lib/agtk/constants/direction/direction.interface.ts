@@ -1,13 +1,13 @@
 /**
- * Direction constants interface module.
+ * Agtk direction constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Direction constants interface.
+ * Agtk direction constants interface.
  */
-export interface Direction {
+export interface AgtkDirection {
   /**
    * Bottom left bit.
    */

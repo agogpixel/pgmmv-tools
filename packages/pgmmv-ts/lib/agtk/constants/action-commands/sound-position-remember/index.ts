@@ -1,5 +1,5 @@
 /**
- * Action commands sound position remember constants module.
+ * Agtk action commands sound position remember constants module.
  *
  * @packageDocumentation
  */

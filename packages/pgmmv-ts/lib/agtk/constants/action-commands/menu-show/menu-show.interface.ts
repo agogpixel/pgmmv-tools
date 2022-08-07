@@ -1,13 +1,13 @@
 /**
- * Action commands menu show constants interface module.
+ * Agtk action commands menu show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands menu show constants interface.
+ * Agtk action commands menu show constants interface.
  */
-export interface MenuShow {
+export interface AgtkMenuShow {
   /**
    * None.
    */

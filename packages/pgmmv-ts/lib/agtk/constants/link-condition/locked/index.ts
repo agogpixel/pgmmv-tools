@@ -1,5 +1,5 @@
 /**
- * Link condition locked constants module.
+ * Agtk link condition locked constants module.
  *
  * @packageDocumentation
  */

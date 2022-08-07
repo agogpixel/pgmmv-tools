@@ -1,13 +1,13 @@
 /**
- * Action commands file load constants interface module.
+ * Agtk action commands file load constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands file load constants interface.
+ * Agtk action commands file load constants interface.
  */
-export interface FileLoad {
+export interface AgtkFileLoad {
   /**
    * None.
    */

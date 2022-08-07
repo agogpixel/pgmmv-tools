@@ -1,5 +1,5 @@
 /**
- * Link condition attack area touched constants module.
+ * Agtk link condition attack area touched constants module.
  *
  * @packageDocumentation
  */

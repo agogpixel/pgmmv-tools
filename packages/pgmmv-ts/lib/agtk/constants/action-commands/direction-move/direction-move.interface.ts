@@ -1,13 +1,13 @@
 /**
- * Action commands direction move constants interface module.
+ * Agtk action commands direction move constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands direction move constants interface.
+ * Agtk action commands direction move constants interface.
  */
-export interface DirectionMove {
+export interface AgtkDirectionMove {
   /**
    * According to move direction.
    */

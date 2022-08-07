@@ -1,14 +1,15 @@
 /**
- * Object instance object hit link condition configuration interface module.
+ * Agtk object instance object hit link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectHitValue as ObjectType } from '../../../constants/link-condition/object-hit';
+import type { AgtkObjectHitValue as AgtkObjectType } from '../../../constants/link-condition/object-hit';
 
 /**
- * Object instance object hit link condition configuration interface.
+ * Agtk object instance object hit link condition configuration interface.
  */
-export interface ObjectHit {
+export interface AgtkObjectHit {
   /**
    * Value 0 - 15.
    *  - 0 = No wall sides selected
@@ -35,7 +36,7 @@ export interface ObjectHit {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

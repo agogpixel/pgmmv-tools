@@ -1,11 +1,11 @@
 /**
- * System layers key constants type module.
+ * Agtk system layers key constants type module.
  *
  * @packageDocumentation
  */
-import type { SystemLayers } from './system-layers.interface';
+import type { AgtkSystemLayers } from './system-layers.interface';
 
 /**
- * System layers key constants type.
+ * Agtk system layers key constants type.
  */
-export type SystemLayersKey = keyof SystemLayers;
+export type AgtkSystemLayersKey = keyof AgtkSystemLayers;

@@ -1,14 +1,14 @@
 /**
- * Object instance file load action command configuration interface module.
+ * Agtk object instance file load action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { FileLoadValue as EffectType } from '../../../constants/action-commands/file-load';
+import type { AgtkFileLoadValue as AgtkEffectType } from '../../../constants/action-commands/file-load';
 
 /**
- * Object instance file load action command configuration interface.
+ * Agtk object instance file load action command configuration interface.
  */
-export interface FileLoad {
+export interface AgtkFileLoad {
   /**
    * Value true/false.
    *  - True = Project Common Variables
@@ -47,7 +47,7 @@ export interface FileLoad {
    *  - 4 = Slide Left
    *  - 5 = Slide Right
    */
-  effectType: EffectType;
+  effectType: AgtkEffectType;
 
   /**
    * Value 0.00+. 300 = 1 second.

@@ -1,13 +1,13 @@
 /**
- * Switch variable objects constants interface module.
+ * Agtk switch variable objects constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Switch variable objects constants interface.
+ * Agtk switch variable objects constants interface.
  */
-export interface SwitchVariableObjects {
+export interface AgtkSwitchVariableObjects {
   /**
    * Project common.
    */

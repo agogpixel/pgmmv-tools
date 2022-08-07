@@ -1,13 +1,13 @@
 /**
- * Action commands effect remove constants interface module.
+ * Agtk action commands effect remove constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands effect remove constants interface.
+ * Agtk action commands effect remove constants interface.
  */
-export interface EffectRemove {
+export interface AgtkEffectRemove {
   /**
    * All effects.
    */

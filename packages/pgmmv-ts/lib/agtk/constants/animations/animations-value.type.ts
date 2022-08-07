@@ -1,12 +1,12 @@
 /**
- * Animations value constants type module.
+ * Agtk animations value constants type module.
  *
  * @packageDocumentation
  */
-import type { AnimationsKey } from './animations-key.type';
-import type { Animations } from './animations.interface';
+import type { AgtkAnimationsKey } from './animations-key.type';
+import type { AgtkAnimations } from './animations.interface';
 
 /**
- * Animations value constants type.
+ * Agtk animations value constants type.
  */
-export type AnimationsValue = Animations[AnimationsKey];
+export type AgtkAnimationsValue = AgtkAnimations[AgtkAnimationsKey];

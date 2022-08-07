@@ -1,13 +1,13 @@
 /**
- * Action commands particle show constants interface module.
+ * Agtk action commands particle show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands particle show constants interface.
+ * Agtk action commands particle show constants interface.
  */
-export interface ParticleShow {
+export interface AgtkParticleShow {
   /**
    * Position center.
    */

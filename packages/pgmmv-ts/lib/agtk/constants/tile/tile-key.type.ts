@@ -1,11 +1,11 @@
 /**
- * Tile key constants type module.
+ * Agtk tile key constants type module.
  *
  * @packageDocumentation
  */
-import type { Tile } from './tile.interface';
+import type { AgtkTile } from './tile.interface';
 
 /**
- * Tile key constants type.
+ * Agtk tile key constants type.
  */
-export type TileKey = keyof Tile;
+export type AgtkTileKey = keyof AgtkTile;

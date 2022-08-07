@@ -1,13 +1,14 @@
 /**
- * Object instance wall touched link condition configuration interface module.
+ * Agtk object instance wall touched link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance wall touched link condition configuration interface.
+ * Agtk object instance wall touched link condition configuration interface.
  */
-export interface WallTouched {
+export interface AgtkWallTouched {
   /**
    * Value 0 - 15.
    *  - 0 = No wall sides selected

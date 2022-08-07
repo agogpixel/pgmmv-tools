@@ -1,14 +1,14 @@
 /**
- * Object instance object unlock action command configuration interface module.
+ * Agtk object instance object unlock action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectUnlockValue as ObjectType } from '../../../constants/action-commands/object-unlock';
+import type { AgtkObjectUnlockValue as AgtkObjectType } from '../../../constants/action-commands/object-unlock';
 
 /**
- * Object instance object unlock action command configuration interface.
+ * Agtk object instance object unlock action command configuration interface.
  */
-export interface ObjectUnlock {
+export interface AgtkObjectUnlock {
   /**
    * Value -1+ depending on amount of Groups. Only useable if objectType is not
    * a value of 1. NOTE: If a value doesn't exist the game won't crash but the
@@ -26,7 +26,7 @@ export interface ObjectUnlock {
    *  - 1 = This option (Set by Object) is priority
    *  - Any other whole number = Option not selected
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value -1 and 1+. Only useable if objectType = 1.

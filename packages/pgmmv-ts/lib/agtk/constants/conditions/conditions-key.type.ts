@@ -1,11 +1,11 @@
 /**
- * Conditions key constants type module.
+ * Agtk conditions key constants type module.
  *
  * @packageDocumentation
  */
-import type { Conditions } from './conditions.interface';
+import type { AgtkConditions } from './conditions.interface';
 
 /**
- * Conditions key constants type.
+ * Agtk conditions key constants type.
  */
-export type ConditionsKey = keyof Conditions;
+export type AgtkConditionsKey = keyof AgtkConditions;

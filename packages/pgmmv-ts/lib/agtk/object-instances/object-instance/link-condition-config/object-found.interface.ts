@@ -1,14 +1,14 @@
 /**
- * Object instance object found link condition configuration interface module.
+ * Agtk object instance object found link condition configuration interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectFoundValue as ObjectType } from '../../../constants/link-condition/object-found';
+import type { AgtkObjectFoundValue as AgtkObjectType } from '../../../constants/link-condition/object-found';
 
 /**
- * Object instance object found link condition configuration interface.
+ * Agtk object instance object found link condition configuration interface.
  */
-export interface ObjectFound {
+export interface AgtkObjectFound {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -28,7 +28,7 @@ export interface ObjectFound {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

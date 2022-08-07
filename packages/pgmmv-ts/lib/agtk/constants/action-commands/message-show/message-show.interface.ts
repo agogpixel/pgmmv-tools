@@ -1,13 +1,13 @@
 /**
- * Action commands message show constants interface module.
+ * Agtk action commands message show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands message show constants interface.
+ * Agtk action commands message show constants interface.
  */
-export interface MessageShow {
+export interface AgtkMessageShow {
   /**
    * Window none.
    */

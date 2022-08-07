@@ -1,12 +1,12 @@
 /**
- * Action commands priority type value constants type module.
+ * Agtk action commands priority type value constants type module.
  *
  * @packageDocumentation
  */
-import type { PriorityTypeKey } from './priority-type-key.type';
-import type { PriorityType } from './priority-type.interface';
+import type { AgtkPriorityTypeKey } from './priority-type-key.type';
+import type { AgtkPriorityType } from './priority-type.interface';
 
 /**
- * Action commands priority type value constants type.
+ * Agtk action commands priority type value constants type.
  */
-export type PriorityTypeValue = PriorityType[PriorityTypeKey];
+export type AgtkPriorityTypeValue = AgtkPriorityType[AgtkPriorityTypeKey];

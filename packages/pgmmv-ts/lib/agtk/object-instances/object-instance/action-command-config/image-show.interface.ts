@@ -1,45 +1,46 @@
 /**
- * Object instance image show action command configuration interface module.
+ * Agtk object instance image show action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ImageShow as ImageShowConstant } from '../../../constants/action-commands/image-show';
-import type { PriorityTypeValue as PriorityType } from '../../../constants/action-commands/priority-type';
+import type { AgtkImageShow as AgtkImageShowConstant } from '../../../constants/action-commands/image-show';
+import type { AgtkPriorityTypeValue as AgtkPriorityType } from '../../../constants/action-commands/priority-type';
 
 /**
- * Image show position type type.
+ * Agtk image show position type type.
  *
  * @internal
  */
-type PositionType =
-  | ImageShowConstant['PositionCenter']
-  | ImageShowConstant['PositionLockObjectCenter']
-  | ImageShowConstant['PositionScenePosition'];
+type AgtkPositionType =
+  | AgtkImageShowConstant['PositionCenter']
+  | AgtkImageShowConstant['PositionLockObjectCenter']
+  | AgtkImageShowConstant['PositionScenePosition'];
 
 /**
- * Image show vertical alignment type.
+ * Agtk image show vertical alignment type.
  *
  * @internal
  */
-type VerticalAlignment =
-  | ImageShowConstant['VertAlignCenter']
-  | ImageShowConstant['VertAlignTop']
-  | ImageShowConstant['VertAlignBottom'];
+type AgtkVerticalAlignment =
+  | AgtkImageShowConstant['VertAlignCenter']
+  | AgtkImageShowConstant['VertAlignTop']
+  | AgtkImageShowConstant['VertAlignBottom'];
 
 /**
- * Image show horizontal alignment type.
+ * Agtk image show horizontal alignment type.
  *
  * @internal
  */
-type HorizontalAlignment =
-  | ImageShowConstant['HorzAlignCenter']
-  | ImageShowConstant['HorzAlignLeft']
-  | ImageShowConstant['HorzAlignRight'];
+type AgtkHorizontalAlignment =
+  | AgtkImageShowConstant['HorzAlignCenter']
+  | AgtkImageShowConstant['HorzAlignLeft']
+  | AgtkImageShowConstant['HorzAlignRight'];
 
 /**
- * Object instance image show action command configuration interface.
+ * Agtk object instance image show action command configuration interface.
  */
-export interface ImageShow {
+export interface AgtkImageShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -70,7 +71,7 @@ export interface ImageShow {
    *  - 1 = Center of Object Locked by This Object
    *  - 2 = Use Scene as Base
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.
@@ -92,7 +93,7 @@ export interface ImageShow {
    *  - 1 = Top
    *  - 2 = Bottom
    */
-  vertAlign: VerticalAlignment;
+  vertAlign: AgtkVerticalAlignment;
 
   /**
    * Value 0 - 2.
@@ -100,7 +101,7 @@ export interface ImageShow {
    *  - 1 = Left
    *  - 2 = Right
    */
-  horzAlign: HorizontalAlignment;
+  horzAlign: AgtkHorizontalAlignment;
 
   /**
    * Value any integer.
@@ -182,5 +183,5 @@ export interface ImageShow {
    *  - 1 = Frontmost
    *  - 2 = Frontmost + Menu Scene
    */
-  priorityType: PriorityType;
+  priorityType: AgtkPriorityType;
 }

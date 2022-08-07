@@ -1,12 +1,12 @@
 /**
- * Link condition object near value constants type module.
+ * Agtk link condition object near value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectNearKey } from './object-near-key.type';
-import type { ObjectNear } from './object-near.interface';
+import type { AgtkObjectNearKey } from './object-near-key.type';
+import type { AgtkObjectNear } from './object-near.interface';
 
 /**
- * Link condition object near value constants type.
+ * Agtk link condition object near value constants type.
  */
-export type ObjectNearValue = ObjectNear[ObjectNearKey];
+export type AgtkObjectNearValue = AgtkObjectNear[AgtkObjectNearKey];

@@ -1,12 +1,12 @@
 /**
- * Link condition attack area touched value constants type module.
+ * Agtk link condition attack area touched value constants type module.
  *
  * @packageDocumentation
  */
-import type { AttackAreaTouchedKey } from './attack-area-touched-key.type';
-import type { AttackAreaTouched } from './attack-area-touched.interface';
+import type { AgtkAttackAreaTouchedKey } from './attack-area-touched-key.type';
+import type { AgtkAttackAreaTouched } from './attack-area-touched.interface';
 
 /**
- * Link condition attack area touched value constants type.
+ * Agtk link condition attack area touched value constants type.
  */
-export type AttackAreaTouchedValue = AttackAreaTouched[AttackAreaTouchedKey];
+export type AgtkAttackAreaTouchedValue = AgtkAttackAreaTouched[AgtkAttackAreaTouchedKey];

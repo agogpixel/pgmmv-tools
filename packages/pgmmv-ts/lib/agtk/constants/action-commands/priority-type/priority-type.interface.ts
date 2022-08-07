@@ -1,13 +1,13 @@
 /**
- * Action commands priority type constants interface module.
+ * Agtk action commands priority type constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands priority type constants interface.
+ * Agtk action commands priority type constants interface.
  */
-export interface PriorityType {
+export interface AgtkPriorityType {
   /**
    * Priority background.
    */

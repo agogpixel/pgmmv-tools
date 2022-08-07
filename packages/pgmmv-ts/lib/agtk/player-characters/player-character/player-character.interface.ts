@@ -1,13 +1,13 @@
 /**
- * Player character interface module.
+ * Agtk player character interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Player character interface.
+ * Agtk player character interface.
  */
-export interface PlayerCharacter {
+export interface AgtkPlayerCharacter {
   /**
    * Get count.
    *

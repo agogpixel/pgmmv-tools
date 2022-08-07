@@ -1,13 +1,13 @@
 /**
- * Action commands forth back move turn constants interface module.
+ * Agtk action commands forth back move turn constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands forth back move turn constants interface.
+ * Agtk action commands forth back move turn constants interface.
  */
-export interface ForthBackMoveTurn {
+export interface AgtkForthBackMoveTurn {
   /**
    * Move none.
    */

@@ -1,5 +1,5 @@
 /**
- * Action commands sound play constants module.
+ * Agtk action commands sound play constants module.
  *
  * @packageDocumentation
  */

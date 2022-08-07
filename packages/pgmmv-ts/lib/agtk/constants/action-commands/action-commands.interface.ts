@@ -1,42 +1,42 @@
 /**
- * Action commands constants interface module.
+ * Agtk action commands constants interface module.
  *
  * @packageDocumentation
  */
-import type { AttackSetting } from './attack-setting';
-import type { CommandBehavior } from './command-behavior';
-import type { DirectionMove } from './direction-move';
-import type { EffectRemove } from './effect-remove';
-import type { EffectShow } from './effect-show';
-import type { FileLoad } from './file-load';
-import type { ForthBackMoveTurn } from './forth-back-move-turn';
-import type { GameSpeedChange } from './game-speed-change';
-import type { ImageShow } from './image-show';
-import type { MenuHide } from './menu-hide';
-import type { MenuShow } from './menu-show';
-import type { MessageShow } from './message-show';
-import type { MovieShow } from './movie-show';
-import type { ObjectChange } from './object-change';
-import type { ObjectCreate } from './object-create';
-import type { ObjectLock } from './object-lock';
-import type { ObjectMove } from './object-move';
-import type { ObjectPushPull } from './object-push-pull';
-import type { ObjectUnlock } from './object-unlock';
-import type { ParticleRemove } from './particle-remove';
-import type { ParticleShow } from './particle-show';
-import type { PriorityType } from './priority-type';
-import type { SceneRotateFlip } from './scene-rotate-flip';
-import type { ScrollMessageShow } from './scroll-message-show';
-import type { SoundPlay } from './sound-play';
-import type { SoundPositionRemember } from './sound-position-remember';
-import type { SoundStop } from './sound-stop';
-import type { TemplateMove } from './template-move';
-import type { Timer } from './timer';
+import type { AgtkAttackSetting } from './attack-setting';
+import type { AgtkCommandBehavior } from './command-behavior';
+import type { AgtkDirectionMove } from './direction-move';
+import type { AgtkEffectRemove } from './effect-remove';
+import type { AgtkEffectShow } from './effect-show';
+import type { AgtkFileLoad } from './file-load';
+import type { AgtkForthBackMoveTurn } from './forth-back-move-turn';
+import type { AgtkGameSpeedChange } from './game-speed-change';
+import type { AgtkImageShow } from './image-show';
+import type { AgtkMenuHide } from './menu-hide';
+import type { AgtkMenuShow } from './menu-show';
+import type { AgtkMessageShow } from './message-show';
+import type { AgtkMovieShow } from './movie-show';
+import type { AgtkObjectChange } from './object-change';
+import type { AgtkObjectCreate } from './object-create';
+import type { AgtkObjectLock } from './object-lock';
+import type { AgtkObjectMove } from './object-move';
+import type { AgtkObjectPushPull } from './object-push-pull';
+import type { AgtkObjectUnlock } from './object-unlock';
+import type { AgtkParticleRemove } from './particle-remove';
+import type { AgtkParticleShow } from './particle-show';
+import type { AgtkPriorityType } from './priority-type';
+import type { AgtkSceneRotateFlip } from './scene-rotate-flip';
+import type { AgtkScrollMessageShow } from './scroll-message-show';
+import type { AgtkSoundPlay } from './sound-play';
+import type { AgtkSoundPositionRemember } from './sound-position-remember';
+import type { AgtkSoundStop } from './sound-stop';
+import type { AgtkTemplateMove } from './template-move';
+import type { AgtkTimer } from './timer';
 
 /**
- * Action commands constants interface.
+ * Agtk action commands constants interface.
  */
-export interface ActionCommands {
+export interface AgtkActionCommands {
   /**
    * Object by type.
    */
@@ -100,145 +100,145 @@ export interface ActionCommands {
   /**
    * Command behavior.
    */
-  readonly commandBehavior: CommandBehavior;
+  readonly commandBehavior: AgtkCommandBehavior;
 
   /**
    * Priority type.
    */
-  readonly priorityType: PriorityType;
+  readonly priorityType: AgtkPriorityType;
 
   /**
    * Template move.
    */
-  readonly templateMove: TemplateMove;
+  readonly templateMove: AgtkTemplateMove;
 
   /**
    * Object lock.
    */
-  readonly objectLock: ObjectLock;
+  readonly objectLock: AgtkObjectLock;
 
   /**
    * Object create.
    */
-  readonly objectCreate: ObjectCreate;
+  readonly objectCreate: AgtkObjectCreate;
 
   /**
    * Object change.
    */
-  readonly objectChange: ObjectChange;
+  readonly objectChange: AgtkObjectChange;
 
   /**
    * Object move.
    */
-  readonly objectMove: ObjectMove;
+  readonly objectMove: AgtkObjectMove;
 
   /**
    * Object push pull.
    */
-  readonly objectPushPull: ObjectPushPull;
+  readonly objectPushPull: AgtkObjectPushPull;
 
   /**
    * Attack setting.
    */
-  readonly attackSetting: AttackSetting;
+  readonly attackSetting: AgtkAttackSetting;
 
   /**
    * Scene rotate flip.
    */
-  readonly sceneRotateFlip: SceneRotateFlip;
+  readonly sceneRotateFlip: AgtkSceneRotateFlip;
 
   /**
    * Sound play.
    */
-  readonly soundPlay: SoundPlay;
+  readonly soundPlay: AgtkSoundPlay;
 
   /**
    * Sound stop.
    */
-  readonly soundStop: SoundStop;
+  readonly soundStop: AgtkSoundStop;
 
   /**
    * Sound position remember.
    */
-  readonly soundPositionRemember: SoundPositionRemember;
+  readonly soundPositionRemember: AgtkSoundPositionRemember;
 
   /**
    * Message show.
    */
-  readonly messageShow: MessageShow;
+  readonly messageShow: AgtkMessageShow;
 
   /**
    * Scroll message show.
    */
-  readonly scrollMessageShow: ScrollMessageShow;
+  readonly scrollMessageShow: AgtkScrollMessageShow;
 
   /**
    * Effect show.
    */
-  readonly effectShow: EffectShow;
+  readonly effectShow: AgtkEffectShow;
 
   /**
    * Effect remove.
    */
-  readonly effectRemove: EffectRemove;
+  readonly effectRemove: AgtkEffectRemove;
 
   /**
    * Particle show.
    */
-  readonly particleShow: ParticleShow;
+  readonly particleShow: AgtkParticleShow;
 
   /**
    * Particle remove.
    */
-  readonly particleRemove: ParticleRemove;
+  readonly particleRemove: AgtkParticleRemove;
 
   /**
    * Movie show.
    */
-  readonly movieShow: MovieShow;
+  readonly movieShow: AgtkMovieShow;
 
   /**
    * Image show.
    */
-  readonly imageShow: ImageShow;
+  readonly imageShow: AgtkImageShow;
 
   /**
    * Game speed change.
    */
-  readonly gameSpeedChange: GameSpeedChange;
+  readonly gameSpeedChange: AgtkGameSpeedChange;
 
   /**
    * Timer.
    */
-  readonly timer: Timer;
+  readonly timer: AgtkTimer;
 
   /**
    * Direction move.
    */
-  readonly directionMove: DirectionMove;
+  readonly directionMove: AgtkDirectionMove;
 
   /**
    * Forth back move turn.
    */
-  readonly forthBackMoveTurn: ForthBackMoveTurn;
+  readonly forthBackMoveTurn: AgtkForthBackMoveTurn;
 
   /**
    * Menu show.
    */
-  readonly menuShow: MenuShow;
+  readonly menuShow: AgtkMenuShow;
 
   /**
    * Menu hide.
    */
-  readonly menuHide: MenuHide;
+  readonly menuHide: AgtkMenuHide;
 
   /**
    * File load.
    */
-  readonly fileLoad: FileLoad;
+  readonly fileLoad: AgtkFileLoad;
 
   /**
    * Object unlock.
    */
-  readonly objectUnlock: ObjectUnlock;
+  readonly objectUnlock: AgtkObjectUnlock;
 }

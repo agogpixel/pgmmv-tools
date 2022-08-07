@@ -1,13 +1,13 @@
 /**
- * Link condition attack area touched constants interface module.
+ * Agtk link condition attack area touched constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition attack area touched constants interface.
+ * Agtk link condition attack area touched constants interface.
  */
-export interface AttackAreaTouched {
+export interface AgtkAttackAreaTouched {
   /**
    * Set by object group.
    */

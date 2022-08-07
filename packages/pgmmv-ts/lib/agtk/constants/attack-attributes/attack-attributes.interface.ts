@@ -1,13 +1,13 @@
 /**
- * Attack attributes constants interface module.
+ * Agtk attack attributes constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Attack attributes constants interface.
+ * Agtk attack attributes constants interface.
  */
-export interface AttackAttributes {
+export interface AgtkAttackAttributes {
   /**
    * Fire.
    */

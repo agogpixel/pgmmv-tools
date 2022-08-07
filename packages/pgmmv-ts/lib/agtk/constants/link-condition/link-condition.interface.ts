@@ -1,76 +1,76 @@
 /**
- * Link condition constants interface module.
+ * Agtk link condition constants interface module.
  *
  * @packageDocumentation
  */
-import type { AttackAreaNear } from './attack-area-near';
-import type { AttackAreaTouched } from './attack-area-touched';
-import type { Locked } from './locked';
-import type { ObjectFacingDirection } from './object-facing-direction';
-import type { ObjectFacingEachOther } from './object-facing-each-other';
-import type { ObjectFacing } from './object-facing';
-import type { ObjectFound } from './object-found';
-import type { ObjectHit } from './object-hit';
-import type { ObjectNear } from './object-near';
-import type { ObjectWallTouched } from './object-wall-touched';
-import type { SlopeTouched } from './slope-touched';
+import type { AgtkAttackAreaNear } from './attack-area-near';
+import type { AgtkAttackAreaTouched } from './attack-area-touched';
+import type { AgtkLocked } from './locked';
+import type { AgtkObjectFacingDirection } from './object-facing-direction';
+import type { AgtkObjectFacingEachOther } from './object-facing-each-other';
+import type { AgtkObjectFacing } from './object-facing';
+import type { AgtkObjectFound } from './object-found';
+import type { AgtkObjectHit } from './object-hit';
+import type { AgtkObjectNear } from './object-near';
+import type { AgtkObjectWallTouched } from './object-wall-touched';
+import type { AgtkSlopeTouched } from './slope-touched';
 
 /**
  * Link condition constants interface.
  */
-export interface LinkCondition {
+export interface AgtkLinkCondition {
   /**
    * Object wall touched.
    */
-  readonly objectWallTouched: ObjectWallTouched;
+  readonly objectWallTouched: AgtkObjectWallTouched;
 
   /**
    * Object hit.
    */
-  readonly objectHit: ObjectHit;
+  readonly objectHit: AgtkObjectHit;
 
   /**
    * Attack area touched.
    */
-  readonly attackAreaTouched: AttackAreaTouched;
+  readonly attackAreaTouched: AgtkAttackAreaTouched;
 
   /**
    * Attack area near.
    */
-  readonly attackAreaNear: AttackAreaNear;
+  readonly attackAreaNear: AgtkAttackAreaNear;
 
   /**
    * Object near.
    */
-  readonly objectNear: ObjectNear;
+  readonly objectNear: AgtkObjectNear;
 
   /**
    * Object facing each other.
    */
-  readonly objectFacingEachOther: ObjectFacingEachOther;
+  readonly objectFacingEachOther: AgtkObjectFacingEachOther;
 
   /**
    * Object facing.
    */
-  readonly objectFacing: ObjectFacing;
+  readonly objectFacing: AgtkObjectFacing;
 
   /**
    * Object found.
    */
-  readonly objectFound: ObjectFound;
+  readonly objectFound: AgtkObjectFound;
 
   /**
    * Object facing direction.
    */
-  readonly objectFacingDirection: ObjectFacingDirection;
+  readonly objectFacingDirection: AgtkObjectFacingDirection;
 
   /**
    * Locked.
    */
-  readonly locked: Locked;
+  readonly locked: AgtkLocked;
 
   /**
    * Slope touched.
    */
-  readonly slopeTouched: SlopeTouched;
+  readonly slopeTouched: AgtkSlopeTouched;
 }

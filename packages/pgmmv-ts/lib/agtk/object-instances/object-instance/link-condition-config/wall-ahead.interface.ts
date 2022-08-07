@@ -1,13 +1,14 @@
 /**
- * Object instance wall ahead link condition configuration interface module.
+ * Agtk object instance wall ahead link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance wall ahead link condition configuration interface.
+ * Agtk object instance wall ahead link condition configuration interface.
  */
-export interface WallAhead {
+export interface AgtkWallAhead {
   /**
    * Value 0 - 15.
    *  - 0 = No wall sides selected

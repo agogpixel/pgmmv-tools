@@ -1,12 +1,12 @@
 /**
- * Action commands file load value constants type module.
+ * Agtk action commands file load value constants type module.
  *
  * @packageDocumentation
  */
-import type { FileLoadKey } from './file-load-key.type';
-import type { FileLoad } from './file-load.interface';
+import type { AgtkFileLoadKey } from './file-load-key.type';
+import type { AgtkFileLoad } from './file-load.interface';
 
 /**
- * Action commands file load value constants type.
+ * Agtk action commands file load value constants type.
  */
-export type FileLoadValue = FileLoad[FileLoadKey];
+export type AgtkFileLoadValue = AgtkFileLoad[AgtkFileLoadKey];

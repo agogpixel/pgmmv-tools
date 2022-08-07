@@ -1,11 +1,11 @@
 /**
- * Action commands object unlock key constants type module.
+ * Agtk action commands object unlock key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectUnlock } from './object-unlock.interface';
+import type { AgtkObjectUnlock } from './object-unlock.interface';
 
 /**
- * Action commands object unlock key constants type.
+ * Agtk action commands object unlock key constants type.
  */
-export type ObjectUnlockKey = keyof ObjectUnlock;
+export type AgtkObjectUnlockKey = keyof AgtkObjectUnlock;

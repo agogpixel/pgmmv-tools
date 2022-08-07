@@ -1,13 +1,13 @@
 /**
- * Link condition object near constants interface module.
+ * Agtk link condition object near constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object near constants interface.
+ * Agtk link condition object near constants interface.
  */
-export interface ObjectNear {
+export interface AgtkObjectNear {
   /**
    * Distance none.
    */

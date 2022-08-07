@@ -1,28 +1,28 @@
 /**
- * Object instance database reflect action command configuration interface
+ * Agtk object instance database reflect action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { Assignments } from '../../../constants/assignments';
+import type { AgtkAssignments } from '../../../constants/assignments';
 
 /**
- * Database reflect reflect variable assignment operator type.
+ * Agtk database reflect reflect variable assignment operator type.
  *
  * @internal
  */
-type ReflectVariableAssignmentOperator =
-  | Assignments['VariableAssignOperatorSet']
-  | Assignments['VariableAssignOperatorAdd']
-  | Assignments['VariableAssignOperatorSub']
-  | Assignments['VariableAssignOperatorMul']
-  | Assignments['VariableAssignOperatorDiv']
-  | Assignments['VariableAssignOperatorMod'];
+type AgtkReflectVariableAssignmentOperator =
+  | AgtkAssignments['VariableAssignOperatorSet']
+  | AgtkAssignments['VariableAssignOperatorAdd']
+  | AgtkAssignments['VariableAssignOperatorSub']
+  | AgtkAssignments['VariableAssignOperatorMul']
+  | AgtkAssignments['VariableAssignOperatorDiv']
+  | AgtkAssignments['VariableAssignOperatorMod'];
 
 /**
- * Object instance database reflect action command configuration interface.
+ * Agtk object instance database reflect action command configuration interface.
  */
-export interface DatabaseReflect {
+export interface AgtkDatabaseReflect {
   columnIndex: number;
   columnIndexFromName: boolean;
   columnNumberFromValue: boolean;
@@ -35,7 +35,7 @@ export interface DatabaseReflect {
   objectId: number;
   reflectObjectId: number;
   reflectQualifierId: number;
-  reflectVariableAssignOperator: ReflectVariableAssignmentOperator;
+  reflectVariableAssignOperator: AgtkReflectVariableAssignmentOperator;
   reflectVariableId: number;
   rowIndexFromName: boolean;
   rowNumberFromValue: boolean;

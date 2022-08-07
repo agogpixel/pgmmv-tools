@@ -1,5 +1,5 @@
 /**
- * Action commands priority type constants module.
+ * Agtk action commands priority type constants module.
  *
  * @packageDocumentation
  */

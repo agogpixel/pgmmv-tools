@@ -1,15 +1,16 @@
 /**
- * Object instance object wall touched link condition configuration interface
- * module.
+ * Agtk object instance object wall touched link condition configuration
+ * interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectWallTouchedValue as ObjectType } from '../../../constants/link-condition/object-wall-touched';
+import type { AgtkObjectWallTouchedValue as AgtkObjectType } from '../../../constants/link-condition/object-wall-touched';
 
 /**
- * Object instance object wall touched link condition configuration interface.
+ * Agtk object instance object wall touched link condition configuration
+ * interface.
  */
-export interface ObjectWallTouched {
+export interface AgtkObjectWallTouched {
   /**
    * Value 0 - 15.
    *  - 0 = No wall sides selected
@@ -36,7 +37,7 @@ export interface ObjectWallTouched {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

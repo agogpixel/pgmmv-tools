@@ -1,15 +1,15 @@
 /**
- * Object instance object filter effect remove action command configuration
+ * Agtk object instance object filter effect remove action command configuration
  * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance object filter effect remove action command configuration
+ * Agtk object instance object filter effect remove action command configuration
  * interface.
  */
-export interface ObjectFilterEffectRemove {
+export interface AgtkObjectFilterEffectRemove {
   /**
    * Values are in bit because of the various combos that can be selected.
    * STRONGLY RECOMMENDED to setup in runtime action and copy the value from the

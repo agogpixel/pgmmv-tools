@@ -1,14 +1,14 @@
 /**
- * Object instance menu show action command configuration interface module.
+ * Agtk object instance menu show action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { MenuShowValue as EffectType } from '../../../constants/action-commands/menu-show';
+import type { AgtkMenuShowValue as AgtkEffectType } from '../../../constants/action-commands/menu-show';
 
 /**
- * Object instance menu show action command configuration interface.
+ * Agtk object instance menu show action command configuration interface.
  */
-export interface MenuShow {
+export interface AgtkMenuShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -31,7 +31,7 @@ export interface MenuShow {
    *  - 2 = Slide Left
    *  - 3 = Slide Right
    */
-  effectType: EffectType;
+  effectType: AgtkEffectType;
 
   /**
    * Value true/false.

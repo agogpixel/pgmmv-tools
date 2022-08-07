@@ -1,5 +1,5 @@
 /**
- * Action commands effect show constants module.
+ * Agtk action commands effect show constants module.
  *
  * @packageDocumentation
  */

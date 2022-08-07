@@ -1,11 +1,11 @@
 /**
- * Action commands forth back move turn key constants type module.
+ * Agtk action commands forth back move turn key constants type module.
  *
  * @packageDocumentation
  */
-import type { ForthBackMoveTurn } from './forth-back-move-turn.interface';
+import type { AgtkForthBackMoveTurn } from './forth-back-move-turn.interface';
 
 /**
- * Action commands forth back move turn key constants type.
+ * Agtk action commands forth back move turn key constants type.
  */
-export type ForthBackMoveTurnKey = keyof ForthBackMoveTurn;
+export type AgtkForthBackMoveTurnKey = keyof AgtkForthBackMoveTurn;

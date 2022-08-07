@@ -1,5 +1,5 @@
 /**
- * Link condition object hit constants module.
+ * Agtk link condition object hit constants module.
  *
  * @packageDocumentation
  */

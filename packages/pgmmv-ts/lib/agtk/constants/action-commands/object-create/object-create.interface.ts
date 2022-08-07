@@ -1,13 +1,13 @@
 /**
- * Action commands object create constants interface module.
+ * Agtk action commands object create constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object create constants interface.
+ * Agtk action commands object create constants interface.
  */
-export interface ObjectCreate {
+export interface AgtkObjectCreate {
   /**
    * Position center.
    */

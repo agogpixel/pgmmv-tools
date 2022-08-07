@@ -1,13 +1,13 @@
 /**
- * Action commands movie show constants interface module.
+ * Agtk action commands movie show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands movie show constants interface.
+ * Agtk action commands movie show constants interface.
  */
-export interface MovieShow {
+export interface AgtkMovieShow {
   /**
    * Position center.
    */

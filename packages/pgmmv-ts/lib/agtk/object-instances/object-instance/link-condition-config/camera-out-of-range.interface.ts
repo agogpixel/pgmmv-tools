@@ -1,14 +1,15 @@
 /**
- * Object instance camera out of range link condition configuration interface
- * module.
+ * Agtk object instance camera out of range link condition configuration
+ * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance camera out of range link condition configuration interface.
+ * Agtk object instance camera out of range link condition configuration
+ * interface.
  */
-export interface CameraOutOfRange {
+export interface AgtkCameraOutOfRange {
   /**
    * Value -3, -2, -1 or 1+.
    *  - -3 = Object Other Then Self

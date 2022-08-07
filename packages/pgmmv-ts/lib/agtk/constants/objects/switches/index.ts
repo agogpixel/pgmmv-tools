@@ -1,5 +1,5 @@
 /**
- * Objects switches constants module.
+ * Agtk objects switches constants module.
  *
  * @packageDocumentation
  */

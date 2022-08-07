@@ -1,11 +1,11 @@
 /**
- * Action commands image show key constants type module.
+ * Agtk action commands image show key constants type module.
  *
  * @packageDocumentation
  */
-import type { ImageShow } from './image-show.interface';
+import type { AgtkImageShow } from './image-show.interface';
 
 /**
- * Action commands image show key constants type.
+ * Agtk action commands image show key constants type.
  */
-export type ImageShowKey = keyof ImageShow;
+export type AgtkImageShowKey = keyof AgtkImageShow;

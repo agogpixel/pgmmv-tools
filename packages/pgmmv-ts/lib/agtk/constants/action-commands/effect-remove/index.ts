@@ -1,5 +1,5 @@
 /**
- * Action commands effect remove constants module.
+ * Agtk action commands effect remove constants module.
  *
  * @packageDocumentation
  */

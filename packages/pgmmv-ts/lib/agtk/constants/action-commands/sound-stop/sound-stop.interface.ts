@@ -1,13 +1,13 @@
 /**
- * Action commands sound stop constants interface module.
+ * Agtk action commands sound stop constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands sound stop constants interface.
+ * Agtk action commands sound stop constants interface.
  */
-export interface SoundStop {
+export interface AgtkSoundStop {
   /**
    * Sound effects.
    */

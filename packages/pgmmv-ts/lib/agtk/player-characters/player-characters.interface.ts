@@ -1,14 +1,14 @@
 /**
- * Player characters interface module.
+ * Agtk player characters interface module.
  *
  * @packageDocumentation
  */
-import type { PlayerCharacter } from './player-character';
+import type { AgtkPlayerCharacter } from './player-character';
 
 /**
- * Player characters interface.
+ * Agtk player characters interface.
  */
-export interface PlayerCharacters {
+export interface AgtkPlayerCharacters {
   /**
    * Get count.
    *
@@ -23,5 +23,5 @@ export interface PlayerCharacters {
    * @param index Player character index.
    * @returns playerCharacter of the specified slot.
    */
-  get(arg: number): PlayerCharacter;
+  get(arg: number): AgtkPlayerCharacter;
 }

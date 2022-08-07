@@ -1,5 +1,5 @@
 /**
- * Qualifier constants module.
+ * Agtk qualifier constants module.
  *
  * @packageDocumentation
  */

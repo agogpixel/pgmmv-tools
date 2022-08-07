@@ -1,12 +1,12 @@
 /**
- * Action commands object change value constants type module.
+ * Agtk action commands object change value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectChangeKey } from './object-change-key.type';
-import type { ObjectChange } from './object-change.interface';
+import type { AgtkObjectChangeKey } from './object-change-key.type';
+import type { AgtkObjectChange } from './object-change.interface';
 
 /**
- * Action commands object change value constants type.
+ * Agtk action commands object change value constants type.
  */
-export type ObjectChangeValue = ObjectChange[ObjectChangeKey];
+export type AgtkObjectChangeValue = AgtkObjectChange[AgtkObjectChangeKey];

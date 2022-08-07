@@ -1,13 +1,13 @@
 /**
- * Assignments constants interface module.
+ * Agtk assignments constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Assignments constants interface.
+ * Agtk assignments constants interface.
  */
-export interface Assignments {
+export interface AgtkAssignments {
   /**
    * Switch assign on.
    */

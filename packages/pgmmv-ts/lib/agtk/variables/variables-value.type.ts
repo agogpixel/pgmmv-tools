@@ -1,12 +1,12 @@
 /**
- * Common variables value type module.
+ * Agtk common variables value type module.
  *
  * @packageDocumentation
  */
-import type { VariablesKey } from './variables-key.type';
-import type { Variables } from './variables.interface';
+import type { AgtkVariablesKey } from './variables-key.type';
+import type { AgtkVariables } from './variables.interface';
 
 /**
- * Common variables value type.
+ * Agtk common variables value type.
  */
-export type VariablesValue = Variables[VariablesKey];
+export type AgtkVariablesValue = AgtkVariables[AgtkVariablesKey];

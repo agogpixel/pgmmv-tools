@@ -1,5 +1,5 @@
 /**
- * Object type constants module.
+ * Agtk object type constants module.
  *
  * @packageDocumentation
  * @deprecated

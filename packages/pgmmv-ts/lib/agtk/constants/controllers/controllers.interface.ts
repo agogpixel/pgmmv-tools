@@ -1,13 +1,13 @@
 /**
- * Controllers constants interface module.
+ * Agtk controllers constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Controllers constants interface.
+ * Agtk controllers constants interface.
  */
-export interface Controllers {
+export interface AgtkControllers {
   /**
    * Operation key A.
    */

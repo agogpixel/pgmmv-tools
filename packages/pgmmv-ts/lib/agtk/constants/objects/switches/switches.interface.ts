@@ -1,13 +1,13 @@
 /**
- * Objects switches constants interface module.
+ * Agtk objects switches constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Objects switches constants interface.
+ * Agtk objects switches constants interface.
  */
-export interface Switches {
+export interface AgtkSwitches {
   /**
    * Invincible ID.
    */

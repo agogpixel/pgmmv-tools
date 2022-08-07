@@ -1,14 +1,15 @@
 /**
- * Object instance object create action command configuration interface module.
+ * Agtk object instance object create action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectCreateValue as CreatePosition } from '../../../constants/action-commands/object-create';
+import type { AgtkObjectCreateValue as AgtkCreatePosition } from '../../../constants/action-commands/object-create';
 
 /**
- * Object instance object create action command configuration interface.
+ * Agtk object instance object create action command configuration interface.
  */
-export interface ObjectCreate {
+export interface AgtkObjectCreate {
   /**
    * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
    * object ID positive number.
@@ -29,7 +30,7 @@ export interface ObjectCreate {
    *  - 0 = Center of This Object
    *  - 1 = Center of Object Locked by This Object
    */
-  createPosition: CreatePosition;
+  createPosition: AgtkCreatePosition;
 
   /**
    * Value true/false.

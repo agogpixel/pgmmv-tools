@@ -1,11 +1,11 @@
 /**
- * Action commands effect show key constants type module.
+ * Agtk action commands effect show key constants type module.
  *
  * @packageDocumentation
  */
-import { EffectShow } from './effect-show.interface';
+import { AgtkEffectShow } from './effect-show.interface';
 
 /**
- * Action commands effect show key constants type.
+ * Agtk action commands effect show key constants type.
  */
-export type EffectShowKey = keyof EffectShow;
+export type AgtkEffectShowKey = keyof AgtkEffectShow;

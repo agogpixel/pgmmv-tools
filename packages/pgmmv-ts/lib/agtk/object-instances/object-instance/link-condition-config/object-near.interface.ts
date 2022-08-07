@@ -1,33 +1,34 @@
 /**
- * Object instance object near link condition configuration interface module.
+ * Agtk object instance object near link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectNear as ObjectNearConstant } from '../../../constants/link-condition/object-near';
+import type { AgtkObjectNear as AgtkObjectNearConstant } from '../../../constants/link-condition/object-near';
 
 /**
- * Object near distance type type.
+ * Agtk object near distance type type.
  *
  * @internal
  */
-type DistanceType =
-  | ObjectNearConstant['DistanceNone']
-  | ObjectNearConstant['DistanceGreaterEqual']
-  | ObjectNearConstant['DistanceLessEqual'];
+type AgtkDistanceType =
+  | AgtkObjectNearConstant['DistanceNone']
+  | AgtkObjectNearConstant['DistanceGreaterEqual']
+  | AgtkObjectNearConstant['DistanceLessEqual'];
 
 /**
-* Object near object type type.
+* Agtk object near object type type.
 *
 * @internal
 */
-type ObjectType =
-  | ObjectNearConstant['SetByObjectGroup']
-  | ObjectNearConstant['SetByObjectId'];
+type AgtkObjectType =
+  | AgtkObjectNearConstant['SetByObjectGroup']
+  | AgtkObjectNearConstant['SetByObjectId'];
 
 /**
- * Object instance object near link condition configuration interface.
+ * Agtk object instance object near link condition configuration interface.
  */
-export interface ObjectNear {
+export interface AgtkObjectNear {
   /**
    * Value true/false.
    *  - True = Direction of Detected Attack: Other than Specified Direction
@@ -56,7 +57,7 @@ export interface ObjectNear {
    *  - 1 = Set Distance: More Than Specified Distance
    *  - 2 = Set Distance: Less Than Specified Distance
    */
-  distanceType: DistanceType;
+  distanceType: AgtkDistanceType;
 
   /**
    * Value any whole number.
@@ -68,7 +69,7 @@ export interface ObjectNear {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

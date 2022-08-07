@@ -3,12 +3,12 @@
  *
  * @packageDocumentation
  */
-import type { Constants } from './constants';
-import type { ObjectInstances } from './object-instances';
-import type { PlayerCharacters } from './player-characters';
-import type { Settings } from './settings';
-import type { Switches } from './switches';
-import type { Variables } from './variables';
+import type { AgtkConstants } from './constants';
+import type { AgtkObjectInstances } from './object-instances';
+import type { AgtkPlayerCharacters } from './player-characters';
+import type { AgtkSettings } from './settings';
+import type { AgtkSwitches } from './switches';
+import type { AgtkVariables } from './variables';
 
 /**
  * Agtk interface.
@@ -43,30 +43,30 @@ export interface Agtk {
   /**
    * Settings.
    */
-  readonly settings: Settings;
+  readonly settings: AgtkSettings;
 
   /**
    * Player characters.
    */
-  readonly playerCharacters: PlayerCharacters;
+  readonly playerCharacters: AgtkPlayerCharacters;
 
   /**
    * Object instances.
    */
-  readonly objectInstances: ObjectInstances;
+  readonly objectInstances: AgtkObjectInstances;
 
   /**
    * Constants.
    */
-  readonly constants: Constants;
+  readonly constants: AgtkConstants;
 
   /**
    * Common switches.
    */
-  readonly switches: Switches
+  readonly switches: AgtkSwitches
 
   /**
    * Common variables.
    */
-  readonly variables: Variables;
+  readonly variables: AgtkVariables;
 }

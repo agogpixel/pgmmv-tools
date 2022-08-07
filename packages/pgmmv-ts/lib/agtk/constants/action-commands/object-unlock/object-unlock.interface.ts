@@ -1,13 +1,13 @@
 /**
- * Action commands object unlock constants interface module.
+ * Agtk action commands object unlock constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object unlock constants interface.
+ * Agtk action commands object unlock constants interface.
  */
-export interface ObjectUnlock {
+export interface AgtkObjectUnlock {
   /**
    * Set by object group.
    */

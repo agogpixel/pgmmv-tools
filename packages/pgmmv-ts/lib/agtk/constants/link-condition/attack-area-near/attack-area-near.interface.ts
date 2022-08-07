@@ -1,13 +1,13 @@
 /**
- * Link condition attack area near constants interface module.
+ * Agtk link condition attack area near constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition attack area near constants interface.
+ * Agtk link condition attack area near constants interface.
  */
-export interface AttackAreaNear {
+export interface AgtkAttackAreaNear {
   /**
    * Distance none.
    */

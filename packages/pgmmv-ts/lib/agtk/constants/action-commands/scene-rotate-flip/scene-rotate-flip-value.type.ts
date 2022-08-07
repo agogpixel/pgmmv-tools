@@ -1,12 +1,12 @@
 /**
- * Action commands scene rotate flip value constants type module.
+ * Agtk action commands scene rotate flip value constants type module.
  *
  * @packageDocumentation
  */
-import type { SceneRotateFlipKey } from './scene-rotate-flip-key.type';
-import type { SceneRotateFlip } from './scene-rotate-flip.interface';
+import type { AgtkSceneRotateFlipKey } from './scene-rotate-flip-key.type';
+import type { AgtkSceneRotateFlip } from './scene-rotate-flip.interface';
 
 /**
- * Action commands scene rotate flip value constants type.
+ * Agtk action commands scene rotate flip value constants type.
  */
-export type SceneRotateFlipValue = SceneRotateFlip[SceneRotateFlipKey];
+export type AgtkSceneRotateFlipValue = AgtkSceneRotateFlip[AgtkSceneRotateFlipKey];

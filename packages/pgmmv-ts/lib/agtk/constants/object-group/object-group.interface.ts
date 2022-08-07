@@ -1,13 +1,13 @@
 /**
- * Object group constants interface module.
+ * Agtk object group constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object group constants interface.
+ * Agtk object group constants interface.
  */
-export interface ObjectGroup {
+export interface AgtkObjectGroup {
   /**
    * Object group all.
    */

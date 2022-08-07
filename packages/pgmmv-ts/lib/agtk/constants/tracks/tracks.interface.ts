@@ -1,13 +1,13 @@
 /**
- * Tracks constants interface module.
+ * Agtk tracks constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Tracks constants interface.
+ * Agtk tracks constants interface.
  */
-export interface Tracks {
+export interface AgtkTracks {
   /**
    * Timeline wall.
    */

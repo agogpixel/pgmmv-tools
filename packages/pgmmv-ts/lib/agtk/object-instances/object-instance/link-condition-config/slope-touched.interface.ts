@@ -1,41 +1,42 @@
 /**
- * Object instance slope touched link condition configuration interface module.
+ * Agtk object instance slope touched link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { SlopeTouched as SlopeTouchedConstant } from '../../../constants/link-condition/slope-touched';
+import type { AgtkSlopeTouched as AgtkSlopeTouchedConstant } from '../../../constants/link-condition/slope-touched';
 
 /**
- * Slope touched direction type type.
+ * Agtk slope touched direction type type.
  *
  * @internal
  */
-type DirectionType =
-  | SlopeTouchedConstant['DirectionUpper']
-  | SlopeTouchedConstant['DirectionLower']
-  | SlopeTouchedConstant['DirectionAny'];
+type AgtkDirectionType =
+  | AgtkSlopeTouchedConstant['DirectionUpper']
+  | AgtkSlopeTouchedConstant['DirectionLower']
+  | AgtkSlopeTouchedConstant['DirectionAny'];
 
 /**
- * Slope touched downward type type.
+ * Agtk slope touched downward type type.
  *
  * @internal
  */
-type DownwardType =
-  | SlopeTouchedConstant['DownwardLeft']
-  | SlopeTouchedConstant['DownwardRight']
-  | SlopeTouchedConstant['DownwardNone'];
+type AgtkDownwardType =
+  | AgtkSlopeTouchedConstant['DownwardLeft']
+  | AgtkSlopeTouchedConstant['DownwardRight']
+  | AgtkSlopeTouchedConstant['DownwardNone'];
 
 /**
- * Object instance slope touched link condition configuration interface.
+ * Agtk object instance slope touched link condition configuration interface.
  */
-export interface SlopeTouched {
+export interface AgtkSlopeTouched {
   /**
    * Value 0 - 2.
    *  - 0 = From Top
    *  - 1 = From Bottom
    *  - 2 = Don't Set
    */
-  directionType: DirectionType;
+  directionType: AgtkDirectionType;
 
   /**
    * Value 0 - 2.
@@ -43,5 +44,5 @@ export interface SlopeTouched {
    *  - 1 = Sloping Right
    *  - 2 = Don't Set
    */
-  downwardType: DownwardType;
+  downwardType: AgtkDownwardType;
 }

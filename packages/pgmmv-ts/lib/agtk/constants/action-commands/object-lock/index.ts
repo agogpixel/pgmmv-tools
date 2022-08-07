@@ -1,5 +1,5 @@
 /**
- * Action commands object lock constants module.
+ * Agtk action commands object lock constants module.
  *
  * @packageDocumentation
  */

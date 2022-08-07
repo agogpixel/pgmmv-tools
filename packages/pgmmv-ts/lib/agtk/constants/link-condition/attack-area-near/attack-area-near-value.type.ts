@@ -1,12 +1,12 @@
 /**
- * Link condition attack area near value constants type module.
+ * Agtk link condition attack area near value constants type module.
  *
  * @packageDocumentation
  */
-import type { AttackAreaNearKey } from './attack-area-near-key.type';
-import type { AttackAreaNear } from './attack-area-near.interface';
+import type { AgtkAttackAreaNearKey } from './attack-area-near-key.type';
+import type { AgtkAttackAreaNear } from './attack-area-near.interface';
 
 /**
- * Link condition attack area near value constants type.
+ * Agtk link condition attack area near value constants type.
  */
-export type AttackAreaNearValue = AttackAreaNear[AttackAreaNearKey];
+export type AgtkAttackAreaNearValue = AgtkAttackAreaNear[AgtkAttackAreaNearKey];

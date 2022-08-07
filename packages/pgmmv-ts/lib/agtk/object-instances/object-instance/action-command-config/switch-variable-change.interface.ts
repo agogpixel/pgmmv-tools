@@ -1,51 +1,51 @@
 /**
- * Object instance switch/variable change action command configuration interface
+ * Agtk object instance switch/variable change action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { Assignments } from '../../../constants/assignments';
-import type { QualifierValue as QualifierId } from '../../../constants/qualifier';
+import type { AgtkAssignments } from '../../../constants/assignments';
+import type { AgtkQualifierValue as AgtkQualifierId } from '../../../constants/qualifier';
 
 /**
- * Switch/variable change switch value type.
+ * Agtk switch/variable change switch value type.
  *
  * @internal
  */
-type SwitchValue =
-  | Assignments['SwitchAssignOn']
-  | Assignments['SwitchAssignOff']
-  | Assignments['SwitchAssignToggle'];
+type AgtkSwitchValue =
+  | AgtkAssignments['SwitchAssignOn']
+  | AgtkAssignments['SwitchAssignOff']
+  | AgtkAssignments['SwitchAssignToggle'];
 
 /**
- * Switch/variable change variable assignment operator type.
+ * Agtk switch/variable change variable assignment operator type.
  *
  * @internal
  */
-type VariableAssignmentOperator =
-  | Assignments['VariableAssignOperatorSet']
-  | Assignments['VariableAssignOperatorAdd']
-  | Assignments['VariableAssignOperatorSub']
-  | Assignments['VariableAssignOperatorMul']
-  | Assignments['VariableAssignOperatorDiv']
-  | Assignments['VariableAssignOperatorMod'];
+type AgtkVariableAssignmentOperator =
+  | AgtkAssignments['VariableAssignOperatorSet']
+  | AgtkAssignments['VariableAssignOperatorAdd']
+  | AgtkAssignments['VariableAssignOperatorSub']
+  | AgtkAssignments['VariableAssignOperatorMul']
+  | AgtkAssignments['VariableAssignOperatorDiv']
+  | AgtkAssignments['VariableAssignOperatorMod'];
 
 /**
- * Switch/variable change variable assignment value type type.
+ * Agtk switch/variable change variable assignment value type type.
  *
  * @internal
  */
-type VariableAssignValueType =
-  | Assignments['VariableAssignValue']
-  | Assignments['VariableAssignVariable']
-  | Assignments['VariableAssignRandom']
-  | Assignments['VariableAssignScript'];
+type AgtkVariableAssignValueType =
+  | AgtkAssignments['VariableAssignValue']
+  | AgtkAssignments['VariableAssignVariable']
+  | AgtkAssignments['VariableAssignRandom']
+  | AgtkAssignments['VariableAssignScript'];
 
 /**
- * Object instance switch/variable change action command configuration
+ * Agtk object instance switch/variable change action command configuration
  * interface.
  */
-export interface SwitchVariableChange {
+export interface AgtkSwitchVariableChange {
   /**
    * Value true/false.
    *  - True = Switch
@@ -69,7 +69,7 @@ export interface SwitchVariableChange {
    *  - -2 = All
    *  - -1 = Single
    */
-  switchQualifierId: QualifierId;
+  switchQualifierId: AgtkQualifierId;
 
   /**
    * Value -1 (None) or any whole number. Value will depend on if Self or Common
@@ -83,7 +83,7 @@ export interface SwitchVariableChange {
    *  - 1 = OFF
    *  - 2 = Toggle
    */
-  switchValue: SwitchValue;
+  switchValue: AgtkSwitchValue;
 
   /**
    * Value -7, -5, -2, -1, 0, 1+.
@@ -101,7 +101,7 @@ export interface SwitchVariableChange {
    *  - -2 = All
    *  - -1 = Single
    */
-  variableQualifierId: QualifierId;
+  variableQualifierId: AgtkQualifierId;
 
   /**
    * Value -1 (None) or any whole number. Value will depend on if Self or Common
@@ -118,7 +118,7 @@ export interface SwitchVariableChange {
    *  - 4 = Divide & assign (/=)
    *  - 5 = Modulus & assign (%=)
    */
-  variableAssignOperator: VariableAssignmentOperator;
+  variableAssignOperator: AgtkVariableAssignmentOperator;
 
   /**
    * Value 0 - 3.
@@ -129,7 +129,7 @@ export interface SwitchVariableChange {
    *
    * @note Do NOT specify Agtk.constants.assignments.VariableAssignScript.
    */
-  variableAssignValueType: VariableAssignValueType;
+  variableAssignValueType: AgtkVariableAssignValueType;
 
   /**
    * Value any float.

@@ -1,13 +1,13 @@
 /**
- * Action commands image show constants interface module.
+ * Agtk action commands image show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands image show constants interface.
+ * Agtk action commands image show constants interface.
  */
-export interface ImageShow {
+export interface AgtkImageShow {
   /**
    * Position center.
    */

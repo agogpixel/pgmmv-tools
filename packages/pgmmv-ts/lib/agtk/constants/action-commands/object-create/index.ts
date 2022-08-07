@@ -1,5 +1,5 @@
 /**
- * Action commands object create constants module.
+ * Agtk action commands object create constants module.
  *
  * @packageDocumentation
  */

@@ -1,22 +1,22 @@
 /**
- * Objects constants interface module.
+ * Agtk objects constants interface module.
  *
  * @packageDocumentation
  */
-import type { Switches } from './switches';
-import type { Variables } from './variables';
+import type { AgtkSwitches } from './switches';
+import type { AgtkVariables } from './variables';
 
 /**
- * Objects constants interface.
+ * Agtk objects constants interface.
  */
-export interface Objects {
+export interface AgtkObjects {
   /**
    * Switches.
    */
-  readonly switches: Switches;
+  readonly switches: AgtkSwitches;
 
   /**
    * Variables.
    */
-  readonly variables: Variables;
+  readonly variables: AgtkVariables;
 }

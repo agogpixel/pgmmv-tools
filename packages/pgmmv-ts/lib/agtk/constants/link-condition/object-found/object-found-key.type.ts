@@ -1,11 +1,11 @@
 /**
- * Link condition object found key constants type module.
+ * Agtk link condition object found key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectFound } from './object-found.interface';
+import type { AgtkObjectFound } from './object-found.interface';
 
 /**
- * Link condition object found key constants type.
+ * Agtk link condition object found key constants type.
  */
-export type ObjectFoundKey = keyof ObjectFound;
+export type AgtkObjectFoundKey = keyof AgtkObjectFound;

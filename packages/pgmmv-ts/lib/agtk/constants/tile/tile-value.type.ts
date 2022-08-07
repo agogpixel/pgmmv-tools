@@ -1,12 +1,12 @@
 /**
- * Tile value constants type module.
+ * Agtk tile value constants type module.
  *
  * @packageDocumentation
  */
-import type { TileKey } from './tile-key.type';
-import type { Tile } from './tile.interface';
+import type { AgtkTileKey } from './tile-key.type';
+import type { AgtkTile } from './tile.interface';
 
 /**
- * Tile value constants type.
+ * Agtk tile value constants type.
  */
-export type TileValue = Tile[TileKey];
+export type AgtkTileValue = AgtkTile[AgtkTileKey];

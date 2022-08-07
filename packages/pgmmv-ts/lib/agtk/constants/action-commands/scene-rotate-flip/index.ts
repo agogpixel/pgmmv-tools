@@ -1,5 +1,5 @@
 /**
- * Action commands scene rotate flip constants module.
+ * Agtk action commands scene rotate flip constants module.
  *
  * @packageDocumentation
  */

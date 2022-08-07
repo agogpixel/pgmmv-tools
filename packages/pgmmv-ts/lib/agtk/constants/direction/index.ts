@@ -1,5 +1,5 @@
 /**
- * Direction constants module.
+ * Agtk direction constants module.
  *
  * @packageDocumentation
  */

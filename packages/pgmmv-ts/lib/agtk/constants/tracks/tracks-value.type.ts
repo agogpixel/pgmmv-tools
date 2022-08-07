@@ -1,12 +1,12 @@
 /**
- * Tracks value constants type module.
+ * Agtk tracks value constants type module.
  *
  * @packageDocumentation
  */
-import type { TracksKey } from './tracks-key.type';
-import type { Tracks } from './tracks.interface';
+import type { AgtkTracksKey } from './tracks-key.type';
+import type { AgtkTracks } from './tracks.interface';
 
 /**
- * Tracks value constants type.
+ * Agtk tracks value constants type.
  */
-export type TracksValue = Tracks[TracksKey];
+export type AgtkTracksValue = AgtkTracks[AgtkTracksKey];

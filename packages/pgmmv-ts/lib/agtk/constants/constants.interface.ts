@@ -1,126 +1,126 @@
 /**
- * Constants interface module.
+ * Agtk constants interface module.
  *
  * @packageDocumentation
  */
-import type { ActionCommands } from './action-commands';
-import type { Animations } from './animations';
-import type { Assignments } from './assignments';
-import type { AttackAttributes } from './attack-attributes';
-import type { Conditions } from './conditions';
-import type { Controllers } from './controllers';
-import type { DatabaseTemplateTypes } from './database-template-types';
-import type { Direction } from './direction';
-import type { FilterEffects } from './filter-effects';
-import type { LinkCondition } from './link-condition';
-import type { ObjectGroup } from './object-group';
-import type { ObjectType } from './object-type';
-import type { Objects } from './objects';
-import type { Qualifier } from './qualifier';
-import type { SwitchVariableObjects } from './switch-variable-objects';
-import type { SystemLayers } from './system-layers';
-import type { TileGroup } from './tile-group';
-import type { Tile } from './tile';
-import type { Tracks } from './tracks';
+import type { AgtkActionCommands } from './action-commands';
+import type { AgtkAnimations } from './animations';
+import type { AgtkAssignments } from './assignments';
+import type { AgtkAttackAttributes } from './attack-attributes';
+import type { AgtkConditions } from './conditions';
+import type { AgtkControllers } from './controllers';
+import type { AgtkDatabaseTemplateTypes } from './database-template-types';
+import type { AgtkDirection } from './direction';
+import type { AgtkFilterEffects } from './filter-effects';
+import type { AgtkLinkCondition } from './link-condition';
+import type { AgtkObjectGroup } from './object-group';
+import type { AgtkObjectType } from './object-type';
+import type { AgtkObjects } from './objects';
+import type { AgtkQualifier } from './qualifier';
+import type { AgtkSwitchVariableObjects } from './switch-variable-objects';
+import type { AgtkSystemLayers } from './system-layers';
+import type { AgtkTileGroup } from './tile-group';
+import type { AgtkTile } from './tile';
+import type { AgtkTracks } from './tracks';
 
 /**
- * Constants interface.
+ * Agtk constants interface.
  */
-export interface Constants {
+export interface AgtkConstants {
   /**
    * Action commands.
    */
-  readonly actionCommands: ActionCommands;
+  readonly actionCommands: AgtkActionCommands;
 
   /**
    * Link condition.
    */
-  readonly linkCondition: LinkCondition;
+  readonly linkCondition: AgtkLinkCondition;
 
   /**
    * Conditions.
    */
-  readonly conditions: Conditions;
+  readonly conditions: AgtkConditions;
 
   /**
    * Assignments.
    */
-  readonly assignments: Assignments;
+  readonly assignments: AgtkAssignments;
 
   /**
    * Attack attributes.
    */
-  readonly attackAttributes: AttackAttributes;
+  readonly attackAttributes: AgtkAttackAttributes;
 
   /**
    * Filter effects.
    */
-  readonly filterEffects: FilterEffects;
+  readonly filterEffects: AgtkFilterEffects;
 
   /**
    * System layers.
    */
-  readonly systemLayers: SystemLayers;
+  readonly systemLayers: AgtkSystemLayers;
 
   /**
    * Qualifier.
    */
-  readonly qualifier: Qualifier;
+  readonly qualifier: AgtkQualifier;
 
   /**
    * Object type.
    *
    * @deprecated
    */
-  readonly objectType: ObjectType;
+  readonly objectType: AgtkObjectType;
 
   /**
    * Object group.
    */
-  readonly objectGroup: ObjectGroup;
+  readonly objectGroup: AgtkObjectGroup;
 
   /**
    * Tile group.
    */
-  readonly tileGroup: TileGroup;
+  readonly tileGroup: AgtkTileGroup;
 
   /**
    * Tile.
    */
-  readonly tile: Tile;
+  readonly tile: AgtkTile;
 
   /**
    * Direction.
    */
-  readonly direction: Direction;
+  readonly direction: AgtkDirection;
 
   /**
    * Controllers.
    */
-  readonly controllers: Controllers;
+  readonly controllers: AgtkControllers;
 
   /**
    * Animations.
    */
-  readonly animations: Animations;
+  readonly animations: AgtkAnimations;
 
   /**
    * Tracks.
    */
-  readonly tracks: Tracks;
+  readonly tracks: AgtkTracks;
 
   /**
    * Objects.
    */
-  readonly objects: Objects;
+  readonly objects: AgtkObjects;
 
   /**
    * Switch variable objects.
    */
-  readonly switchVariableObjects: SwitchVariableObjects;
+  readonly switchVariableObjects: AgtkSwitchVariableObjects;
 
   /**
    * Database template types.
    */
-  readonly databaseTemplateTypes: DatabaseTemplateTypes;
+  readonly databaseTemplateTypes: AgtkDatabaseTemplateTypes;
 }

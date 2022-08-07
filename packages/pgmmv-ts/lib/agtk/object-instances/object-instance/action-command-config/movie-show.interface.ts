@@ -1,45 +1,46 @@
 /**
- * Object instance movie show action command configuration interface module.
+ * Agtk object instance movie show action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { MovieShow as MovieShowConstant } from '../../../constants/action-commands/movie-show';
-import type { PriorityTypeValue as PriorityType } from '../../../constants/action-commands/priority-type';
+import type { AgtkMovieShow as AgtkMovieShowConstant } from '../../../constants/action-commands/movie-show';
+import type { AgtkPriorityTypeValue as AgtkPriorityType } from '../../../constants/action-commands/priority-type';
 
 /**
- * Movie show position type type.
+ * Agtk movie show position type type.
  *
  * @internal
  */
-type PositionType =
-  | MovieShowConstant['PositionCenter']
-  | MovieShowConstant['PositionLockObjectCenter']
-  | MovieShowConstant['PositionScenePosition'];
+type AgtkPositionType =
+  | AgtkMovieShowConstant['PositionCenter']
+  | AgtkMovieShowConstant['PositionLockObjectCenter']
+  | AgtkMovieShowConstant['PositionScenePosition'];
 
 /**
- * Movie show vertical alignment type.
+ * Agtk movie show vertical alignment type.
  *
  * @internal
  */
-type VerticalAlignment =
-  | MovieShowConstant['VertAlignCenter']
-  | MovieShowConstant['VertAlignTop']
-  | MovieShowConstant['VertAlignBottom'];
+type AgtkVerticalAlignment =
+  | AgtkMovieShowConstant['VertAlignCenter']
+  | AgtkMovieShowConstant['VertAlignTop']
+  | AgtkMovieShowConstant['VertAlignBottom'];
 
 /**
- * Movie show horizontal alignment type.
+ * Agtk movie show horizontal alignment type.
  *
  * @internal
  */
-type HorizontalAlignment =
-  | MovieShowConstant['HorzAlignCenter']
-  | MovieShowConstant['HorzAlignLeft']
-  | MovieShowConstant['HorzAlignRight'];
+type AgtkHorizontalAlignment =
+  | AgtkMovieShowConstant['HorzAlignCenter']
+  | AgtkMovieShowConstant['HorzAlignLeft']
+  | AgtkMovieShowConstant['HorzAlignRight'];
 
 /**
- * Object instance movie show action command configuration interface.
+ * Agtk object instance movie show action command configuration interface.
  */
-export interface MovieShow {
+export interface AgtkMovieShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -82,7 +83,7 @@ export interface MovieShow {
    *  - 1 = Center of Object Locked by This Object
    *  - 2 = Use Scene as Base
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.
@@ -104,7 +105,7 @@ export interface MovieShow {
    *  - 1 = Top
    *  - 2 = Bottom
    */
-  vertAlign: VerticalAlignment;
+  vertAlign: AgtkVerticalAlignment;
 
   /**
    * Value 0 - 2.
@@ -112,7 +113,7 @@ export interface MovieShow {
    *  - 1 = Left
    *  - 2 = Right
    */
-  horzAlign: HorizontalAlignment;
+  horzAlign: AgtkHorizontalAlignment;
 
   /**
    * Value any integer.
@@ -174,5 +175,5 @@ export interface MovieShow {
    *  - 1 = Frontmost
    *  - 2 = Frontmost + Menu Scene
    */
-  priorityType: PriorityType;
+  priorityType: AgtkPriorityType;
 }

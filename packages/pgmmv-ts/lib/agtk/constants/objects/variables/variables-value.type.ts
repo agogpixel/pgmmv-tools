@@ -1,12 +1,12 @@
 /**
- * Objects variables value constants type module.
+ * Agtk objects variables value constants type module.
  *
  * @packageDocumentation
  */
-import type { VariablesKey } from './variables-key.type';
-import type { Variables } from './variables.interface';
+import type { AgtkVariablesKey } from './variables-key.type';
+import type { AgtkVariables } from './variables.interface';
 
 /**
- * Objects variables value constants type.
+ * Agtk objects variables value constants type.
  */
-export type VariablesValue = Variables[VariablesKey];
+export type AgtkVariablesValue = AgtkVariables[AgtkVariablesKey];

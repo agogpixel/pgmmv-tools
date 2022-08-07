@@ -1,20 +1,21 @@
 /**
- * Object instance object facing link condition configuration interface module.
+ * Agtk object instance object facing link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingValue as ObjectType } from '../../../constants/link-condition/object-facing';
+import type { AgtkObjectFacingValue as AgtkObjectType } from '../../../constants/link-condition/object-facing';
 
 /**
- * Object instance object facing link condition configuration interface.
+ * Agtk object instance object facing link condition configuration interface.
  */
-export interface ObjectFacing {
+export interface AgtkObjectFacing {
   /**
    * Value 0 - 1.
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

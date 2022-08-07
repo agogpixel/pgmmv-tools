@@ -1,5 +1,5 @@
 /**
- * Link condition object found constants module.
+ * Agtk link condition object found constants module.
  *
  * @packageDocumentation
  */

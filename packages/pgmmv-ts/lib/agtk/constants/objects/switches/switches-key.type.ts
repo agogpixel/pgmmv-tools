@@ -1,11 +1,11 @@
 /**
- * Objects switches key constants type module.
+ * Agtk objects switches key constants type module.
  *
  * @packageDocumentation
  */
-import type { Switches } from './switches.interface';
+import type { AgtkSwitches } from './switches.interface';
 
 /**
- * Objects switches key constants type.
+ * Agtk objects switches key constants type.
  */
-export type SwitchesKey = keyof Switches;
+export type AgtkSwitchesKey = keyof AgtkSwitches;

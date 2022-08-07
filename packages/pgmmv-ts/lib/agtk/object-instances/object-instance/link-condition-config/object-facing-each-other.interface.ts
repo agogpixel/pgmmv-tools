@@ -1,22 +1,22 @@
 /**
- * Object instance object facing each other link condition configuration
+ * Agtk object instance object facing each other link condition configuration
  * interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingEachOtherValue as ObjectType } from '../../../constants/link-condition/object-facing-each-other';
+import type { AgtkObjectFacingEachOtherValue as AgtkObjectType } from '../../../constants/link-condition/object-facing-each-other';
 
 /**
- * Object instance object facing each other link condition configuration
+ * Agtk object instance object facing each other link condition configuration
  * interface.
  */
-export interface ObjectFacingEachOther {
+export interface AgtkObjectFacingEachOther {
   /**
    * Value 0 - 1.
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

@@ -1,21 +1,21 @@
 /**
- * Object instance scene rotate flip action command configuration interface
+ * Agtk object instance scene rotate flip action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { SceneRotateFlipValue as Type } from '../../../constants/action-commands/scene-rotate-flip';
+import type { AgtkSceneRotateFlipValue as AgtkType } from '../../../constants/action-commands/scene-rotate-flip';
 
 /**
- * Object instance scene rotate flip action command configuration interface.
+ * Agtk object instance scene rotate flip action command configuration interface.
  */
-export interface SceneRotateFlip {
+export interface AgtkSceneRotateFlip {
   /**
    * Value 0 - 1.
    *  - 0 = Reset
    *  - 1 = Rotate/Flip
    */
-  type: Type;
+  type: AgtkType;
 
   /**
    * Value true/false.

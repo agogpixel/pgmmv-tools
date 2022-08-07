@@ -1,11 +1,11 @@
 /**
- * Action commands sound stop key constants type module.
+ * Agtk action commands sound stop key constants type module.
  *
  * @packageDocumentation
  */
-import type { SoundStop } from './sound-stop.interface';
+import type { AgtkSoundStop } from './sound-stop.interface';
 
 /**
- * Action commands sound stop key constants type.
+ * Agtk action commands sound stop key constants type.
  */
-export type SoundStopKey = keyof SoundStop;
+export type AgtkSoundStopKey = keyof AgtkSoundStop;

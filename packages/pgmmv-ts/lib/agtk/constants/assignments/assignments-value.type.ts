@@ -1,12 +1,12 @@
 /**
- * Assignments value constants type module.
+ * Agtk assignments value constants type module.
  *
  * @packageDocumentation
  */
-import type { AssignmentsKey } from './assignments-key.type';
-import type { Assignments } from './assignments.interface';
+import type { AgtkAssignmentsKey } from './assignments-key.type';
+import type { AgtkAssignments } from './assignments.interface';
 
 /**
- * Assignments value constants type.
+ * Agtk assignments value constants type.
  */
-export type AssignmentsValue = Assignments[AssignmentsKey];
+export type AgtkAssignmentsValue = AgtkAssignments[AgtkAssignmentsKey];

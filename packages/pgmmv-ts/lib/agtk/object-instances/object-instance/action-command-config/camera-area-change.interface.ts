@@ -1,14 +1,15 @@
 /**
- * Object instance camera area change action command configuration interface
- * module.
+ * Agtk object instance camera area change action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance camera area change action command configuration interface.
+ * Agtk object instance camera area change action command configuration
+ * interface.
  */
-export interface CameraAreaChange {
+export interface AgtkCameraAreaChange {
   /**
    * Value float, some examples (but not limited too):
    *  - 0.5 = 50%

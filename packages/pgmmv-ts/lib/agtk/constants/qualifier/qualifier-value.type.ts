@@ -1,12 +1,12 @@
 /**
- * Qualifier value constants type module.
+ * Agtk qualifier value constants type module.
  *
  * @packageDocumentation
  */
-import type { QualifierKey } from './qualifier-key.type';
-import type { Qualifier } from './qualifier.interface';
+import type { AgtkQualifierKey } from './qualifier-key.type';
+import type { AgtkQualifier } from './qualifier.interface';
 
 /**
- * Qualifier value constants type.
+ * Agtk qualifier value constants type.
  */
-export type QualifierValue = Qualifier[QualifierKey];
+export type AgtkQualifierValue = AgtkQualifier[AgtkQualifierKey];

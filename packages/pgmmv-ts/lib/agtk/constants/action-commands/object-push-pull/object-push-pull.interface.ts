@@ -1,13 +1,13 @@
 /**
- * Action commands object push pull constants interface module.
+ * Agtk action commands object push pull constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object push pull constants interface.
+ * Agtk action commands object push pull constants interface.
  */
-export interface ObjectPushPull {
+export interface AgtkObjectPushPull {
   /**
    * Direction angle.
    */

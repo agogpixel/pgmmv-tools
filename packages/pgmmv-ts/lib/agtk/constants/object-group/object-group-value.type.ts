@@ -1,12 +1,12 @@
 /**
- * Object group value constants type module.
+ * Agtk object group value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectGroupKey } from './object-group-key.type';
-import type { ObjectGroup } from './object-group.interface';
+import type { AgtkObjectGroupKey } from './object-group-key.type';
+import type { AgtkObjectGroup } from './object-group.interface';
 
 /**
- * Object group value constants type.
+ * Agtk object group value constants type.
  */
-export type ObjectGroupValue = ObjectGroup[ObjectGroupKey];
+export type AgtkObjectGroupValue = AgtkObjectGroup[AgtkObjectGroupKey];

@@ -1,11 +1,11 @@
 /**
- * Switch variable objects key constants type module.
+ * Agtk switch variable objects key constants type module.
  *
  * @packageDocumentation
  */
-import type { SwitchVariableObjects } from './switch-variable-objects.interface';
+import type { AgtkSwitchVariableObjects } from './switch-variable-objects.interface';
 
 /**
- * Switch variable objects key constants type.
+ * Agtk switch variable objects key constants type.
  */
-export type SwitchVariableObjectsKey = keyof SwitchVariableObjects;
+export type AgtkSwitchVariableObjectsKey = keyof AgtkSwitchVariableObjects;

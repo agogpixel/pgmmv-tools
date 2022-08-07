@@ -1,5 +1,5 @@
 /**
- * Controllers constants module.
+ * Agtk controllers constants module.
  *
  * @packageDocumentation
  */

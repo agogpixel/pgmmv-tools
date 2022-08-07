@@ -1,11 +1,11 @@
 /**
- * Qualifier key constants type module.
+ * Agtk qualifier key constants type module.
  *
  * @packageDocumentation
  */
-import type { Qualifier } from './qualifier.interface';
+import type { AgtkQualifier } from './qualifier.interface';
 
 /**
- * Qualifier key constants type.
+ * Agtk qualifier key constants type.
  */
-export type QualifierKey = keyof Qualifier;
+export type AgtkQualifierKey = keyof AgtkQualifier;

@@ -1,15 +1,16 @@
 /**
- * Object instance resource set change action command configuration interface
- * module.
+ * Agtk object instance resource set change action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
-import type { QualifierValue as QualifierId } from '../../../constants/qualifier';
+import type { AgtkQualifierValue as AgtkQualifierId } from '../../../constants/qualifier';
 
 /**
- * Object instance resource set change action command configuration interface.
+ * Agtk object instance resource set change action command configuration
+ * interface.
  */
-export interface ResourceSetChange {
+export interface AgtkResourceSetChange {
   /**
    * Value -2, -1, 1+.
    *  - -2 = Object Self
@@ -23,7 +24,7 @@ export interface ResourceSetChange {
    *  - -2 = All
    *  - -1 = Single
    */
-  qualifierId: QualifierId;
+  qualifierId: AgtkQualifierId;
 
   /**
    * Value -1, 1+.

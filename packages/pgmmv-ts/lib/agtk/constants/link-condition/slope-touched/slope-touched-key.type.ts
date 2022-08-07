@@ -1,11 +1,11 @@
 /**
- * Link condition slope touched key constants type module.
+ * Agtk link condition slope touched key constants type module.
  *
  * @packageDocumentation
  */
-import type { SlopeTouched } from './slope-touched.interface';
+import type { AgtkSlopeTouched } from './slope-touched.interface';
 
 /**
- * Link condition slope touched key constants type.
+ * Agtk link condition slope touched key constants type.
  */
-export type SlopeTouchedKey = keyof SlopeTouched;
+export type AgtkSlopeTouchedKey = keyof AgtkSlopeTouched;

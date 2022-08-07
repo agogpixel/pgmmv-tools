@@ -1,5 +1,5 @@
 /**
- * Action commands particle remove constants module.
+ * Agtk action commands particle remove constants module.
  *
  * @packageDocumentation
  */

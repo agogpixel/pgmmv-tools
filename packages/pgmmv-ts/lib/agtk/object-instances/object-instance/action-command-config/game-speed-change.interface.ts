@@ -1,16 +1,17 @@
 /**
- * Object instance game speed change action command configuration interface
+ * Agtk object instance game speed change action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { GameSpeedChangeValue as TargetingType } from '../../../constants/action-commands/game-speed-change';
-import type { QualifierValue as TargetQualifierId } from '../../../constants/qualifier';
+import type { AgtkGameSpeedChangeValue as AgtkTargetingType } from '../../../constants/action-commands/game-speed-change';
+import type { AgtkQualifierValue as AgtkTargetQualifierId } from '../../../constants/qualifier';
 
 /**
- * Object instance game speed change action command configuration interface.
+ * Agtk object instance game speed change action command configuration
+ * interface.
  */
-export interface GameSpeedChange {
+export interface AgtkGameSpeedChange {
   /**
    * Value 0+.
    */
@@ -66,7 +67,7 @@ export interface GameSpeedChange {
    *
    * @note Developer typo.
    */
-  targettingType: TargetingType;
+  targettingType: AgtkTargetingType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find
@@ -100,7 +101,7 @@ export interface GameSpeedChange {
    *  - -2 = All
    *  - -1 = Single
    */
-  targetQualifierId: TargetQualifierId;
+  targetQualifierId: AgtkTargetQualifierId;
 
   /**
    * Value true/false.

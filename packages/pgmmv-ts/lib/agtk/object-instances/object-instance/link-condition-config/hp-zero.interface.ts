@@ -1,13 +1,13 @@
 /**
- * Object instance HP zero link condition configuration interface module.
+ * Agtk object instance HP zero link condition configuration interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance HP zero link condition configuration interface.
+ * Agtk object instance HP zero link condition configuration interface.
  */
-export interface HpZero {
+export interface AgtkHpZero {
   /**
    * Value -3, -2, -1 or 1+.
    *  - -3 = Object Other Then Self

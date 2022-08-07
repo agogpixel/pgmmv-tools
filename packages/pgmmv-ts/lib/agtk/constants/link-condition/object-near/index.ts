@@ -1,5 +1,5 @@
 /**
- * Link condition object near constants module.
+ * Agtk link condition object near constants module.
  *
  * @packageDocumentation
  */

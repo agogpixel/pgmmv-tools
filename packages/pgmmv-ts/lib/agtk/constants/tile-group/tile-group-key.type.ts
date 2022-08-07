@@ -1,11 +1,11 @@
 /**
- * Tile group key constants type module.
+ * Agtk tile group key constants type module.
  *
  * @packageDocumentation
  */
-import type { TileGroup } from './tile-group.interface';
+import type { AgtkTileGroup } from './tile-group.interface';
 
 /**
- * Tile group key constants type.
+ * Agtk tile group key constants type.
  */
-export type TileGroupKey = keyof TileGroup;
+export type AgtkTileGroupKey = keyof AgtkTileGroup;

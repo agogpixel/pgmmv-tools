@@ -1,11 +1,11 @@
 /**
- * Object instance switch interface module.
+ * Agtk object instance switch interface module.
  *
  * @packageDocumentation
  */
 import type { SwitchValueAccessor } from '../../../../_shared';
 
 /**
- * Object instance switch interface.
+ * Agtk object instance switch interface.
  */
-export interface Switch extends SwitchValueAccessor {}
+export interface AgtkSwitch extends SwitchValueAccessor {}

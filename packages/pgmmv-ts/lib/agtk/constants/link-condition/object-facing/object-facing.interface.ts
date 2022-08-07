@@ -1,13 +1,13 @@
 /**
- * Link condition object facing constants interface module.
+ * Agtk link condition object facing constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object facing constants interface.
+ * Agtk link condition object facing constants interface.
  */
-export interface ObjectFacing {
+export interface AgtkObjectFacing {
   /**
    * Set by object group.
    */

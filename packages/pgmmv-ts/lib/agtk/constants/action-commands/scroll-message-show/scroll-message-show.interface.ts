@@ -1,13 +1,13 @@
 /**
- * Action commands scroll message show constants interface module.
+ * Agtk action commands scroll message show constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands scroll message show constants interface.
+ * Agtk action commands scroll message show constants interface.
  */
-export interface ScrollMessageShow {
+export interface AgtkScrollMessageShow {
   /**
    * Background none.
    */

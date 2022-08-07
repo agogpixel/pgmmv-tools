@@ -1,14 +1,14 @@
 /**
- * Object instance menu hide action command configuration interface module.
+ * Agtk object instance menu hide action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { MenuHideValue as EffectType } from '../../../constants/action-commands/menu-hide';
+import type { AgtkMenuHideValue as AgtkEffectType } from '../../../constants/action-commands/menu-hide';
 
 /**
- * Object instance menu hide action command configuration interface.
+ * Agtk object instance menu hide action command configuration interface.
  */
-export interface MenuHide {
+export interface AgtkMenuHide {
   /**
    * Value true/false.
    *  - True = Hide All Except Default Display Menu
@@ -31,7 +31,7 @@ export interface MenuHide {
    *  - 2 = Slide Left
    *  - 3 = Slide Right
    */
-  effectType: EffectType;
+  effectType: AgtkEffectType;
 
   /**
    * Value true/false.

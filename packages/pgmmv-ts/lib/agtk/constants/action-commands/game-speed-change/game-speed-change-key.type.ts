@@ -1,11 +1,11 @@
 /**
- * Action commands game speed change key constants type module.
+ * Agtk action commands game speed change key constants type module.
  *
  * @packageDocumentation
  */
-import type { GameSpeedChange } from './game-speed-change.interface';
+import type { AgtkGameSpeedChange } from './game-speed-change.interface';
 
 /**
- * Action commands game speed change key constants type.
+ * Agtk action commands game speed change key constants type.
  */
-export type GameSpeedChangeKey = keyof GameSpeedChange;
+export type AgtkGameSpeedChangeKey = keyof AgtkGameSpeedChange;

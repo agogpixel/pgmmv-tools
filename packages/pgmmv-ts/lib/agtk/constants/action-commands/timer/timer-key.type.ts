@@ -1,11 +1,11 @@
 /**
- * Action commands timer key constants type module.
+ * Agtk action commands timer key constants type module.
  *
  * @packageDocumentation
  */
-import type { Timer } from './timer.interface';
+import type { AgtkTimer } from './timer.interface';
 
 /**
- * Action commands timer key constants type.
+ * Agtk action commands timer key constants type.
  */
-export type TimerKey = keyof Timer;
+export type AgtkTimerKey = keyof AgtkTimer;

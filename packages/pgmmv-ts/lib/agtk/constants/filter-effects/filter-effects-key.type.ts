@@ -1,11 +1,11 @@
 /**
- * Filter effects key constants type module.
+ * Agtk filter effects key constants type module.
  *
  * @packageDocumentation
  */
-import type { FilterEffects } from './filter-effects.interface';
+import type { AgtkFilterEffects } from './filter-effects.interface';
 
 /**
- * Filter effects key constants type.
+ * Agtk filter effects key constants type.
  */
-export type FilterEffectsKey = keyof FilterEffects;
+export type AgtkFilterEffectsKey = keyof AgtkFilterEffects;

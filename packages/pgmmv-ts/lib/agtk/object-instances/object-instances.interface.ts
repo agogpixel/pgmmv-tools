@@ -1,21 +1,21 @@
 /**
- * Object instances interface module.
+ * Agtk object instances interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectInstance } from './object-instance';
+import type { AgtkObjectInstance } from './object-instance';
 
 /**
- * Object instances interface.
+ * Agtk object instances interface.
  */
-export interface ObjectInstances {
+export interface AgtkObjectInstances {
   /**
    * Get object instance.
    *
    * @param id - The object instance ID.
    * @returns The object instance
    */
-  get(id: number): ObjectInstance;
+  get(id: number): AgtkObjectInstance;
 
   /**
    * Get object instance ID by name.

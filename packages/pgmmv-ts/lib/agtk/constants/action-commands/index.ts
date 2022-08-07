@@ -1,5 +1,5 @@
 /**
- * Action commands constants module.
+ * Agtk action commands constants module.
  *
  * @packageDocumentation
  */

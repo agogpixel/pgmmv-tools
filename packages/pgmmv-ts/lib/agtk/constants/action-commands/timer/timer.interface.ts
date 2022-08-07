@@ -1,13 +1,13 @@
 /**
- * Action commands timer constants interface module.
+ * Agtk action commands timer constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands timer constants interface.
+ * Agtk action commands timer constants interface.
  */
-export interface Timer {
+export interface AgtkTimer {
   /**
    * Second by value.
    */

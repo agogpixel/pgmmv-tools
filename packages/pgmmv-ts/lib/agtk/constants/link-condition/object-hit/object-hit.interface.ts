@@ -1,13 +1,13 @@
 /**
- * Link condition object hit constants interface module.
+ * Agtk link condition object hit constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object hit constants interface.
+ * Agtk link condition object hit constants interface.
  */
-export interface ObjectHit {
+export interface AgtkObjectHit {
   /**
    * Set by object group.
    */

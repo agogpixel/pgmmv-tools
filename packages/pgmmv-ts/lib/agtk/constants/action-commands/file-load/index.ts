@@ -1,5 +1,5 @@
 /**
- * Action commands file load constants module.
+ * Agtk action commands file load constants module.
  *
  * @packageDocumentation
  */

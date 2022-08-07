@@ -1,12 +1,12 @@
 /**
- * Action commands message show value constants type module.
+ * Agtk action commands message show value constants type module.
  *
  * @packageDocumentation
  */
-import type { MessageShowKey } from './message-show-key.type';
-import type { MessageShow } from './message-show.interface';
+import type { AgtkMessageShowKey } from './message-show-key.type';
+import type { AgtkMessageShow } from './message-show.interface';
 
 /**
- * Action commands message show value constants type.
+ * Agtk action commands message show value constants type.
  */
-export type MessageShowValue = MessageShow[MessageShowKey];
+export type AgtkMessageShowValue = AgtkMessageShow[AgtkMessageShowKey];

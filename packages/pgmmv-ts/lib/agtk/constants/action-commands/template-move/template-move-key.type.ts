@@ -1,11 +1,11 @@
 /**
- * Action commands template move key constants type module.
+ * Agtk action commands template move key constants type module.
  *
  * @packageDocumentation
  */
-import type { TemplateMove } from './template-move.interface';
+import type { AgtkTemplateMove } from './template-move.interface';
 
 /**
- * Action commands template move key constants type.
+ * Agtk action commands template move key constants type.
  */
-export type TemplateMoveKey = keyof TemplateMove;
+export type AgtkTemplateMoveKey = keyof AgtkTemplateMove;

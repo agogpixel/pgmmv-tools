@@ -1,13 +1,13 @@
 /**
- * Qualifier constants interface module.
+ * Agtk qualifier constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Qualifier constants interface.
+ * Agtk qualifier constants interface.
  */
-export interface Qualifier {
+export interface AgtkQualifier {
   /**
    * Qualifier single.
    */

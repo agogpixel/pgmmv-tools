@@ -1,13 +1,13 @@
 /**
- * Action commands sound position remember constants interface module.
+ * Agtk action commands sound position remember constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands sound position remember constants interface.
+ * Agtk action commands sound position remember constants interface.
  */
-export interface SoundPositionRemember {
+export interface AgtkSoundPositionRemember {
   /**
    * Sound effects.
    */

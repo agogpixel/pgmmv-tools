@@ -1,5 +1,5 @@
 /**
- * Action commands movie show constants module.
+ * Agtk action commands movie show constants module.
  *
  * @packageDocumentation
  */

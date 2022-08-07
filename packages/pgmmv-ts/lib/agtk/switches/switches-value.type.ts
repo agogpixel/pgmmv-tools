@@ -1,12 +1,12 @@
 /**
- * Common switches value type module.
+ * Agtk common switches value type module.
  *
  * @packageDocumentation
  */
-import type { SwitchesKey } from './switches-key.type';
-import type { Switches } from './switches.interface';
+import type { AgtkSwitchesKey } from './switches-key.type';
+import type { AgtkSwitches } from './switches.interface';
 
 /**
- * Common switches value type.
+ * Agtk common switches value type.
  */
-export type SwitchesValue = Switches[SwitchesKey];
+export type AgtkSwitchesValue = AgtkSwitches[AgtkSwitchesKey];

@@ -1,11 +1,11 @@
 /**
- * Action commands object create key constants type module.
+ * Agtk action commands object create key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectCreate } from './object-create.interface';
+import type { AgtkObjectCreate } from './object-create.interface';
 
 /**
- * Action commands object create key constants type.
+ * Agtk action commands object create key constants type.
  */
-export type ObjectCreateKey = keyof ObjectCreate;
+export type AgtkObjectCreateKey = keyof AgtkObjectCreate;

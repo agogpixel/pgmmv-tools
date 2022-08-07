@@ -1,69 +1,70 @@
 /**
- * Object instance message show action command configuration interface module.
+ * Agtk object instance message show action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { MessageShow as MessageShowConstant } from '../../../constants/action-commands/message-show';
-import type { PriorityTypeValue as PriorityType } from '../../../constants/action-commands/priority-type';
+import type { AgtkMessageShow as AgtkMessageShowConstant } from '../../../constants/action-commands/message-show';
+import type { AgtkPriorityTypeValue as AgtkPriorityType } from '../../../constants/action-commands/priority-type';
 
 /**
- * Message show window type type.
+ * Agtk message show window type type.
  *
  * @internal
  */
-type WindowType =
-  | MessageShowConstant['WindowNone']
-  | MessageShowConstant['WindowTemplate']
-  | MessageShowConstant['WindowImage'];
+type AgtkWindowType =
+  | AgtkMessageShowConstant['WindowNone']
+  | AgtkMessageShowConstant['WindowTemplate']
+  | AgtkMessageShowConstant['WindowImage'];
 
 /**
- * Message show template ID type.
+ * Agtk message show template ID type.
  *
  * @internal
  */
-type TemplateId =
-  | MessageShowConstant['TemplateWhiteFrame']
-  | MessageShowConstant['TemplateBlack']
-  | MessageShowConstant['TemplateWhite'];
+type AgtkTemplateId =
+  | AgtkMessageShowConstant['TemplateWhiteFrame']
+  | AgtkMessageShowConstant['TemplateBlack']
+  | AgtkMessageShowConstant['TemplateWhite'];
 
 /**
- * Message show position type type.
+ * Agtk message show position type type.
  *
  * @internal
  */
-type PositionType =
-  | MessageShowConstant['PositionCenter']
-  | MessageShowConstant['PositionLockObjectCenter']
-  | MessageShowConstant['PositionScenePosition'];
+type AgtkPositionType =
+  | AgtkMessageShowConstant['PositionCenter']
+  | AgtkMessageShowConstant['PositionLockObjectCenter']
+  | AgtkMessageShowConstant['PositionScenePosition'];
 
 /**
- * Message show horizontal alignment type.
+ * Agtk message show horizontal alignment type.
  *
  * @internal
  */
-type HorizontalAlignment =
-  | MessageShowConstant['HorzAlignLeft']
-  | MessageShowConstant['HorzAlignCenter']
-  | MessageShowConstant['HorzAlignRight'];
+type AgtkHorizontalAlignment =
+  | AgtkMessageShowConstant['HorzAlignLeft']
+  | AgtkMessageShowConstant['HorzAlignCenter']
+  | AgtkMessageShowConstant['HorzAlignRight'];
 
 /**
- * Message show vertical alignment type.
+ * Agtk message show vertical alignment type.
  *
  * @internal
  */
-type VerticalAlignment =
-  | MessageShowConstant['VertAlignTop']
-  | MessageShowConstant['VertAlignCenter']
-  | MessageShowConstant['VertAlignBottom'];
+type AgtkVerticalAlignment =
+  | AgtkMessageShowConstant['VertAlignTop']
+  | AgtkMessageShowConstant['VertAlignCenter']
+  | AgtkMessageShowConstant['VertAlignBottom'];
 
 /**
- * Object instance message show action command configuration interface.
+ * Agtk object instance message show action command configuration interface.
  *
  * @note Text Resource options 'Font', 'Character Spacing', and 'Line Spacing'
  * are only available in the normal Runtime Action as they are essentially an
  * extension to the Text resource tab.
  */
-export interface MessageShow {
+export interface AgtkMessageShow {
   /**
    * Value true/false.
    *  - True = Text Resources
@@ -168,7 +169,7 @@ export interface MessageShow {
    *  - 0 = Select from Templates
    *  - 1 = Select from Image Resource
    */
-  windowType: WindowType;
+  windowType: AgtkWindowType;
 
   /**
    * Value 0 - 2.
@@ -176,7 +177,7 @@ export interface MessageShow {
    *  - 1 = Black
    *  - 2 = White
    */
-  templateId: TemplateId;
+  templateId: AgtkTemplateId;
 
   /**
    * Value -1, 1+.
@@ -206,7 +207,7 @@ export interface MessageShow {
    *  - 1 = Center of Object Locked by This Object
    *  - 2 = Use Scene as Base
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.
@@ -248,7 +249,7 @@ export interface MessageShow {
    *  - 1 = Center
    *  - 2 = Right
    */
-  horzAlign: HorizontalAlignment;
+  horzAlign: AgtkHorizontalAlignment;
 
 
   /**
@@ -257,7 +258,7 @@ export interface MessageShow {
    *  - 1 = Center
    *  - 2 = Bottom
    */
-  vertAlign: VerticalAlignment;
+  vertAlign: AgtkVerticalAlignment;
 
   /**
    * Value 0.00+. NOTE: 300 = 1sec.
@@ -329,5 +330,5 @@ export interface MessageShow {
    *  - 1 = Frontmost
    *  - 2 = Frontmost + Menu Scene
    */
-  priorityType: PriorityType;
+  priorityType: AgtkPriorityType;
 }

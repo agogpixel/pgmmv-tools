@@ -1,56 +1,60 @@
 /**
- * Object instance object lock action command configuration interface module.
+ * Agtk object instance object lock action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectLock as ObjectLockConstant } from '../../../constants/action-commands/object-lock';
-import type { Conditions } from '../../../constants/conditions';
+import type { AgtkObjectLock as AgtkObjectLockConstant } from '../../../constants/action-commands/object-lock';
+import type { AgtkConditions } from '../../../constants/conditions';
 
 /**
- * Object lock compare variable operator type.
+ * Agtk object lock compare variable operator type.
  *
  * @internal
  */
-type CompareVariableOperator =
-  | Conditions['OperatorLess']
-  | Conditions['OperatorLessEqual']
-  | Conditions['OperatorEaual']
-  | Conditions['OperatorGreaterEqual']
-  | Conditions['OperatorGreater']
-  | Conditions['OperatorNotEqual'];
+type AgtkCompareVariableOperator =
+  | AgtkConditions['OperatorLess']
+  | AgtkConditions['OperatorLessEqual']
+  | AgtkConditions['OperatorEaual']
+  | AgtkConditions['OperatorGreaterEqual']
+  | AgtkConditions['OperatorGreater']
+  | AgtkConditions['OperatorNotEqual'];
 
 /**
- * Object lock compare value type type.
+ * Agtk object lock compare value type type.
  *
  * @internal
  */
-type CompareValueType =
-  | Conditions['CompareValue']
-  | Conditions['CompareVariable']
-  | Conditions['CompareNaN'];
+type AgtkCompareValueType =
+  | AgtkConditions['CompareValue']
+  | AgtkConditions['CompareVariable']
+  | AgtkConditions['CompareNaN'];
 
 /**
- * Object lock switch condition type.
+ * Agtk object lock switch condition type.
  *
  * @internal
  */
-type SwitchCondition =
-  | Conditions['SwitchConditionOn']
-  | Conditions['SwitchConditionOff']
-  | Conditions['SwitchConditionOnFromOff']
-  | Conditions['SwitchConditionOffFromOn'];
+type AgtkSwitchCondition =
+  | AgtkConditions['SwitchConditionOn']
+  | AgtkConditions['SwitchConditionOff']
+  | AgtkConditions['SwitchConditionOnFromOff']
+  | AgtkConditions['SwitchConditionOffFromOn'];
 
 /**
- * Object lock use type type.
+ * Agtk object lock use type type.
  *
  * @internal
  */
-type UseType = ObjectLockConstant['UseSwitch'] | ObjectLockConstant['UseVariable'] | ObjectLockConstant['UseNone'];
+type AgtkUseType =
+  | AgtkObjectLockConstant['UseSwitch']
+  | AgtkObjectLockConstant['UseVariable']
+  | AgtkObjectLockConstant['UseNone'];
 
 /**
- * Object instance object lock action command configuration interface.
+ * Agtk object instance object lock action command configuration interface.
  */
-export interface ObjectLock {
+export interface AgtkObjectLock {
   /**
    * Value True/False.
    *  - True = Only lock if wall detections are in contact with the object
@@ -124,7 +128,7 @@ export interface ObjectLock {
    *  - 1 = Set Variable as Condition
    *  - 2 = Not Set (default)
    */
-  useType: UseType;
+  useType: AgtkUseType;
 
   /**
    * Only useable if useType = 0.
@@ -145,7 +149,7 @@ export interface ObjectLock {
    *  - 2 = Off to On
    *  - 3 = On to Off
    */
-  switchCondition: SwitchCondition;
+  switchCondition: AgtkSwitchCondition;
 
   /**
    * Only useable if useType = 1.
@@ -169,7 +173,7 @@ export interface ObjectLock {
    *  - 4 = Greater than >
    *  - 5 = Not equal to !=
    */
-  compareVariableOperator: CompareVariableOperator;
+  compareVariableOperator: AgtkCompareVariableOperator;
 
   /**
    * Value 0-2. Only useable if useType = 1.
@@ -177,7 +181,7 @@ export interface ObjectLock {
    *  - 1 = Other Variables
    *  - 2 = Non-numeric
    */
-  compareValueType: CompareValueType;
+  compareValueType: AgtkCompareValueType;
 
   /**
    *  Value any float. Only useable if compareValueType = 0.

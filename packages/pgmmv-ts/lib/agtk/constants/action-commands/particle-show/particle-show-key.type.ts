@@ -1,11 +1,11 @@
 /**
- * Action commands particle show key constants type module.
+ * Agtk action commands particle show key constants type module.
  *
  * @packageDocumentation
  */
-import type { ParticleShow } from './particle-show.interface';
+import type { AgtkParticleShow } from './particle-show.interface';
 
 /**
- * Action commands particle show key constants type.
+ * Agtk action commands particle show key constants type.
  */
-export type ParticleShowKey = keyof ParticleShow;
+export type AgtkParticleShowKey = keyof AgtkParticleShow;

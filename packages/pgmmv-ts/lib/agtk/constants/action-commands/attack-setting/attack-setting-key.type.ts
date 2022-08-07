@@ -1,11 +1,11 @@
 /**
- * Action commands attack setting key constants type module.
+ * Agtk action commands attack setting key constants type module.
  *
  * @packageDocumentation
  */
-import type { AttackSetting } from './attack-setting.interface';
+import type { AgtkAttackSetting } from './attack-setting.interface';
 
 /**
- * Action commands attack setting key constants type.
+ * Agtk action commands attack setting key constants type.
  */
-export type AttackSettingKey = keyof AttackSetting;
+export type AgtkAttackSettingKey = keyof AgtkAttackSetting;

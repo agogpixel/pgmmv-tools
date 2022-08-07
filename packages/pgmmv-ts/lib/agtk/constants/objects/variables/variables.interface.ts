@@ -1,13 +1,13 @@
 /**
- * Objects variables constants interface module.
+ * Agtk objects variables constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Objects variables constants interface.
+ * Agtk objects variables constants interface.
  */
-export interface Variables {
+export interface AgtkVariables {
   /**
    * Object ID ID.
    */

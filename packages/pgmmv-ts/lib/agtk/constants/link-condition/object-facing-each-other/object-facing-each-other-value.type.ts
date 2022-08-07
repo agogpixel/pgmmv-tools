@@ -1,12 +1,12 @@
 /**
- * Link condition object facing each other value constants type module.
+ * Agtk link condition object facing each other value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingEachOtherKey } from './object-facing-each-other-key.type';
-import type { ObjectFacingEachOther } from './object-facing-each-other.interface';
+import type { AgtkObjectFacingEachOtherKey } from './object-facing-each-other-key.type';
+import type { AgtkObjectFacingEachOther } from './object-facing-each-other.interface';
 
 /**
- * Link condition object facing each other value constants type.
+ * Agtk link condition object facing each other value constants type.
  */
-export type ObjectFacingEachOtherValue = ObjectFacingEachOther[ObjectFacingEachOtherKey];
+export type AgtkObjectFacingEachOtherValue = AgtkObjectFacingEachOther[AgtkObjectFacingEachOtherKey];

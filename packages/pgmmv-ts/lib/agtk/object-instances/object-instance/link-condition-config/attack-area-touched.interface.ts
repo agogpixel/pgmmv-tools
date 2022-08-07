@@ -1,35 +1,35 @@
 /**
- * Object instance attack area touched link condition configuration interface
- * module.
+ * Agtk object instance attack area touched link condition configuration
+ * interface module.
  *
  * @packageDocumentation
  */
-import type { AttackAreaTouched as AttackAreaTouchedConstant } from '../../../constants/link-condition/attack-area-touched';
-import type { AttackAttributesValue as AttributePresetId } from '../../../constants/attack-attributes';
+import type { AgtkAttackAreaTouched as AgtkAttackAreaTouchedConstant } from '../../../constants/link-condition/attack-area-touched';
+import type { AgtkAttackAttributesValue as AgtkAttributePresetId } from '../../../constants/attack-attributes';
 
 /**
- * Attack area touched object type type.
+ * Agtk attack area touched object type type.
  *
  * @internal
  */
-type ObjectType =
-  | AttackAreaTouchedConstant['SetByObjectGroup']
-  | AttackAreaTouchedConstant['SetByObjectId'];
+type AgtkObjectType =
+  | AgtkAttackAreaTouchedConstant['SetByObjectGroup']
+  | AgtkAttackAreaTouchedConstant['SetByObjectId'];
 
 /**
- * Attack area touched attribute type type.
+ * Agtk attack area touched attribute type type.
  *
  * @internal
  */
-type AttributeType =
-  | AttackAreaTouchedConstant['AttributeNone']
-  | AttackAreaTouchedConstant['AttributePreset']
-  | AttackAreaTouchedConstant['AttributeValue'];
+type AgtkAttributeType =
+  | AgtkAttackAreaTouchedConstant['AttributeNone']
+  | AgtkAttackAreaTouchedConstant['AttributePreset']
+  | AgtkAttackAreaTouchedConstant['AttributeValue'];
 
 /**
- * Object instance attack area touched link condition configuration interface.
+ * Agtk object instance attack area touched link condition configuration interface.
  */
-export interface AttackAreaTouched {
+export interface AgtkAttackAreaTouched {
   /**
    * Value 0 - 15.
    *  - 0 = No wall sides selected
@@ -56,7 +56,7 @@ export interface AttackAreaTouched {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find
@@ -90,7 +90,7 @@ export interface AttackAreaTouched {
    *  - 1 = Preset Attributes
    *  - 2 = Set by Value
    */
-  attributeType: AttributeType;
+  attributeType: AgtkAttributeType;
 
   /**
    * Value 1-8.
@@ -103,7 +103,7 @@ export interface AttackAreaTouched {
    *  - 7 = Light
    *  - 8 = Dark
    */
-  attributePresetId: AttributePresetId;
+  attributePresetId: AgtkAttributePresetId;
 
   /**
    * Value whole number.

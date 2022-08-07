@@ -1,5 +1,5 @@
 /**
- * Common switches module.
+ * Agtk common switches module.
  *
  * @packageDocumentation
  */

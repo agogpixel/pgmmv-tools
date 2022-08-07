@@ -1,14 +1,15 @@
 /**
- * Object instance effect show action command configuration interface module.
+ * Agtk object instance effect show action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { EffectShowValue as PositionType } from '../../../constants/action-commands/effect-show';
+import type { AgtkEffectShowValue as AgtkPositionType } from '../../../constants/action-commands/effect-show';
 
 /**
- * Object instance effect show action command configuration interface.
+ * Agtk object instance effect show action command configuration interface.
  */
-export interface EffectShow {
+export interface AgtkEffectShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -21,7 +22,7 @@ export interface EffectShow {
    *  - 0 = Center of This Object
    *  - 1 = Center of Object Locked by This Object
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.

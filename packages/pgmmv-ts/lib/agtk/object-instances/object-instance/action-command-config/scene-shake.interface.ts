@@ -1,13 +1,13 @@
 /**
- * Object instance scene shake action command configuration interface module.
+ * Agtk object instance scene shake action command configuration interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance scene shake action command configuration interface.
+ * Agtk object instance scene shake action command configuration interface.
  */
-export interface SceneShake {
+export interface AgtkSceneShake {
   /**
    * Value 0.00+. NOTE: 300 = 1sec.
    */

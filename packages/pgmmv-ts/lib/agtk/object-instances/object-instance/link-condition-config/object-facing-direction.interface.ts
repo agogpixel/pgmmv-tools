@@ -1,16 +1,16 @@
 /**
- * Object instance object facing direction link condition configuration
+ * Agtk object instance object facing direction link condition configuration
  * interface module.
  *
  * @packageDocumentation
  */
-import type { ObjectFacingDirectionValue as ObjectType } from '../../../constants/link-condition/object-facing-direction';
+import type { AgtkObjectFacingDirectionValue as AgtkObjectType } from '../../../constants/link-condition/object-facing-direction';
 
 /**
- * Object instance object facing direction link condition configuration
+ * Agtk object instance object facing direction link condition configuration
  * interface.
  */
-export interface ObjectFacingDirection {
+export interface AgtkObjectFacingDirection {
   /**
    * Value true/false.
    *  - True = Orientation of Other Objects: Other than Specified Direction
@@ -38,7 +38,7 @@ export interface ObjectFacingDirection {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  objectType: ObjectType;
+  objectType: AgtkObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

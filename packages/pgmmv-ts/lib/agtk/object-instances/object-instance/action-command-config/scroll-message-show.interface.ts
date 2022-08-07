@@ -1,59 +1,59 @@
 /**
- * Object instance scroll message show action command configuration interface
- * module.
+ * Agtk object instance scroll message show action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
-import type { PriorityTypeValue as PriorityType } from '../../../constants/action-commands/priority-type';
-import type { ScrollMessageShow as ScrollMessageShowConstant } from '../../../constants/action-commands/scroll-message-show';
+import type { AgtkPriorityTypeValue as AgtkPriorityType } from '../../../constants/action-commands/priority-type';
+import type { AgtkScrollMessageShow as AgtkScrollMessageShowConstant } from '../../../constants/action-commands/scroll-message-show';
 
 /**
- * Scroll message show background type type.
+ * Agtk scroll message show background type type.
  *
  * @internal
  */
-type BackgroundType =
-  | ScrollMessageShowConstant['BackgroundNone']
-  | ScrollMessageShowConstant['BackgroundTemplate']
-  | ScrollMessageShowConstant['BackgroundImage'];
+type AgtkBackgroundType =
+  | AgtkScrollMessageShowConstant['BackgroundNone']
+  | AgtkScrollMessageShowConstant['BackgroundTemplate']
+  | AgtkScrollMessageShowConstant['BackgroundImage'];
 
 /**
- * Scroll message show template ID type.
+ * Agtk scroll message show template ID type.
  *
  * @internal
  */
-type TemplateId =
-  | ScrollMessageShowConstant['TemplateBlack']
-  | ScrollMessageShowConstant['TemplateWhite'];
+type AgtkTemplateId =
+  | AgtkScrollMessageShowConstant['TemplateBlack']
+  | AgtkScrollMessageShowConstant['TemplateWhite'];
 
 /**
- * Scroll message show position type type.
+ * Agtk scroll message show position type type.
  *
  * @internal
  */
-type PositionType =
-  | ScrollMessageShowConstant['PositionCenter']
-  | ScrollMessageShowConstant['PositionLockObjectCenter']
-  | ScrollMessageShowConstant['PositionScenePosition'];
+type AgtkPositionType =
+  | AgtkScrollMessageShowConstant['PositionCenter']
+  | AgtkScrollMessageShowConstant['PositionLockObjectCenter']
+  | AgtkScrollMessageShowConstant['PositionScenePosition'];
 
 /**
- * Scroll message show horizontal alignment type.
+ * Agtk scroll message show horizontal alignment type.
  *
  * @internal
  */
-type HorizontalAlignment =
-  | ScrollMessageShowConstant['HorzAlignLeft']
-  | ScrollMessageShowConstant['HorzAlignCenter']
-  | ScrollMessageShowConstant['HorzAlignRight'];
+type AgtkHorizontalAlignment =
+  | AgtkScrollMessageShowConstant['HorzAlignLeft']
+  | AgtkScrollMessageShowConstant['HorzAlignCenter']
+  | AgtkScrollMessageShowConstant['HorzAlignRight'];
 
 /**
- * Object instance scroll message show action command configuration interface.
+ * Agtk object instance scroll message show action command configuration interface.
  *
  * @note Text Resource options 'Font', 'Character Spacing', and 'Line Spacing'
  * are only available in the normal Runtime Action as they are essentially an
  * extension to the Text resource tab.
  */
-export interface ScrollMessageShow {
+export interface AgtkScrollMessageShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -87,14 +87,14 @@ export interface ScrollMessageShow {
    *  - 0 = Select from Templates
    *  - 1 = Select from Image Resource
    */
-  backgroundType: BackgroundType;
+  backgroundType: AgtkBackgroundType;
 
   /**
    * Value 1 - 2.
    *  - 1 = Black
    *  - 2 = White
    */
-  templateId: TemplateId;
+  templateId: AgtkTemplateId;
 
   /**
    * Value -1, 1+.
@@ -124,7 +124,7 @@ export interface ScrollMessageShow {
    *  - 1 = Center of Object Locked by This Object
    *  - 2 = Use Scene as Base
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.
@@ -156,7 +156,7 @@ export interface ScrollMessageShow {
    *  - 1 = Center
    *  - 2 = Right
    */
-  horzAlign: HorizontalAlignment;
+  horzAlign: AgtkHorizontalAlignment;
 
   /**
    * Value any integer.
@@ -238,5 +238,5 @@ export interface ScrollMessageShow {
    *  - 1 = Frontmost
    *  - 2 = Frontmost + Menu Scene
    */
-  priorityType: PriorityType;
+  priorityType: AgtkPriorityType;
 }

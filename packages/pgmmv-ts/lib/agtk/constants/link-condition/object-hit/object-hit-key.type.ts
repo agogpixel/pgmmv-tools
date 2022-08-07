@@ -1,11 +1,11 @@
 /**
- * Link condition object hit key constants type module.
+ * Agtk link condition object hit key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectHit } from './object-hit.interface';
+import type { AgtkObjectHit } from './object-hit.interface';
 
 /**
- * Link condition object hit key constants type.
+ * Agtk link condition object hit key constants type.
  */
-export type ObjectHitKey = keyof ObjectHit;
+export type AgtkObjectHitKey = keyof AgtkObjectHit;

@@ -1,14 +1,15 @@
 /**
- * Object instance scene effect remove action command configuration interface
- * module.
+ * Agtk object instance scene effect remove action command configuration
+ * interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance scene effect remove action command configuration interface.
+ * Agtk object instance scene effect remove action command configuration
+ * interface.
  */
-export interface SceneEffectRemove {
+export interface AgtkSceneEffectRemove {
   /**
    * Value -4, -3, -1, 0+
    *  - -4 = Foremost Layer + Menu

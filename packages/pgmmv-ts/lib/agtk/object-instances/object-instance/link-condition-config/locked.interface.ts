@@ -1,14 +1,14 @@
 /**
- * Object instance locked link condition configuration interface module.
+ * Agtk object instance locked link condition configuration interface module.
  *
  * @packageDocumentation
  */
-import type { LockedValue as LockedObjectType } from '../../../constants/link-condition/locked';
+import type { AgtkLockedValue as AgtkLockedObjectType } from '../../../constants/link-condition/locked';
 
 /**
- * Object instance locked link condition configuration interface.
+ * Agtk object instance locked link condition configuration interface.
  */
-export interface Locked {
+export interface AgtkLocked {
   /**
    * Value -3, -1 or 1+.
    *  - -3 = Object Other Then Self
@@ -22,7 +22,7 @@ export interface Locked {
    *  - 0 = Set by Object Group
    *  - 1 = Set by Object
    */
-  lockedObjectType: LockedObjectType;
+  lockedObjectType: AgtkLockedObjectType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

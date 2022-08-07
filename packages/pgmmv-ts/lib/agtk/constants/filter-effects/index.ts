@@ -1,5 +1,5 @@
 /**
- * Filter effects constants module.
+ * Agtk filter effects constants module.
  *
  * @packageDocumentation
  */

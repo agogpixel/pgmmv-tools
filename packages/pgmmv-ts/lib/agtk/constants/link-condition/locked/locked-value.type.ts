@@ -1,12 +1,12 @@
 /**
- * Link condition locked value constants type module.
+ * Agtk link condition locked value constants type module.
  *
  * @packageDocumentation
  */
-import type { LockedKey } from './locked-key.type';
-import type { Locked } from './locked.interface';
+import type { AgtkLockedKey } from './locked-key.type';
+import type { AgtkLocked } from './locked.interface';
 
 /**
- * Link condition locked value constants type.
+ * Agtk link condition locked value constants type.
  */
-export type LockedValue = Locked[LockedKey];
+export type AgtkLockedValue = AgtkLocked[AgtkLockedKey];

@@ -1,5 +1,5 @@
 /**
- * Action commands menu hide constants module.
+ * Agtk action commands menu hide constants module.
  *
  * @packageDocumentation
  */

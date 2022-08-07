@@ -1,13 +1,14 @@
 /**
- * Object instance layer enable action command configuration interface module.
+ * Agtk object instance layer enable action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance layer disable action command configuration interface.
+ * Agtk object instance layer disable action command configuration interface.
  */
-export interface LayerEnable {
+export interface AgtkLayerEnable {
   /**
    * Value -1 or 0+. Note: If non-existing layer, game will not crash but action
    * will be null.

@@ -1,12 +1,12 @@
 /**
- * Objects switches value constants type module.
+ * Agtk objects switches value constants type module.
  *
  * @packageDocumentation
  */
-import type { SwitchesKey } from './switches-key.type';
-import type { Switches } from './switches.interface';
+import type { AgtkSwitchesKey } from './switches-key.type';
+import type { AgtkSwitches } from './switches.interface';
 
 /**
- * Objects switches value constants type.
+ * Agtk objects switches value constants type.
  */
-export type SwitchesValue = Switches[SwitchesKey];
+export type AgtkSwitchesValue = AgtkSwitches[AgtkSwitchesKey];

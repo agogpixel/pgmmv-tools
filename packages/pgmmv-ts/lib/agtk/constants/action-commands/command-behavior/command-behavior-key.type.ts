@@ -1,11 +1,11 @@
 /**
- * Action commands command behavior key constants type module.
+ * Agtk action commands command behavior key constants type module.
  *
  * @packageDocumentation
  */
-import type { CommandBehavior } from './command-behavior.interface';
+import type { AgtkCommandBehavior } from './command-behavior.interface';
 
 /**
- * Action commands command behavior key constants type.
+ * Agtk action commands command behavior key constants type.
  */
-export type CommandBehaviorKey = keyof CommandBehavior;
+export type AgtkCommandBehaviorKey = keyof AgtkCommandBehavior;

@@ -1,11 +1,11 @@
 /**
- * Action commands effect remove key constants type module.
+ * Agtk action commands effect remove key constants type module.
  *
  * @packageDocumentation
  */
-import type { EffectRemove } from './effect-remove.interface';
+import type { AgtkEffectRemove } from './effect-remove.interface';
 
 /**
- * Action commands effect remove key constants type.
+ * Agtk action commands effect remove key constants type.
  */
-export type EffectRemoveKey = keyof EffectRemove;
+export type AgtkEffectRemoveKey = keyof AgtkEffectRemove;

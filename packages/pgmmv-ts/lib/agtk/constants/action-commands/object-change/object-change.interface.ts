@@ -1,13 +1,13 @@
 /**
- * Action commands object change constants interface module.
+ * Agtk action commands object change constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object change constants interface.
+ * Agtk action commands object change constants interface.
  */
-export interface ObjectChange {
+export interface AgtkObjectChange {
   /**
    * Position center.
    */

@@ -1,11 +1,11 @@
 /**
- * Action commands sound position remember key constants type module.
+ * Agtk action commands sound position remember key constants type module.
  *
  * @packageDocumentation
  */
-import type { SoundPositionRemember } from './sound-position-remember.interface';
+import type { AgtkSoundPositionRemember } from './sound-position-remember.interface';
 
 /**
- * Action commands sound position remember key constants type.
+ * Agtk action commands sound position remember key constants type.
  */
-export type SoundPositionRememberKey = keyof SoundPositionRemember;
+export type AgtkSoundPositionRememberKey = keyof AgtkSoundPositionRemember;

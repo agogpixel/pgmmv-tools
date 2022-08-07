@@ -1,13 +1,13 @@
 /**
- * Link condition slope touched constants interface module.
+ * Agtk link condition slope touched constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition slope touched constants interface.
+ * Agtk link condition slope touched constants interface.
  */
-export interface SlopeTouched {
+export interface AgtkSlopeTouched {
   /**
    * Direction upper.
    */

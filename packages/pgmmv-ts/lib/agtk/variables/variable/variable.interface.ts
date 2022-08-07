@@ -1,11 +1,11 @@
 /**
- * Common variable interface module.
+ * Agtk Common variable interface module.
  *
  * @packageDocumentation
  */
 import type { VariableValueAccessor } from '../../_shared';
 
 /**
- * Common variable interface.
+ * Agtk common variable interface.
  */
-export interface Variable extends VariableValueAccessor {}
+export interface AgtkVariable extends VariableValueAccessor {}

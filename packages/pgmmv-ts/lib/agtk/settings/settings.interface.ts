@@ -1,14 +1,14 @@
 /**
- * Settings interface module.
+ * Agtk settings interface module.
  *
  * @packageDocumentation
  */
-import type { PlayerCharacters } from '../player-characters';
+import type { AgtkPlayerCharacters } from '../player-characters';
 
 /**
- * Settings interface.
+ * Agtk settings interface.
  */
-export interface Settings {
+export interface AgtkSettings {
   /**
    * Tile width (unit: dots).
    */
@@ -32,7 +32,7 @@ export interface Settings {
   /**
    * The playerCharacters object.
    */
-  playerCharacters: PlayerCharacters;
+  playerCharacters: AgtkPlayerCharacters;
 
   /**
    * Project path.

@@ -1,5 +1,5 @@
 /**
- * Action commands game speed change constants module.
+ * Agtk action commands game speed change constants module.
  *
  * @packageDocumentation
  */

@@ -1,51 +1,51 @@
 /**
- * Object instance switch/variable changed link condition configuration
+ * Agtk object instance switch/variable changed link condition configuration
  * interface module.
  *
  * @packageDocumentation
  */
-import type { Conditions } from '../../../constants/conditions';
-import type { QualifierValue as QualifierId } from '../../../constants/qualifier';
+import type { AgtkConditions } from '../../../constants/conditions';
+import type { AgtkQualifierValue as AgtkQualifierId } from '../../../constants/qualifier';
 
 /**
- * Switch/variable changed switch condition type.
+ * Agtk switch/variable changed switch condition type.
  *
  * @internal
  */
-type SwitchCondition =
-  | Conditions['SwitchConditionOn']
-  | Conditions['SwitchConditionOff']
-  | Conditions['SwitchConditionOnFromOff']
-  | Conditions['SwitchConditionOffFromOn'];
+type AgtkSwitchCondition =
+  | AgtkConditions['SwitchConditionOn']
+  | AgtkConditions['SwitchConditionOff']
+  | AgtkConditions['SwitchConditionOnFromOff']
+  | AgtkConditions['SwitchConditionOffFromOn'];
 
 /**
- * Switch/variable changed compare variable operator type.
+ * Agtk switch/variable changed compare variable operator type.
  *
  * @internal
  */
-type CompareVariableOperator =
-  | Conditions['OperatorLess']
-  | Conditions['OperatorLessEqual']
-  | Conditions['OperatorEaual']
-  | Conditions['OperatorGreaterEqual']
-  | Conditions['OperatorGreater']
-  | Conditions['OperatorNotEqual'];
+type AgtkCompareVariableOperator =
+  | AgtkConditions['OperatorLess']
+  | AgtkConditions['OperatorLessEqual']
+  | AgtkConditions['OperatorEaual']
+  | AgtkConditions['OperatorGreaterEqual']
+  | AgtkConditions['OperatorGreater']
+  | AgtkConditions['OperatorNotEqual'];
 
 /**
- * Switch/variable changed compare value type type.
+ * Agtk switch/variable changed compare value type type.
  *
  * @internal
  */
-type CompareValueType =
-  | Conditions['CompareValue']
-  | Conditions['CompareVariable']
-  | Conditions['CompareNaN'];
+type AgtkCompareValueType =
+  | AgtkConditions['CompareValue']
+  | AgtkConditions['CompareVariable']
+  | AgtkConditions['CompareNaN'];
 
 /**
- * Object instance switch/variable changed link condition configuration
+ * Agtk object instance switch/variable changed link condition configuration
  * interface.
  */
-export interface SwitchVariableChanged {
+export interface AgtkSwitchVariableChanged {
   /**
    * Value true/false
    *  - True = Switch
@@ -69,7 +69,7 @@ export interface SwitchVariableChanged {
    *  - -2 = All
    *  - -1 = Single
    */
-  switchQualifierId: QualifierId;
+  switchQualifierId: AgtkQualifierId;
 
   /**
    * Value -1 (None) or any whole number. Value will depend on if Self or Common
@@ -84,7 +84,7 @@ export interface SwitchVariableChanged {
    *  - 2 = OFF to ON
    *  - 3 = ON to OFF
    */
-  switchCondition: SwitchCondition;
+  switchCondition: AgtkSwitchCondition;
 
   /**
    * Value -7, -5, -2, -1, 0, 1+.
@@ -102,7 +102,7 @@ export interface SwitchVariableChanged {
    *  - -2 = All
    *  - -1 = Single
    */
-  variableQualifierId: QualifierId;
+  variableQualifierId: AgtkQualifierId;
 
   /**
    * Value -1 (None) or any whole number. Value will depend on if Self or Common
@@ -119,7 +119,7 @@ export interface SwitchVariableChanged {
    *  - 4 = Greater than >
    *  - 5 = Not equal to !=
    */
-  compareVariableOperator: CompareVariableOperator;
+  compareVariableOperator: AgtkCompareVariableOperator;
 
   /**
    * Value 0 - 2.
@@ -127,7 +127,7 @@ export interface SwitchVariableChanged {
    *  - 1 = Set Variable as Condition
    *  - 2 = Non-numeric
    */
-  compareValueType: CompareValueType;
+  compareValueType: AgtkCompareValueType;
 
   /**
    * Value any float.

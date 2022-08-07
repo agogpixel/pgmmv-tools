@@ -1,14 +1,14 @@
 /**
- * Object instance template move action command configuration interface module.
+ * Agtk object instance template move action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { TemplateMoveValue as MoveType } from '../../../constants/action-commands/template-move/template-move-value.type';
+import type { AgtkTemplateMoveValue as AgtkMoveType } from '../../../constants/action-commands/template-move/template-move-value.type';
 
 /**
- * Object instance template move action command configuration interface.
+ * Agtk object instance template move action command configuration interface.
  */
-export interface TemplateMove {
+export interface AgtkTemplateMove {
   /**
    * Value 0-6. NOTE: Values outside 0-6 won't crash game, but will null the
    * action.
@@ -20,7 +20,7 @@ export interface TemplateMove {
    *  - 5 = Move Away from Nearby Object
    *  - 6 = Stop
    */
-  moveType: MoveType;
+  moveType: AgtkMoveType;
 
   /**
    * Value True/False.

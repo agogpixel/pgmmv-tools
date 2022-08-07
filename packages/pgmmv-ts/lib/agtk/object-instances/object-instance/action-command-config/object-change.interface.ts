@@ -1,14 +1,15 @@
 /**
- * Object instance object change action command configuration interface module.
+ * Agtk object instance object change action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ObjectChangeValue as CreatePosition } from '../../../constants/action-commands/object-change'
+import type { AgtkObjectChangeValue as AgtkCreatePosition } from '../../../constants/action-commands/object-change'
 
 /**
- * Object instance object change action command configuration interface.
+ * Agtk object instance object change action command configuration interface.
  */
-export interface ObjectChange {
+export interface AgtkObjectChange {
   /**
    * Value -1 or 1+. WARNING: Game will crash if value is 0 or a nonexistent
    * object ID positive number.
@@ -50,7 +51,7 @@ export interface ObjectChange {
    *  - 0 = Center of This Object
    *  - 1 = Center of Object Locked by This Object
    */
-  createPosition: CreatePosition;
+  createPosition: AgtkCreatePosition;
 
   /**
    * Value true/false.

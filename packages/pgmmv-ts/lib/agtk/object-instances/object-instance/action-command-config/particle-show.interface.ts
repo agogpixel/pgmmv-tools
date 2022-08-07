@@ -1,14 +1,15 @@
 /**
- * Object instance particle show action command configuration interface module.
+ * Agtk object instance particle show action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { ParticleShowValue as PositionType } from '../../../constants/action-commands/particle-show';
+import type { AgtkParticleShowValue as AgtkPositionType } from '../../../constants/action-commands/particle-show';
 
 /**
- * Object instance particle show action command configuration interface.
+ * Agtk object instance particle show action command configuration interface.
  */
-export interface ParticleShow {
+export interface AgtkParticleShow {
   /**
    * Value -1, 1+.
    *  - -1 = Not Set
@@ -21,7 +22,7 @@ export interface ParticleShow {
    *  - 0 = Center of This Object
    *  - 1 = Center of Object Locked by This Object
    */
-  positionType: PositionType;
+  positionType: AgtkPositionType;
 
   /**
    * Value true/false.

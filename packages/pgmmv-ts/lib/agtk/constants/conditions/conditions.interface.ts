@@ -1,13 +1,13 @@
 /**
- * Conditions constants interface module.
+ * Agtk conditions constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Conditions constants interface.
+ * Agtk conditions constants interface.
  */
-export interface Conditions {
+export interface AgtkConditions {
   /**
    * Switch condition on.
    */

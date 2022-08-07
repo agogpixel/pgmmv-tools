@@ -1,5 +1,5 @@
 /**
- * Link condition object wall touched constants module.
+ * Agtk link condition object wall touched constants module.
  *
  * @packageDocumentation
  */

@@ -1,5 +1,5 @@
 /**
- * Object instance link condition configurations module.
+ * Agtk object instance link condition configurations module.
  *
  * @packageDocumentation
  */

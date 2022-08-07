@@ -1,11 +1,11 @@
 /**
- * Action commands object push pull key constants type module.
+ * Agtk action commands object push pull key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectPushPull } from './object-push-pull.interface';
+import type { AgtkObjectPushPull } from './object-push-pull.interface';
 
 /**
- * Action commands object push pull key constants type.
+ * Agtk action commands object push pull key constants type.
  */
-export type ObjectPushPullKey = keyof ObjectPushPull;
+export type AgtkObjectPushPullKey = keyof AgtkObjectPushPull;

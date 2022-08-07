@@ -1,5 +1,5 @@
 /**
- * Action commands object move constants module.
+ * Agtk action commands object move constants module.
  *
  * @packageDocumentation
  */

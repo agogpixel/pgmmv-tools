@@ -1,13 +1,13 @@
 /**
- * Filter effects constants interface module.
+ * Agtk filter effects constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Filter effects constants interface.
+ * Agtk filter effects constants interface.
  */
-export interface FilterEffects {
+export interface AgtkFilterEffects {
   /**
    * Effect noise.
    */

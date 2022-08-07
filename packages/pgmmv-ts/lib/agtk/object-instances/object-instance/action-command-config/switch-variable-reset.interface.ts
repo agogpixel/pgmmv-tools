@@ -1,14 +1,14 @@
 /**
- * Object instance switch/variable reset action command configuration interface
+ * Agtk object instance switch/variable reset action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance switch/variable reset action command configuration interface.
+ * Agtk object instance switch/variable reset action command configuration interface.
  */
-export interface SwitchVariableReset {
+export interface AgtkSwitchVariableReset {
   /**
    * Value true/false.
    *  - True = Switch

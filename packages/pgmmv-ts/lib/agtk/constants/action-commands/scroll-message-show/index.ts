@@ -1,5 +1,5 @@
 /**
- * Action commands scroll message show constants module.
+ * Agtk action commands scroll message show constants module.
  *
  * @packageDocumentation
  */

@@ -1,13 +1,13 @@
 /**
- * Animations constants interface module.
+ * Agtk animations constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Animations constants interface.
+ * Agtk animations constants interface.
  */
-export interface Animations {
+export interface AgtkAnimations {
   /**
    * Motion.
    */

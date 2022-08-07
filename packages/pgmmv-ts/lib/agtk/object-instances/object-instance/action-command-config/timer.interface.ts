@@ -1,14 +1,14 @@
 /**
- * Object instance timer action command configuration interface module.
+ * Agtk object instance timer action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { TimerValue as SecondType } from '../../../constants/action-commands/timer';
+import type { AgtkTimerValue as AgtkSecondType } from '../../../constants/action-commands/timer';
 
 /**
- * Object instance timer action command configuration interface.
+ * Agtk object instance timer action command configuration interface.
  */
-export interface Timer {
+export interface AgtkTimer {
   /**
    * Value true/false.
    *  - True = Start
@@ -50,7 +50,7 @@ export interface Timer {
    *  - 0 = Input Seconds
    *  - 1 = Set by Variable
    */
-  secondType: SecondType;
+  secondType: AgtkSecondType;
 
   /**
    * Value 0.00+. 300 = 1 second if secondType is 0.

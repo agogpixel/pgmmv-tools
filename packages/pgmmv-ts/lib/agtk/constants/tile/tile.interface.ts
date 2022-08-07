@@ -1,13 +1,13 @@
 /**
- * Tile constants interface module.
+ * Agtk tile constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Tile constants interface.
+ * Agtk tile constants interface.
  */
-export interface Tile {
+export interface AgtkTile {
   /**
    * Wall top.
    */

@@ -1,21 +1,21 @@
 /**
- * Object instance sound stop action command configuration interface module.
+ * Agtk object instance sound stop action command configuration interface module.
  *
  * @packageDocumentation
  */
-import type { SoundStopValue as SoundType } from '../../../constants/action-commands/sound-stop';
+import type { AgtkSoundStopValue as AgtkSoundType } from '../../../constants/action-commands/sound-stop';
 
 /**
- * Object instance sound stop action command configuration interface.
+ * Agtk object instance sound stop action command configuration interface.
  */
-export interface SoundStop {
+export interface AgtkSoundStop {
   /**
    * Value 0 - 2.
    *  - 0 = Sound Effects
    *  - 1 = Voices
    *  - 2 = Background Music
    */
-  soundType: SoundType;
+  soundType: AgtkSoundType;
 
   /**
    * Value -1, 1+.

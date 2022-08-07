@@ -1,11 +1,11 @@
 /**
- * Database template types key constants type module.
+ * Agtk database template types key constants type module.
  *
  * @packageDocumentation
  */
-import type { DatabaseTemplateTypes } from './database-template-types.interface';
+import type { AgtkDatabaseTemplateTypes } from './database-template-types.interface';
 
 /**
- * Database template types key constants type.
+ * Agtk database template types key constants type.
  */
-export type DatabaseTemplateTypesKey = keyof DatabaseTemplateTypes;
+export type AgtkDatabaseTemplateTypesKey = keyof AgtkDatabaseTemplateTypes;

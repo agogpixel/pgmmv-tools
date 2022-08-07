@@ -1,13 +1,13 @@
 /**
- * Tile group constants interface module.
+ * Agtk tile group constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Tile group constants interface.
+ * Agtk tile group constants interface.
  */
-export interface TileGroup {
+export interface AgtkTileGroup {
   /**
    * Tile group default.
    */

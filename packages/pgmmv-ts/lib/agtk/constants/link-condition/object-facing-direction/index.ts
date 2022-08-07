@@ -1,5 +1,5 @@
 /**
- * Link condition object facing direction constants module.
+ * Agtk link condition object facing direction constants module.
  *
  * @packageDocumentation
  */

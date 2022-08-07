@@ -1,5 +1,5 @@
 /**
- * Link condition object facing each other constants module.
+ * Agtk link condition object facing each other constants module.
  *
  * @packageDocumentation
  */

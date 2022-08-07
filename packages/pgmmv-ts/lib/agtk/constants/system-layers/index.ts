@@ -1,5 +1,5 @@
 /**
- * System layers constants module.
+ * Agtk system layers constants module.
  *
  * @packageDocumentation
  */

@@ -1,13 +1,14 @@
 /**
- * Object instance probability link condition configuration interface module.
+ * Agtk object instance probability link condition configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance probability link condition configuration interface.
+ * Agtk object instance probability link condition configuration interface.
  */
-export interface Probability {
+export interface AgtkProbability {
   /**
    * Value 0 - 100.
    */

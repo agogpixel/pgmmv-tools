@@ -1,5 +1,5 @@
 /**
- * Action commands sound stop constants module.
+ * Agtk action commands sound stop constants module.
  *
  * @packageDocumentation
  */

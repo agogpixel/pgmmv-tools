@@ -1,12 +1,12 @@
 /**
- * Action commands timer value constants type module.
+ * Agtk action commands timer value constants type module.
  *
  * @packageDocumentation
  */
-import type { TimerKey } from './timer-key.type';
-import type { Timer } from './timer.interface';
+import type { AgtkTimerKey } from './timer-key.type';
+import type { AgtkTimer } from './timer.interface';
 
 /**
- * Action commands timer value constants type.
+ * Agtk action commands timer value constants type.
  */
-export type TimerValue = Timer[TimerKey];
+export type AgtkTimerValue = AgtkTimer[AgtkTimerKey];

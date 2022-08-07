@@ -1,12 +1,12 @@
 /**
- * Conditions value constants type module.
+ * Agtk conditions value constants type module.
  *
  * @packageDocumentation
  */
-import type { ConditionsKey } from './conditions-key.type';
-import type { Conditions } from './conditions.interface';
+import type { AgtkConditionsKey } from './conditions-key.type';
+import type { AgtkConditions } from './conditions.interface';
 
 /**
- * Conditions value constants type.
+ * Agtk conditions value constants type.
  */
-export type ConditionsValue = Conditions[ConditionsKey];
+export type AgtkConditionsValue = AgtkConditions[AgtkConditionsKey];

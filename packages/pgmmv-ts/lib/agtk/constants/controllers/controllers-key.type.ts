@@ -1,11 +1,11 @@
 /**
- * Controllers key constants type module.
+ * Agtk controllers key constants type module.
  *
  * @packageDocumentation
  */
-import type { Controllers } from './controllers.interface';
+import type { AgtkControllers } from './controllers.interface';
 
 /**
- * Controllers key constants type.
+ * Agtk controllers key constants type.
  */
-export type ControllersKey = keyof Controllers;
+export type AgtkControllersKey = keyof AgtkControllers;

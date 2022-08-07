@@ -1,13 +1,13 @@
 /**
- * Action commands menu hide constants interface module.
+ * Agtk action commands menu hide constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands menu hide constants interface.
+ * Agtk action commands menu hide constants interface.
  */
-export interface MenuHide {
+export interface AgtkMenuHide {
   /**
    * None.
    */

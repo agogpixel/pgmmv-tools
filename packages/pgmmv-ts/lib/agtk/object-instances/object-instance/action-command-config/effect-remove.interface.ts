@@ -1,25 +1,26 @@
 /**
- * Object instance effect remove action command configuration interface module.
+ * Agtk object instance effect remove action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { EffectRemove as EffectRemoveConstant } from '../../../constants/action-commands/effect-remove'
+import type { AgtkEffectRemove as AgtkEffectRemoveConstant } from '../../../constants/action-commands/effect-remove'
 
 /**
- * Effect remove targeting type type.
+ * Agtk effect remove targeting type type.
  *
  * @internal
  */
-type TargetingType =
-  | EffectRemoveConstant['TargettingByType']
-  | EffectRemoveConstant['TargettingByGroup']
-  | EffectRemoveConstant['TargettingById']
-  | EffectRemoveConstant['TargettingSceneEffect'];
+type AgtkTargetingType =
+  | AgtkEffectRemoveConstant['TargettingByType']
+  | AgtkEffectRemoveConstant['TargettingByGroup']
+  | AgtkEffectRemoveConstant['TargettingById']
+  | AgtkEffectRemoveConstant['TargettingSceneEffect'];
 
 /**
- * Object instance effect remove action command configuration interface.
+ * Agtk object instance effect remove action command configuration interface.
  */
-export interface EffectRemove {
+export interface AgtkEffectRemove {
   /**
    * Value -2, -1, 1+.
    *  - -2 = All Effects
@@ -36,7 +37,7 @@ export interface EffectRemove {
    *
    * @note Developer typo.
    */
-  targettingType: TargetingType;
+  targettingType: AgtkTargetingType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

@@ -1,13 +1,13 @@
 /**
- * Link condition object wall touched constants interface module.
+ * Agtk link condition object wall touched constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object wall touched constants interface.
+ * Agtk link condition object wall touched constants interface.
  */
-export interface ObjectWallTouched {
+export interface AgtkObjectWallTouched {
   /**
    * Set by object group.
    */

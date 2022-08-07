@@ -1,5 +1,5 @@
 /**
- * Object group constants module.
+ * Agtk object group constants module.
  *
  * @packageDocumentation
  */

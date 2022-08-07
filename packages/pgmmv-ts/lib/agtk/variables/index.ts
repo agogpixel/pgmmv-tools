@@ -1,5 +1,5 @@
 /**
- * Common variables module.
+ * Agtk common variables module.
  *
  * @packageDocumentation
  */

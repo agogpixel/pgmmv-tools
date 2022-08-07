@@ -1,13 +1,13 @@
 /**
- * Action commands object lock constants interface module.
+ * Agtk action commands object lock constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands object lock constants interface.
+ * Agtk action commands object lock constants interface.
  */
-export interface ObjectLock {
+export interface AgtkObjectLock {
   /**
    * Set by object group.
    */

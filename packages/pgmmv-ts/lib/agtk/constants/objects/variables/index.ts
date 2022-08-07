@@ -1,5 +1,5 @@
 /**
- * Objects variables constants module.
+ * Agtk objects variables constants module.
  *
  * @packageDocumentation
  */

@@ -1,11 +1,11 @@
 /**
- * Action commands scroll message show key constants type module.
+ * Agtk action commands scroll message show key constants type module.
  *
  * @packageDocumentation
  */
-import type { ScrollMessageShow } from './scroll-message-show.interface';
+import type { AgtkScrollMessageShow } from './scroll-message-show.interface';
 
 /**
- * Action commands scroll message show key constants type.
+ * Agtk action commands scroll message show key constants type.
  */
-export type ScrollMessageShowKey = keyof ScrollMessageShow;
+export type AgtkScrollMessageShowKey = keyof AgtkScrollMessageShow;

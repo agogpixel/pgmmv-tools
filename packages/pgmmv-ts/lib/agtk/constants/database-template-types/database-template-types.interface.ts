@@ -1,13 +1,13 @@
 /**
- * Database template types constants interface module.
+ * Agtk database template types constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Database template types constants interface.
+ * Agtk database template types constants interface.
  */
-export interface DatabaseTemplateTypes {
+export interface AgtkDatabaseTemplateTypes {
   /**
    * Default.
    */

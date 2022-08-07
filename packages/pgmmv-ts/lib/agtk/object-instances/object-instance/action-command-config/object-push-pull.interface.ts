@@ -1,43 +1,45 @@
 /**
- * Object instance object push/pull action command configuration interface
+ * Agtk object instance object push/pull action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { ObjectPushPull as ObjectPushPullConstant } from '../../../constants/action-commands/object-push-pull';
-import type { QualifierValue as TargetQualifierId } from '../../../constants/qualifier';
+import type { AgtkObjectPushPull as AgtkObjectPushPullConstant } from '../../../constants/action-commands/object-push-pull';
+import type { AgtkQualifierValue as AgtkTargetQualifierId } from '../../../constants/qualifier';
 
 /**
- * Object push/pull direction type type.
+ * Agtk object push/pull direction type type.
  *
  * @internal
  */
-type DirectionType = ObjectPushPullConstant['DirectionAngle'] | ObjectPushPullConstant['DirectionObjectDisp'];
+type AgtkDirectionType =
+  | AgtkObjectPushPullConstant['DirectionAngle']
+  | AgtkObjectPushPullConstant['DirectionObjectDisp'];
 
 /**
- * Object push/pull effect direction type type.
+ * Agtk object push/pull effect direction type type.
  *
  * @internal
  */
-type EffectDirectionType =
-  | ObjectPushPullConstant['EffectDirectionAngle']
-  | ObjectPushPullConstant['EffectDirectionObjectDisp']
-  | ObjectPushPullConstant['EffectDirectionObjectConnect'];
+type AgtkEffectDirectionType =
+  | AgtkObjectPushPullConstant['EffectDirectionAngle']
+  | AgtkObjectPushPullConstant['EffectDirectionObjectDisp']
+  | AgtkObjectPushPullConstant['EffectDirectionObjectConnect'];
 
 /**
- * Object push/pull targeting type type.
+ * Agtk object push/pull targeting type type.
  */
-type TargetingType =
-  | ObjectPushPullConstant['TargettingByType']
-  | ObjectPushPullConstant['TargettingByGroup']
-  | ObjectPushPullConstant['TargettingById']
-  | ObjectPushPullConstant['TargettingTouched']
-  | ObjectPushPullConstant['TargettingLocked'];
+type AgtkTargetingType =
+  | AgtkObjectPushPullConstant['TargettingByType']
+  | AgtkObjectPushPullConstant['TargettingByGroup']
+  | AgtkObjectPushPullConstant['TargettingById']
+  | AgtkObjectPushPullConstant['TargettingTouched']
+  | AgtkObjectPushPullConstant['TargettingLocked'];
 
 /**
- * Object instance object push pull action command configuration interface.
+ * Agtk object instance object push pull action command configuration interface.
  */
-export interface ObjectPushPull {
+export interface AgtkObjectPushPull {
   /**
    * Value true/false.
    *  - True = Set Effect Range Base as Connection Point
@@ -57,7 +59,7 @@ export interface ObjectPushPull {
    *  - 0 = Range Direction: Set Angle
    *  - 1 = Range Direction: This Object's Display Direction
    */
-  directionType: DirectionType;
+  directionType: AgtkDirectionType;
 
   /**
    * Value 0 - 359. Common use references, but not limited too:
@@ -108,7 +110,7 @@ export interface ObjectPushPull {
    *  - 1 = Effect Direction: This Object's Display Direction
    *  - 2 = Effect Direction: This Object's Connection Point
    */
-  effectDirectionType: EffectDirectionType;
+  effectDirectionType: AgtkEffectDirectionType;
 
   /**
    * Value 0 - 359. Common use references, but not limited too:
@@ -156,7 +158,7 @@ export interface ObjectPushPull {
    *    for this option)
    *  - 3 = Objects Locked by This Object
    */
-  targettingType: TargetingType;
+  targettingType: AgtkTargetingType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find
@@ -189,7 +191,7 @@ export interface ObjectPushPull {
    *  - -2 = All
    *  - -1 = Single
    */
-  targetQualifierId: TargetQualifierId;
+  targetQualifierId: AgtkTargetQualifierId;
 
   /**
    * Value true/false.

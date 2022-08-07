@@ -1,5 +1,5 @@
 /**
- * Attack attributes constants module.
+ * Agtk attack attributes constants module.
  *
  * @packageDocumentation
  */

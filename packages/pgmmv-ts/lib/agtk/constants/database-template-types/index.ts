@@ -1,5 +1,5 @@
 /**
- * Database template types constants module.
+ * Agtk database template types constants module.
  *
  * @packageDocumentation
  */

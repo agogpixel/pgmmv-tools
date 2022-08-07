@@ -1,26 +1,26 @@
 /**
- * Object instance particle remove action command configuration interface
+ * Agtk object instance particle remove action command configuration interface
  * module.
  *
  * @packageDocumentation
  */
-import type { ParticleRemove as ParticleRemoveConstant } from '../../../constants/action-commands/particle-remove';
+import type { AgtkParticleRemove as AgtkParticleRemoveConstant } from '../../../constants/action-commands/particle-remove';
 
 /**
- * Particle remove targeting type type.
+ * Agtk particle remove targeting type type.
  *
  * @internal
  */
-type TargetingType =
-  | ParticleRemoveConstant['TargettingByType']
-  | ParticleRemoveConstant['TargettingByGroup']
-  | ParticleRemoveConstant['TargettingById']
-  | ParticleRemoveConstant['TargettingSceneParticle'];
+type AgtkTargetingType =
+  | AgtkParticleRemoveConstant['TargettingByType']
+  | AgtkParticleRemoveConstant['TargettingByGroup']
+  | AgtkParticleRemoveConstant['TargettingById']
+  | AgtkParticleRemoveConstant['TargettingSceneParticle'];
 
 /**
- * Object instance particle remove action command configuration interface.
+ * Agtk object instance particle remove action command configuration interface.
  */
-export interface ParticleRemove {
+export interface AgtkParticleRemove {
   /**
    * Value -2, -1, 1+.
    *  - -2 = All Particles
@@ -35,7 +35,7 @@ export interface ParticleRemove {
    *  - 1 = Set by Object
    *  - 5 = Particles Being Shown in Scene
    */
-  targettingType: TargetingType;
+  targettingType: AgtkTargetingType;
 
   /**
    * Value anything. This may be a discontinued property as I couldn't find

@@ -1,13 +1,13 @@
 /**
- * Action commands particle remove constants interface module.
+ * Agtk action commands particle remove constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands particle remove constants interface.
+ * Agtk action commands particle remove constants interface.
  */
-export interface ParticleRemove {
+export interface AgtkParticleRemove {
   /**
    * All particles.
    */

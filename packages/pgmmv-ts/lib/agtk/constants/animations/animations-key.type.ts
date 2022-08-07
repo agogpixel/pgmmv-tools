@@ -1,11 +1,11 @@
 /**
- * Animations key constants type module.
+ * Agtk animations key constants type module.
  *
  * @packageDocumentation
  */
-import type { Animations } from './animations.interface';
+import type { AgtkAnimations } from './animations.interface';
 
 /**
- * Animations key constants type.
+ * Agtk animations key constants type.
  */
-export type AnimationsKey = keyof Animations;
+export type AgtkAnimationsKey = keyof AgtkAnimations;

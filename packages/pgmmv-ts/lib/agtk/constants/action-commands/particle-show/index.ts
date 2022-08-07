@@ -1,5 +1,5 @@
 /**
- * Action commands particle show constants module.
+ * Agtk action commands particle show constants module.
  *
  * @packageDocumentation
  */

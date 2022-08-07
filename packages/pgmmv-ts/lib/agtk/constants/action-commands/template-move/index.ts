@@ -1,5 +1,5 @@
 /**
- * Action commands template move constants module.
+ * Agtk action commands template move constants module.
  *
  * @packageDocumentation
  */

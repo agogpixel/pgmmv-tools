@@ -1,12 +1,12 @@
 /**
- * Link condition object hit value constants type module.
+ * Agtk link condition object hit value constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectHitKey } from './object-hit-key.type';
-import type { ObjectHit } from './object-hit.interface';
+import type { AgtkObjectHitKey } from './object-hit-key.type';
+import type { AgtkObjectHit } from './object-hit.interface';
 
 /**
- * Link condition object hit value constants type.
+ * Agtk link condition object hit value constants type.
  */
-export type ObjectHitValue = ObjectHit[ObjectHitKey];
+export type AgtkObjectHitValue = AgtkObjectHit[AgtkObjectHitKey];

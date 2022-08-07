@@ -1,12 +1,12 @@
 /**
- * Controllers value constants type module.
+ * Agtk controllers value constants type module.
  *
  * @packageDocumentation
  */
-import type { ControllersKey } from './controllers-key.type';
-import type { Controllers } from './controllers.interface';
+import type { AgtkControllersKey } from './controllers-key.type';
+import type { AgtkControllers } from './controllers.interface';
 
 /**
- * Controllers value constants type.
+ * Agtk controllers value constants type.
  */
-export type ControllersValue = Controllers[ControllersKey];
+export type AgtkControllersValue = AgtkControllers[AgtkControllersKey];

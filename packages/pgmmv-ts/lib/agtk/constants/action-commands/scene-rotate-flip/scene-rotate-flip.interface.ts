@@ -1,13 +1,13 @@
 /**
- * Action commands scene rotate flip constants interface module.
+ * Agtk action commands scene rotate flip constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands scene rotate flip constants interface.
+ * Agtk action commands scene rotate flip constants interface.
  */
-export interface SceneRotateFlip {
+export interface AgtkSceneRotateFlip {
   /**
    * Type reset.
    */

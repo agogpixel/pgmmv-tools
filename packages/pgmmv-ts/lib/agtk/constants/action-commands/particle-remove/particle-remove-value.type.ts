@@ -1,12 +1,12 @@
 /**
- * Action commands particle remove value constants type module.
+ * Agtk action commands particle remove value constants type module.
  *
  * @packageDocumentation
  */
-import type { ParticleRemoveKey } from './particle-remove-key.type';
-import type { ParticleRemove } from './particle-remove.interface';
+import type { AgtkParticleRemoveKey } from './particle-remove-key.type';
+import type { AgtkParticleRemove } from './particle-remove.interface';
 
 /**
- * Action commands particle remove value constants type.
+ * Agtk action commands particle remove value constants type.
  */
-export type ParticleRemoveValue = ParticleRemove[ParticleRemoveKey];
+export type AgtkParticleRemoveValue = AgtkParticleRemove[AgtkParticleRemoveKey];

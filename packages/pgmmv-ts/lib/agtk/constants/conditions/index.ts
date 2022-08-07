@@ -1,5 +1,5 @@
 /**
- * Conditions constants module.
+ * Agtk conditions constants module.
  *
  * @packageDocumentation
  */

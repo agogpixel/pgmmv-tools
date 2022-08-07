@@ -1,13 +1,13 @@
 /**
- * Action commands game speed change constants interface module.
+ * Agtk action commands game speed change constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands game speed change constants interface.
+ * Agtk action commands game speed change constants interface.
  */
-export interface GameSpeedChange {
+export interface AgtkGameSpeedChange {
   /**
    * Targeting by type.
    *

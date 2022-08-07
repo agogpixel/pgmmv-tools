@@ -1,11 +1,11 @@
 /**
- * Attack attributes key constants type module.
+ * Agtk attack attributes key constants type module.
  *
  * @packageDocumentation
  */
-import type { AttackAttributes } from './attack-attributes.interface';
+import type { AgtkAttackAttributes } from './attack-attributes.interface';
 
 /**
- * Attack attributes key constants type.
+ * Agtk attack attributes key constants type.
  */
-export type AttackAttributesKey = keyof AttackAttributes;
+export type AgtkAttackAttributesKey = keyof AgtkAttackAttributes;

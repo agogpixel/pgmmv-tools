@@ -1,14 +1,13 @@
 /**
- * Object instance switches interface module.
+ * Agtk object instance switches interface module.
  *
  * @packageDocumentation
  */
-import type { Switches as PresetSwitches } from '../../../constants/objects/switches'
 import type { ValueAccessorAccessor } from '../../../_shared/value-accessor-accessor.interface';
 
-import type { Switch } from './switch';
+import type { AgtkSwitch } from './switch';
 
 /**
- * Object instance switches interface
+ * Agtk object instance switches interface
  */
-export interface Switches extends PresetSwitches, ValueAccessorAccessor<Switch> {}
+export interface AgtkSwitches extends ValueAccessorAccessor<AgtkSwitch> {}

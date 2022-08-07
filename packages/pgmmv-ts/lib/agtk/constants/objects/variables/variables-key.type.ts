@@ -1,11 +1,11 @@
 /**
- * Objects variables key constants type module.
+ * Agtk objects variables key constants type module.
  *
  * @packageDocumentation
  */
-import type { Variables } from './variables.interface';
+import type { AgtkVariables } from './variables.interface';
 
 /**
- * Objects variables key constants type.
+ * Agtk objects variables key constants type.
  */
-export type VariablesKey = keyof Variables;
+export type AgtkVariablesKey = keyof AgtkVariables;

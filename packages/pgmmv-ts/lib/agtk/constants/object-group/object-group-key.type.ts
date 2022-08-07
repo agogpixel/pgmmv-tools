@@ -1,11 +1,11 @@
 /**
- * Object group key constants type module.
+ * Agtk object group key constants type module.
  *
  * @packageDocumentation
  */
-import type { ObjectGroup } from './object-group.interface';
+import type { AgtkObjectGroup } from './object-group.interface';
 
 /**
- * Object group key constants type.
+ * Agtk object group key constants type.
  */
-export type ObjectGroupKey = keyof ObjectGroup;
+export type AgtkObjectGroupKey = keyof AgtkObjectGroup;

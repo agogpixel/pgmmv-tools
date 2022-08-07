@@ -1,13 +1,13 @@
 /**
- * Action commands sound play constants interface module.
+ * Agtk action commands sound play constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands sound play constants interface.
+ * Agtk action commands sound play constants interface.
  */
-export interface SoundPlay {
+export interface AgtkSoundPlay {
   /**
    * Sound effects.
    */

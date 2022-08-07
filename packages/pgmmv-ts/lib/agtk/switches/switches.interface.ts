@@ -1,14 +1,14 @@
 /**
- * Common switches interface module.
+ * Agtk common switches interface module.
  *
  * @packageDocumentation
  */
-import type { Switch } from './switch';
+import type { AgtkSwitch } from './switch';
 
 /**
- * Common variables interface module.
+ * Agtk common variables interface module.
  */
-export interface Switches {
+export interface AgtkSwitches {
   /**
    * Init ID.
    */
@@ -65,7 +65,7 @@ export interface Switches {
    * @param id - The switch ID.
    * @returns The switch.
    */
-  get(id: number): Switch;
+  get(id: number): AgtkSwitch;
 
   /**
    * Get common switch ID by name.

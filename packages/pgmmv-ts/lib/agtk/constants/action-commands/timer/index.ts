@@ -1,5 +1,5 @@
 /**
- * Action commands timer constants module.
+ * Agtk action commands timer constants module.
  *
  * @packageDocumentation
  */

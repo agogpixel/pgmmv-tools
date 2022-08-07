@@ -1,13 +1,13 @@
 /**
- * System layers constants interface module.
+ * Agtk system layers constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * System layers constants interface.
+ * Agtk system layers constants interface.
  */
-export interface SystemLayers {
+export interface AgtkSystemLayers {
   /**
    * System layer all ID.
    */

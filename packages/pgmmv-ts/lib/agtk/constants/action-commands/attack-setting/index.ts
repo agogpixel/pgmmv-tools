@@ -1,5 +1,5 @@
 /**
- * Action commands attack setting constants module.
+ * Agtk action commands attack setting constants module.
  *
  * @packageDocumentation
  */

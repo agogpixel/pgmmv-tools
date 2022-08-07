@@ -1,5 +1,5 @@
 /**
- * Tile group constants module.
+ * Agtk tile group constants module.
  *
  * @packageDocumentation
  */

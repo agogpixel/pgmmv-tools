@@ -1,13 +1,13 @@
 /**
- * Link condition object facing each other constants interface module.
+ * Agtk link condition object facing each other constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition object facing each other constants interface.
+ * Agtk link condition object facing each other constants interface.
  */
-export interface ObjectFacingEachOther {
+export interface AgtkObjectFacingEachOther {
   /**
    * Set by object group.
    */

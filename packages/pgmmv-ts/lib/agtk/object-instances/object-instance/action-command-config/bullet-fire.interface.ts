@@ -1,13 +1,14 @@
 /**
- * Object instance bullet fire action command configuration interface module.
+ * Agtk object instance bullet fire action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance bullet fire action command configuration interface.
+ * Agtk object instance bullet fire action command configuration interface.
  */
-export interface BulletFire {
+export interface AgtkBulletFire {
   /**
    * Value -1 or 1+. WARNING: If non-existing bulletId, game will crash.
    *  - -1 = Not Set

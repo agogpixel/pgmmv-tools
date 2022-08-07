@@ -1,11 +1,11 @@
 /**
- * Common switch interface module.
+ * Agtk common switch interface module.
  *
  * @packageDocumentation
  */
 import type { SwitchValueAccessor } from '../../_shared';
 
 /**
- * Common switch interface.
+ * Agtk common switch interface.
  */
-export interface Switch extends SwitchValueAccessor {}
+export interface AgtkSwitch extends SwitchValueAccessor {}

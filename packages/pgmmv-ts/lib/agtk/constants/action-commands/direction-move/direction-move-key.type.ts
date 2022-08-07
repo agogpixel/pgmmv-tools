@@ -1,11 +1,11 @@
 /**
- * Action commands direction move key constants type module.
+ * Agtk action commands direction move key constants type module.
  *
  * @packageDocumentation
  */
-import type { DirectionMove } from './direction-move.interface';
+import type { AgtkDirectionMove } from './direction-move.interface';
 
 /**
- * Action commands direction move key constants type.
+ * Agtk action commands direction move key constants type.
  */
-export type DirectionMoveKey = keyof DirectionMove;
+export type AgtkDirectionMoveKey = keyof AgtkDirectionMove;

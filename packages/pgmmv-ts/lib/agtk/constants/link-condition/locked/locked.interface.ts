@@ -1,13 +1,13 @@
 /**
- * Link condition locked constants interface module.
+ * Agtk link condition locked constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Link condition locked constants interface.
+ * Agtk link condition locked constants interface.
  */
-export interface Locked {
+export interface AgtkLocked {
   /**
    * Set by object group.
    */

@@ -1,13 +1,13 @@
 /**
- * Action commands attack setting constants interface module.
+ * Agtk action commands attack setting constants interface module.
  *
  * @packageDocumentation
  */
 
 /**
- * Action commands attack setting constants interface.
+ * Agtk action commands attack setting constants interface.
  */
-export interface AttackSetting {
+export interface AgtkAttackSetting {
   /**
    * Attribute none.
    */

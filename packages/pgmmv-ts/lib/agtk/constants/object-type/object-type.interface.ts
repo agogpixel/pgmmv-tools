@@ -1,16 +1,16 @@
 /**
- * Object type constants interface module.
+ * Agtk object type constants interface module.
  *
  * @packageDocumentation
  * @deprecated
  */
 
 /**
- * Object type constants interface.
+ * Agtk object type constants interface.
  *
  * @deprecated
  */
-export interface ObjectType {
+export interface AgtkObjectType {
   /**
    * Object type all.
    *

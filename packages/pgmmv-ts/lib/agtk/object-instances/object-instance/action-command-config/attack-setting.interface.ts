@@ -1,15 +1,16 @@
 /**
- * Object instance attack setting action command configuration interface module.
+ * Agtk object instance attack setting action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
-import type { AttackSettingValue as AttributeType } from '../../../constants/action-commands/attack-setting';
-import type { AttackAttributesValue as AttributePresetId } from '../../../constants/attack-attributes';
+import type { AgtkAttackSettingValue as AgtkAttributeType } from '../../../constants/action-commands/attack-setting';
+import type { AgtkAttackAttributesValue as AgtkAttributePresetId } from '../../../constants/attack-attributes';
 
 /**
- * Object instance attack setting action command configuration interface.
+ * Agtk object instance attack setting action command configuration interface.
  */
-export interface AttackSetting {
+export interface AgtkAttackSetting {
   /**
    * Value any integer.
    */
@@ -74,7 +75,7 @@ export interface AttackSetting {
    *  - 1 = Preset Attributes
    *  - 2 = Assign Constant to Attribute Variable
    */
-  attributeType: AttributeType;
+  attributeType: AgtkAttributeType;
 
   /**
    * Value 1-8.
@@ -87,7 +88,7 @@ export interface AttackSetting {
    *  - 7 = Light
    *  - 8 = Dark
    */
-  attributePresetId: AttributePresetId;
+  attributePresetId: AgtkAttributePresetId;
 
   /**
    * Value whole number.

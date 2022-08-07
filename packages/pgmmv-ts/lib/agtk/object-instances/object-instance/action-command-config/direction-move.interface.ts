@@ -1,13 +1,14 @@
 /**
- * Object instance direction move action command configuration interface module.
+ * Agtk object instance direction move action command configuration interface
+ * module.
  *
  * @packageDocumentation
  */
 
 /**
- * Object instance direction move action command configuration interface.
+ * Agtk object instance direction move action command configuration interface.
  */
-export interface DirectionMove {
+export interface AgtkDirectionMove {
   /**
    * Value 0 - 359. Common use references, but not limited too:
    *  - 0 = Up
