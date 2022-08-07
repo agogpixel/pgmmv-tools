@@ -1,5 +1,5 @@
 /**
- * Internal shared module.
+ * Internal Agtk shared module.
  *
  * @packageDocumentation
  * @internal
